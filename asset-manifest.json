@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/kirill25460/cleaning.git/static/css/main.7acaea2f.css",
-    "main.js": "/kirill25460/cleaning.git/static/js/main.0d52ceae.js",
-    "index.html": "/kirill25460/cleaning.git/index.html",
-    "main.7acaea2f.css.map": "/kirill25460/cleaning.git/static/css/main.7acaea2f.css.map",
-    "main.0d52ceae.js.map": "/kirill25460/cleaning.git/static/js/main.0d52ceae.js.map"
+    "main.css": "/cleaning/static/css/main.7acaea2f.css",
+    "main.js": "/cleaning/static/js/main.0d52ceae.js",
+    "index.html": "/cleaning/index.html",
+    "main.7acaea2f.css.map": "/cleaning/static/css/main.7acaea2f.css.map",
+    "main.0d52ceae.js.map": "/cleaning/static/js/main.0d52ceae.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
