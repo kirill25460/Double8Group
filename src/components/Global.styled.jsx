@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+// import lev from '/images/lev.png';
+
 
 export const Global = styled.div`
-margin-top:1px;
-background-image: url("./images/lev.png");
 
-margin-left:0px;
-height: 100%;
-width: 100%;
+
+
 `
+
+//   backgroundImage: url('${lev}');
