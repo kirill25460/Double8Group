@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom'; 
 export const Nav = styled.div`
-margin-top:5px;
+
 border-top:2px solid #FF8C00;
+
 padding-bottom:5px;
-margin-bottom:10px;
+
 `;
 export const NavList = styled.ul`
 display:flex;
@@ -43,6 +44,7 @@ display:flex;
 align-items: center;
 justify-content: center;
 gap: 32px;
+
 list-style: none;
 `
 
@@ -64,7 +66,7 @@ text-decoration: none;
 `;
 
 export const ExampleA = styled.a`
-color: #000;
+color: #fff;
 text-decoration: none;
 `
 
@@ -72,9 +74,7 @@ export const Container = styled.div`
   width: 375px;
   margin: 0 auto;
   padding: 0 16px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+
   @media screen and (min-width: 768px) {
     width: 768px;
     padding: 0 32px;

@@ -14,11 +14,12 @@ export const Navigation = () => {
     //   ];
    
     return (
-        <Nav>
           <Container>
+                    <Nav>
+
           <ExampleUl >
                     <ExampleLi ><ExampleA  href="/Home">Home</ExampleA></ExampleLi>
-                    <ExampleLi> <select name= "Services">
+                    <ExampleLi> <select name= "Services" >
                     <option value="value1">Services</option>
                     <option value="value1">For each</option>
                     <option value="value1">Description of service</option>
@@ -36,8 +37,9 @@ export const Navigation = () => {
                     <ExampleLi><ExampleA  href="/About us ">About us</ExampleA></ExampleLi>
                     <ExampleLi><ExampleA  href="/Contact us ">Contact us</ExampleA></ExampleLi>
                     </ExampleUl>
+                    </Nav>
 
-          </Container>
+
 {/* <NavList>
 {navItems.map(({ href, text }) =>( 
 <NavItem>
@@ -47,11 +49,15 @@ export const Navigation = () => {
 </NavItem>)
 )}
 </NavList> */}
+
+
+          </Container>
+
  
 
 
 
-        </Nav>
+   
     )
 }
 

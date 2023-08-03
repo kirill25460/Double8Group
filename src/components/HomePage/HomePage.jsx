@@ -1,5 +1,5 @@
-import {MainText,Container,MainPar,WhyUsText,WhyWrap,WhyUsTop,WhyPictures,WhyTextWrap,WhyWrapPictures,PicturesItem,PicturesList, MainPage,HomeList,HomeItem,HomeItemButton,PhoneButton, Wrap, MainPicture} from './HomePage.styled'
-import mainPicture from "images/bigPicture.JPG";
+import {MainText,Container,HomeText,MainPar,WhyUsText,HomePar,WhyWrap,WhyUsTop,WhyPictures,WhyTextWrap,WhyWrapPictures,PicturesItem,PicturesList, MainPage,HomeList,HomeItem,HomeItemButton,PhoneButton, Wrap, MainPicture} from './HomePage.styled'
+import mainPicture from "images/main.PNG";
 // import firstUS from "images/first.jpg";
 import secondUS from "images/second.jpg";
 import thirdUS from "images/third.jpg"
@@ -15,33 +15,33 @@ export const HomePage = () => {
 
 <HomeList>
     <HomeItem>
-        <h3>General Handyman</h3>
-        <p>Handymen are the do-it-all type and take care of almost all general repairs and maintenance inside and outside a home. Materials, if needed, are additional and will be quoted by your Pro.</p>
+        <HomeText>General Handyman</HomeText>
+        <HomePar>Handymen are the do-it-all type and take care of almost all general repairs and maintenance inside and outside a home. Materials, if needed, are additional and will be quoted by your Pro.</HomePar>
         <HomeItemButton>Learn More</HomeItemButton>
     </HomeItem>
     <HomeItem>
-        <h3>Electical</h3>
-        <p>Our electrical contractors are licensed, and conduct works safely and per the Ontario Electrical Safety Code. If needed, materials, additional labor, and permits are additional and will be quoted by your Pro.</p>
+        <HomeText>Electical</HomeText>
+        <HomePar>Our electrical contractors are licensed, and conduct works safely and per the Ontario Electrical Safety Code. If needed, materials, additional labor, and permits are additional and will be quoted by your Pro.</HomePar>
         <HomeItemButton>Learn More</HomeItemButton>
     </HomeItem>
     <HomeItem>
-        <h3>Plumbing</h3>
-        <p>Our plumbers are licensed and are suitable for all sorts of piping and drainage in a home.  If extra materials are needed, they will be quoted by your Pro. The following equipment has an additional charge: Snake (+$40), Camera (+$225).</p>
+        <HomeText>Plumbing</HomeText>
+        <HomePar>Our plumbers are licensed and are suitable for all sorts of piping and drainage in a home.  If extra materials are needed, they will be quoted by your Pro. The following equipment has an additional charge: Snake (+$40), Camera (+$225).</HomePar>
         <HomeItemButton>Learn More</HomeItemButton>
     </HomeItem>
     <HomeItem>
-        <h3>Tiling & Flooring</h3>
-        <p>Another key method to enhancing your property is repairing or installing new flooring. We rework tiles, laminate, and hardwood flooring or backsplash.</p>
+        <HomeText>Tiling & Flooring</HomeText>
+        <HomePar>Another key method to enhancing your property is repairing or installing new flooring. We rework tiles, laminate, and hardwood flooring or backsplash.</HomePar>
         <HomeItemButton>Learn More</HomeItemButton>
     </HomeItem>
     <HomeItem>
-        <h3>TV Wall Mounting</h3>
-        <p>Get your TV mounted securely using a fixed, tilting, or full-motion mount (mount not included).</p>
+        <HomeText>TV Wall Mounting</HomeText>
+        <HomePar>Get your TV mounted securely using a fixed, tilting, or full-motion mount (mount not included).</HomePar>
         <HomeItemButton>Learn More</HomeItemButton>
     </HomeItem>
     <HomeItem>
-        <h3>Drywall & Painting</h3>
-        <p>Our clients are always amazed by how much an expertly patched drywall hole or crack and a coat of fresh paint can restore and rejuvenate their homes!</p>
+        <HomeText>Drywall & Painting</HomeText>
+        <HomePar>Our clients are always amazed by how much an expertly patched drywall hole or crack and a coat of fresh paint can restore and rejuvenate their homes!</HomePar>
         <HomeItemButton>Learn More</HomeItemButton>
     </HomeItem>
 </HomeList>

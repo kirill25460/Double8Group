@@ -13,15 +13,13 @@ export const AppBar = styled.header`
 `;
 
 export const Container = styled.div`
+
 display: flex;
 align-items: center;
 justify-content: center;
-  width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+width: 375px;
+margin: 0 auto;
+padding: 0 16px;
   @media screen and (min-width: 768px) {
     width: 768px;
     padding: 0 32px;

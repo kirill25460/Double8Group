@@ -13,7 +13,8 @@ margin-top: 5px;
 `
 
 export const MainPicture = styled.img`
-width:50%;
+width:70%;
+padding-top:15px;
 display: block;
   margin-left: auto;
   margin-right: auto;
@@ -22,16 +23,18 @@ display: block;
 
 
 export const MainText = styled.h2`
-margin:0;
+padding-top:15px;
 display:flex;
 align-items: center;
 justify-content: center;
+color:#fff;
 
 `
 export const MainPar = styled.p`
 display:flex;
 align-items: center;
 justify-content: center;
+color:#fff;
 `
 
 export const HomeList = styled.ul`
@@ -48,7 +51,7 @@ flex-wrap: wrap;
 justify-content: center;
 width: 100%;
 
-background: #FFFFFF;
+background: transparent;
 align-items: stretch;
 
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,6 +66,14 @@ width: calc((100% - 0px) / 1);
    
       width: calc((100% - 60px) / 3);
     }
+`
+
+export const HomeText = styled.h3`
+color:#fff;
+`
+
+export const HomePar = styled.p`
+color:#fff;
 `
 export const HomeItemButton = styled.button`
 // background-color:#FF8C00
@@ -118,12 +129,13 @@ export const WhyUsTop = styled.h2`
 display:flex;
 align-items: center;
 justify-content: center;
+color:#fff;
 
 `
 
 export const WhyUsText = styled.p`
 
- 
+ color:#fff;
  width: 450px;
 
 

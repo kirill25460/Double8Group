@@ -3,15 +3,19 @@ import { Header } from "./Header/Header";
 import { Navigation } from "./Navigation/Navigation";
 import {Footer} from "./Footer/Footer"
 import {Global} from "./Global.styled"
+import background from '../images/fon.jpg'
+
 
 export const App = () => {
   return (
   <div>  
     
     <Header/>
-    <Global>
-    <Navigation/>
+    <Global style={{ backgroundImage: `url(${background})`, }}>
+      <div style={{}}>
+      <Navigation/>
     <HomePage/>
+      </div>
     </Global>
     <Footer/>
   
