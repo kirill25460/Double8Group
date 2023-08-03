@@ -3,7 +3,7 @@ import { Header } from "./Header/Header";
 import { Navigation } from "./Navigation/Navigation";
 import {Footer} from "./Footer/Footer"
 import {Global} from "./Global.styled"
-import background from '../images/fon.jpg'
+import background from '../images/fon1.jpg'
 
 
 export const App = () => {

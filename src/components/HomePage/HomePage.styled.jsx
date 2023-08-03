@@ -50,10 +50,8 @@ align-items: center;
 flex-wrap: wrap;
 justify-content: center;
 width: 100%;
-
 background: transparent;
 align-items: stretch;
-
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 width: calc((100% - 0px) / 1);
 &:hover{box-shadow: 0 15px 20px rgba(32, 32, 32, .4);}
@@ -172,9 +170,6 @@ export const Container = styled.div`
   width: 375px;
   margin: 0 auto;
   padding: 0 16px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   @media screen and (min-width: 768px) {
     width: 768px;
     padding: 0 32px;
@@ -184,3 +179,4 @@ export const Container = styled.div`
     padding: 0 100px;
   }
 `;
+
