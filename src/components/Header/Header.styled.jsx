@@ -75,12 +75,15 @@ span {
  
 &.active {
     
-    border-bottom:3px solid #FF8C00;
+    // border-bottom:3px solid #FF8C00;
 }
 
 &:hover:not(.active),
 &:focus-visible:not(.active) {
-    border-bottom:3px solid #FF8C00;
+  color: #222021;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    // border-bottom:3px solid #FF8C00;
 }
 `;
 // margin: left 100px;

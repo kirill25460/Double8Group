@@ -4,10 +4,10 @@ import { useState } from 'react';
 
 // import { updateSearchType } from 'redux/search/searchSlice';
 
-import { SearchForm, Text } from './Selector.styled';
-
+import { SearchForm,  } from './Selector.styled';
+// Text
 const options = [
-  { value: 'For each', label: 'for each' },
+  { value: 'Book us', label: 'Book Us' },
   { value: 'Description of service', label: 'Description of service' },
   { value: 'Picture', label: 'Picture' },
   { value: 'Option to book online', label: 'Option to book online' },
@@ -21,7 +21,7 @@ const options = [
 
 const portal = document.body;
 
-export const CategorySearchSelector = () => {
+export const BookUsSelector = () => {
 //   const dispatch = useDispatch();
   const [selectedOption, setSelectedOption] = useState(options[0]);
 
@@ -32,7 +32,7 @@ export const CategorySearchSelector = () => {
 
   return (
     <SearchForm>
-      <Text>Category</Text>
+      {/* <Text>Book us</Text> */}
       <Select
         value={selectedOption}
         onChange={handleChange}
@@ -51,7 +51,7 @@ export const CategorySearchSelector = () => {
             outline: 'none',
             borderColor: state.isFocused ? 'none' : provided.borderColor,
             boxShadow: state.isFocused ? 'none' : provided.boxShadow,
-            color: '#000',
+            color: '#F8821E',
             width: '146px',
             height: '24px',
             '&:hover': {
@@ -72,7 +72,7 @@ export const CategorySearchSelector = () => {
             },
           }),dropdownIndicator: (base, state) => ({
             ...base,
-            color: '#8BAA36',
+            color: '#F8821E',
            
           }),
           indicatorSeparator: () => ({
@@ -81,7 +81,7 @@ export const CategorySearchSelector = () => {
           input: (provided, state) => ({
             ...provided,
             marginBottom: '0',
-            color: '#000000',
+            color: 'transparent',
             font: '14',
             lineHeight: '1.5',
           }),
@@ -99,7 +99,7 @@ export const CategorySearchSelector = () => {
             paddingBottom: '5px',
             font: '12px',
             lineHeight: '18px',
-            color: '#rgba(0, 0, 0, 0.5)',
+            color: '#F8821E',
             backgroundColor: '#ffffff',
             borderRadius: '6px',
             border: 'none',
@@ -139,13 +139,13 @@ export const CategorySearchSelector = () => {
           option: (provided, state) => ({
             border: 'none',
             paddingLeft: '14px',
-            color: '#000000',
+            color: '#F8821E',
             opacity: '0.5',
             padding: '8px',
             cursor: 'pointer',
 
             '&:hover': {
-              color: '#8baa36',
+              color: '#222021',
               opacity: '0.75',
               backgroundColor: '#f2ecec',
             },

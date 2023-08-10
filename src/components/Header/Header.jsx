@@ -1,7 +1,7 @@
-import logo from "images/first-logo.PNG"
+import HeaderLogo from "images/firstLogo.png"
 import {LogoHeader,Container, AppBar,LogoWrap,Wrap,NavList,NavItem,StyledLink} from "./Header.styled";
 // HeaderSpan,HeaderText,HeaderWrap,HeaderButton
-
+import {BookUsSelector} from "../Navigation/Selector/SelectorServices";
 
 
 export const Header = () => {
@@ -9,8 +9,8 @@ export const Header = () => {
   const navItems = [
       { href: `/Home`, text: 'Home' },
       { href: '/Reviews', text: 'Reviews' },
-      { href: '/Book us online', text: 'Book us online' },
-      { href: '/Contact us', text: 'Contact us' },
+      // { href: '/Book us', text: 'Book us' },
+      // { href: '/Contacts', text: 'Contacts' },
        ];
 
     return  (
@@ -20,7 +20,7 @@ export const Header = () => {
     
       
    <LogoWrap>
-   <LogoHeader src={logo} alt="Logo" /> 
+   <LogoHeader src={HeaderLogo} alt="Logo" /> 
    </LogoWrap>
    <Wrap>
    <NavList>
@@ -31,6 +31,13 @@ export const Header = () => {
             </StyledLink>
 </NavItem>)
 )}
+
+<NavItem>
+   <StyledLink>
+   <BookUsSelector/>
+   </StyledLink>
+
+</NavItem>
 </NavList>
     </Wrap>
   

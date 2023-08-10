@@ -18,14 +18,14 @@ export const MeasureSearchForm = styled.form`
 
 export const Text = styled.span`
   opacity:0.5;
-//   color: ${props => props.theme.colors.blackText};
+
   font-weight: 400 ;
   font-size: 14 px;
   letter-spacing:-0.02em;
   line-height: 1.29;
 
   @media screen and (min-width: 768px) {
-    // font-size: ${props => props.theme.fontSizes[3]}px;
+
     line-height: 1.33;
   }
   @media screen and (min-width: 1440px) {
@@ -41,7 +41,7 @@ width: 20px;
   &:focus-within {
     outline: none;
   }
-  background:#F5F5F5;
+  background:#F8821E;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   @media screen and (min-width: 768px) {
