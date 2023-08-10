@@ -8,21 +8,28 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import './Slider.css';
+import{ButtonSlider,TopText,Container,TextSlider} from './Slider.styled'
 
-
-
+import Slide1 from "images/pexels-life1.png";
+import Slide2 from "images/second.jpg";
+import Slide3 from "images/third.jpg";
+import Slide4 from "images/naruto.png"
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
+
+
+
 export default function MySlider() {
   return (
     <>
+    
       <Swiper
         spaceBetween={40}
         centeredSlides={true}
         autoplay={{
-          delay: 30000,
+          delay: 200000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -32,13 +39,27 @@ export default function MySlider() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide> <img src="public/images/first.jpg" alt='Slide1'/></SwiperSlide>
-        <SwiperSlide><img src="public/images/second.jpg" alt='Slide2'/></SwiperSlide>
-        <SwiperSlide><img src="public/images/third.jpg" alt='Slide3'/></SwiperSlide>
-        <SwiperSlide><img src="public/images/naruto.png" alt='Slide4'/></SwiperSlide>
+
    
-    
+        <SwiperSlide> 
+          <img src={Slide1} alt='Slide1'/>
+          <TopText>AIR DUCT & DRYER VENT CLEANING SERVICE</TopText>
+          <TextSlider>Optional text about itOptional text about itOptional text about itOptional text about itOptional text about itOptional text about </TextSlider>
+        <ButtonSlider>Book Us</ButtonSlider>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Slide2} alt='Slide2'/>
+        <ButtonSlider>Book Us</ButtonSlider>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Slide3} alt='Slide3'/>
+        <ButtonSlider>Book Us</ButtonSlider>
+        </SwiperSlide>
+
+   
+        
       </Swiper>
+      
     </>
   );
 }

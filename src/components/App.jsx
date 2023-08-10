@@ -9,18 +9,15 @@ import MySlider from './Slider/Slider'
 
 export const App = () => {
   return (
-  <div>  
-    
-    <Header/>
-    
-    
-<MySlider/>
-<HomePage/>
+<>  
+  <Header/>
 
+  <MySlider/>
+
+  <HomePage/>
+  {/* <Footer/> */}
   
-    {/* <Footer/> */}
-  
-  </div>
+</>
 
   );
 };

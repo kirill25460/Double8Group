@@ -1,5 +1,49 @@
 import styled from 'styled-components';
 
+
+export const Container = styled.div`
+  width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    padding: 0 100px;
+  }
+`;
+
+export const HomeWrap = styled.div`
+height:794px;
+background-color:#222021;
+`
+export const HomeText = styled.h2`
+font-family: Myanmar Khyay;
+font-size: 75px;
+font-weight: 400;
+line-height: 61px;
+letter-spacing: 0px;
+text-align: left;
+color: #F8821E;
+
+`
+
+export const HomePar = styled.p`
+font-family: Montserrat;
+font-size: 22px;
+font-weight: 300;
+line-height: 29px;
+letter-spacing: 0px;
+text-align: left;
+
+`
+
+
+
+
+
 export const MainPage = styled.div`
 margin-top: 5px;
 
@@ -66,13 +110,8 @@ width: calc((100% - 0px) / 1);
     }
 `
 
-export const HomeText = styled.h3`
-color:#fff;
-`
 
-export const HomePar = styled.p`
-color:#fff;
-`
+
 export const HomeItemButton = styled.button`
 // background-color:#FF8C00
 text-decoration: none;
@@ -165,18 +204,3 @@ list-style: none;
 export const PicturesItem = styled.li`
 
 `
-
-export const Container = styled.div`
-  width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 0 32px;
-  }
-  @media screen and (min-width: 1440px) {
-    width: 1440px;
-    padding: 0 100px;
-  }
-`;
-

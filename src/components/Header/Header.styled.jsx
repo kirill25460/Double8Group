@@ -11,13 +11,14 @@ height:67px;
 
 export const AppBar = styled.header`
   width: 100%;
-  padding-top: 18px;
+  
 `;
 
 export const Container = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
+height: 110px;
 
 width: 375px;
 margin: 0 auto;
