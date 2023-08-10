@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
+// useRef, useState 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -8,12 +9,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import './Slider.css';
-import{ButtonSlider,TopText,Container,TextSlider} from './Slider.styled'
-
+import{ButtonSlider,TopText,TextSlider} from './Slider.styled'
+// Container,
 import Slide1 from "images/pexels-life1.png";
 import Slide2 from "images/second.jpg";
 import Slide3 from "images/third.jpg";
-import Slide4 from "images/naruto.png"
+// import Slide4 from "images/naruto.png"
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
