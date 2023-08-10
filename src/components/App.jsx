@@ -1,9 +1,9 @@
 import {HomePage} from "./HomePage/HomePage"
 import { Header } from "./Header/Header";
-import { Navigation } from "./Navigation/Navigation";
-import {Footer} from "./Footer/Footer"
-import {Global} from "./Global.styled"
-import background from '../images/fon1.jpg'
+// import { Navigation } from "./Navigation/Navigation";
+// import {Footer} from "./Footer/Footer"
+// import {Global} from "./Global.styled"
+
 
 
 export const App = () => {
@@ -11,13 +11,13 @@ export const App = () => {
   <div>  
     
     <Header/>
-    <Global style={{ backgroundImage: `url(${background})`, }}>
-      <div style={{}}>
-      <Navigation/>
+    
+    
+
     <HomePage/>
-      </div>
-    </Global>
-    <Footer/>
+
+  
+    {/* <Footer/> */}
   
   </div>
 

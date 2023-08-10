@@ -1,14 +1,15 @@
-import {MainText,Container,HomeText,MainPar,WhyUsText,HomePar,WhyWrap,WhyUsTop,WhyPictures,WhyTextWrap,WhyWrapPictures,PicturesItem,PicturesList, MainPage,HomeList,HomeItem,HomeItemButton,PhoneButton, Wrap, MainPicture} from './HomePage.styled'
-import mainPicture from "images/main.PNG";
+// import {MainText,Container,HomeText,MainPar,WhyUsText,HomePar,WhyWrap,WhyUsTop,WhyPictures,WhyTextWrap,WhyWrapPictures,PicturesItem,PicturesList, MainPage,HomeList,HomeItem,HomeItemButton,PhoneButton, Wrap, MainPicture} from './HomePage.styled'
+// import mainPicture from "images/main.PNG";
+import {Container} from "./HomePage.styled"
 // import firstUS from "images/first.jpg";
-import secondUS from "images/second.jpg";
-import thirdUS from "images/third.jpg"
-import { BsFillTelephoneFill} from "react-icons/bs";
+// import secondUS from "images/second.jpg";
+// import thirdUS from "images/third.jpg"
+// import { BsFillTelephoneFill} from "react-icons/bs";
 
 export const HomePage = () => {
     return(
         <Container>
-<MainPage>
+{/* <MainPage>
             <MainPicture src={mainPicture} alt="Logo" /> 
             <MainText>Our Professional Handyman Services</MainText>
             <MainPar>Most contractors won’t take on small projects or can be expensive if/when they do get around to it. With The Handyman Services, you just need to tell us what you need, and your expectations, and services can be booked right away.</MainPar>
@@ -71,7 +72,7 @@ Most contractors won’t take on small projects, or can be expensive if/when the
 <PhoneButton>
 <BsFillTelephoneFill size={50}/>
 </PhoneButton>
-        </MainPage>
+        </MainPage> */}
 
         </Container>
         
