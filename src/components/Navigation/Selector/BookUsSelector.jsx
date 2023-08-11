@@ -11,11 +11,11 @@ const options = [
   { value: 'Description of service', label: 'Description of service' },
   { value: 'Picture', label: 'Picture' },
   { value: 'Option to book online', label: 'Option to book online' },
-  { value: 'Air duct cleaning', label: 'Air duct cleaning' },
-  { value: 'Dryer vent cleaning', label: 'Dryer vent cleaning' },
-  { value: 'Bathroom fan cleaning', label: 'Bathroom fan cleaning' },
-  { value: 'Chimney cleaning', label: 'Chimney cleaning' },
-  { value: 'Comercial air duct cleaning', label: 'Comercial air duct cleaning' },
+  // { value: 'Air duct cleaning', label: 'Air duct cleaning' },
+  // { value: 'Dryer vent cleaning', label: 'Dryer vent cleaning' },
+  // { value: 'Bathroom fan cleaning', label: 'Bathroom fan cleaning' },
+  // { value: 'Chimney cleaning', label: 'Chimney cleaning' },
+  // { value: 'Comercial air duct cleaning', label: 'Comercial air duct cleaning' },
  
 ];
 

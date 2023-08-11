@@ -1,7 +1,7 @@
 import HeaderLogo from "images/firstLogo.png"
 import {LogoHeader,Container, AppBar,LogoWrap,Wrap,NavList,NavItem,StyledLink} from "./Header.styled";
 // HeaderSpan,HeaderText,HeaderWrap,HeaderButton
-import {BookUsSelector} from "../Navigation/Selector/SelectorServices";
+import {BookUsSelector} from "../Navigation/Selector/BookUsSelector";
 
 
 export const Header = () => {

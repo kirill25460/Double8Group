@@ -17,7 +17,6 @@ export const AppBar = styled.header`
 export const Container = styled.div`
 display: flex;
 align-items: center;
-justify-content: space-between;
 height: 110px;
 
 width: 375px;
@@ -28,6 +27,8 @@ padding: 0 10px;
     padding: 0 32px;
   }
   @media screen and (min-width: 1440px) {
+   
+    justify-content: space-between;
     width: 1440px;
     padding: 0 100px;
   }

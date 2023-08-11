@@ -39,36 +39,12 @@ span {
 }
 `;
 
-export const ExampleUl = styled.ul`
-display:flex;
-align-items: center;
-justify-content: center;
-gap: 32px;
-
-list-style: none;
-`
-
-export const ExampleLi = styled.li`
+export const Wrap = styled.div`
 display: flex;
-align-items: center;
-
-color: #000;
-text-decoration: none;
-&.active {
-    
-    border-bottom:3px solid #FF8C00;
-}
-
-&:hover:not(.active),
-&:focus-visible:not(.active) {
-    border-bottom:3px solid #FF8C00;
-}
-`;
-
-export const ExampleA = styled.a`
-color: #fff;
-text-decoration: none;
 `
+
+
+
 
 export const Container = styled.div`
   width: 375px;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
+display:flex;
   width: 375px;
   margin: 0 auto;
   padding: 0 16px;
@@ -15,11 +16,17 @@ export const Container = styled.div`
   }
 `;
 
+export const Wrap = styled.div`
+
+`
+
 export const HomeWrap = styled.div`
 height:794px;
 background-color:#222021;
 `
 export const HomeText = styled.h2`
+margin:0;
+padding-top:215px;
 font-family: Myanmar Khyay;
 font-size: 75px;
 font-weight: 400;
@@ -31,6 +38,11 @@ color: #F8821E;
 `
 
 export const HomePar = styled.p`
+margin:0;
+padding-top:32px;
+color:#FFFFFF;
+width: 611px;
+height: 287px;
 font-family: Montserrat;
 font-size: 22px;
 font-weight: 300;
@@ -39,7 +51,15 @@ letter-spacing: 0px;
 text-align: left;
 
 `
+export const AboutUsPic = styled.img`
+width: 508px;
+height: 690px;
+padding-top: 103px;
+padding-left:103px;
 
+@media screen and (min-width: 1440px) {
+} 
+`;
 
 
 
@@ -155,11 +175,8 @@ svg {
   }
 
 `
-export const Wrap = styled.div`
-padding-top:60px;
-padding-bottom:60px;
 
-`
+
 
 export const WhyUsTop = styled.h2`
 

@@ -25,7 +25,7 @@
   .swiper-button-next {
     right: 105px;
     color: #FFFFFF;
-    
+    opacity: 1;
   }
   .swiper-button-prev{
     left: 105px;

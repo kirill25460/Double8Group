@@ -9,12 +9,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import './Slider.css';
-import{ButtonSlider,TopText,TextSlider} from './Slider.styled'
+import{ButtonSlider,TopText,TextSlider,Container} from './Slider.styled'
 // Container,
 import Slide1 from "images/pexels-life1.png";
 import Slide2 from "images/second.jpg";
 import Slide3 from "images/third.jpg";
-// import Slide4 from "images/naruto.png"
+
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -25,12 +25,12 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 export default function MySlider() {
   return (
     <>
-    
+   
       <Swiper
         spaceBetween={40}
         centeredSlides={true}
         autoplay={{
-          delay: 200000,
+          delay: 20000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -40,6 +40,7 @@ export default function MySlider() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
+         <Container>
 
    
         <SwiperSlide> 
@@ -58,7 +59,7 @@ export default function MySlider() {
         </SwiperSlide>
 
    
-        
+        </Container>
       </Swiper>
       
     </>
