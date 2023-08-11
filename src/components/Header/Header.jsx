@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import { HiMenuAlt2 } from 'react-icons/hi';
-import { IoClose } from 'react-icons/io5';
+// import { useState, useEffect } from 'react';
+// import { HiMenuAlt2 } from 'react-icons/hi';
+// import { IoClose } from 'react-icons/io5';
 
 
 
 import HeaderLogo from "images/firstLogo.png"
-import {LogoHeader,Container, AppBar,LogoWrap,Wrap,NavList,NavItem,StyledLink,MobileOpenHeader,BurgerButton,MobileMenu,MobileCloseHeader,CrossButton} from "./Header.styled";
-// HeaderSpan,HeaderText,HeaderWrap,HeaderButton
+import {LogoHeader,Container, AppBar,LogoWrap,Wrap,NavList,NavItem,StyledLink,} from "./Header.styled";
+// MobileOpenHeader,BurgerButton,MobileMenu,MobileCloseHeader,CrossButton
 import {BookUsSelector} from "../Navigation/Selector/BookUsSelector";
 
 
