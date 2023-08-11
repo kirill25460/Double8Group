@@ -1,11 +1,37 @@
+import { useState, useEffect } from 'react';
+import { HiMenuAlt2 } from 'react-icons/hi';
+import { IoClose } from 'react-icons/io5';
+
+
+
 import HeaderLogo from "images/firstLogo.png"
-import {LogoHeader,Container, AppBar,LogoWrap,Wrap,NavList,NavItem,StyledLink} from "./Header.styled";
+import {LogoHeader,Container, AppBar,LogoWrap,Wrap,NavList,NavItem,StyledLink,MobileOpenHeader,BurgerButton,MobileMenu,MobileCloseHeader,CrossButton} from "./Header.styled";
 // HeaderSpan,HeaderText,HeaderWrap,HeaderButton
 import {BookUsSelector} from "../Navigation/Selector/BookUsSelector";
 
 
 export const Header = () => {
+   // const [toggleMenu, setToggleMenu] = useState(false);
 
+
+ 
+   // useEffect(() => {
+   //   const bodyEl = document.getElementById('body');
+ 
+   //   bodyEl.style.overflow = toggleMenu ? 'hidden' : 'visible';
+   // }, [toggleMenu]);
+ 
+   // const toggleMenuHandler = () => {
+   //   return setToggleMenu(prevState => !prevState);
+   // };
+ 
+
+ 
+   // const mobileMenuHandler = e => {
+   //   if (e.target.closest('li') && window.innerWidth < 1439) {
+   //     return setToggleMenu(prevState => !prevState);
+   //   }
+   // };
   const navItems = [
       { href: `/Home`, text: 'Home' },
       { href: '/Reviews', text: 'Reviews' },
@@ -16,7 +42,23 @@ export const Header = () => {
     return  (
  <AppBar>
     <Container>
-    
+    {/* <MobileOpenHeader>
+         
+          
+          <BurgerButton type="button" onClick={toggleMenuHandler}>
+            <HiMenuAlt2 size={28} />
+          </BurgerButton>
+        </MobileOpenHeader>
+        <MobileMenu status={toggleMenu} onClick={mobileMenuHandler}>
+          <MobileCloseHeader>
+            
+            <CrossButton type="button" onClick={toggleMenuHandler}>
+              <IoClose size={32} />
+            </CrossButton>
+          </MobileCloseHeader>
+          {/* <Navigation /> */}
+          
+        {/* </MobileMenu> */} 
       
    <LogoWrap>
    <LogoHeader src={HeaderLogo} alt="Logo" /> 

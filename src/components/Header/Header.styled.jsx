@@ -34,13 +34,8 @@ padding: 0 10px;
   }
 `;
 
-export const HeaderText = styled.p`
-color:#202020;
-`
-export const HeaderSpan = styled.span`
-color:#202020;
-display:flex;
-`
+
+
 export const LogoWrap = styled.div`
 
 
@@ -98,18 +93,118 @@ export const Wrap = styled.div`
 display: flex;
 `
 
-export const HeaderButton = styled.button`
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: 24px;
-padding: 0;
-background-color: transparent;
-border: none;
-outline: none;
-cursor: pointer;
-svg {
-    fill: #202020;
-    &:hover{fill: #FF8C00;}
+export const MobileOpenHeader = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const BurgerButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 24px;
+  padding: 0;
+
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  svg {
+    fill: ;
   }
-`
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  transform: translateY(-100%);
+
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 18px 16px;
+
+  background-color: ;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 767px) {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 18px 32px 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    position: static;
+
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    padding: 0;
+
+    background-color: transparent;
+
+    transform: none;
+  }
+
+  ${({ status }) => {
+    return status
+      ? 'transform: translateY(0);'
+      : 'transform: translateY(-100%);';
+  }}
+`;
+
+export const MobileCloseHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+`;
+
+export const CrossButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  svg {
+    fill: ;
+  }
+`;
