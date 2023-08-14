@@ -11,9 +11,7 @@ import 'swiper/css/navigation';
 import './Slider.css';
 import{ButtonSlider,TopText,TextSlider,Container} from './Slider.styled'
 // Container,
-import Slide1 from "images/pexels-life1.png";
-import Slide2 from "images/second.jpg";
-import Slide3 from "images/third.jpg";
+import Slide1 from "images/Group1.png"
 
 
 // import required modules
@@ -50,11 +48,11 @@ export default function MySlider() {
         <ButtonSlider>Book Us</ButtonSlider>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Slide2} alt='Slide2'/>
+          <img src={Slide1} alt='Slide2'/>
         <ButtonSlider>Book Us</ButtonSlider>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Slide3} alt='Slide3'/>
+          <img src={Slide1} alt='Slide3'/>
         <ButtonSlider>Book Us</ButtonSlider>
         </SwiperSlide>
 

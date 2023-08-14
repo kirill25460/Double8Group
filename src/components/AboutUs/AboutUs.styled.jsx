@@ -27,14 +27,14 @@ background-color:#222021;
 export const HomeText = styled.h2`
 margin:0;
 padding-top:215px;
-font-family: Myanmar Khyay;
+font-family: Montserrat;
 font-size: 75px;
-font-weight: 400;
+font-weight: 600;
 line-height: 61px;
 letter-spacing: 0px;
 text-align: left;
 color: #F8821E;
-
+text-shadow: 4px 4px 31px rgba(248,130,30,0.65);
 `
 
 export const HomePar = styled.p`
@@ -52,9 +52,9 @@ text-align: left;
 
 `
 export const AboutUsPic = styled.img`
-width: 508px;
-height: 690px;
-padding-top: 103px;
+width: 774px;
+height: 763px;
+padding-top: 30px;
 padding-left:103px;
 
 @media screen and (min-width: 1440px) {

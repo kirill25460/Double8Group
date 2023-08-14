@@ -2,12 +2,10 @@
 // import { HiMenuAlt2 } from 'react-icons/hi';
 // import { IoClose } from 'react-icons/io5';
 
-
-
 import HeaderLogo from "images/firstLogo.png"
 import {LogoHeader,Container, AppBar,LogoWrap,Wrap,NavList,NavItem,StyledLink,} from "./Header.styled";
 // MobileOpenHeader,BurgerButton,MobileMenu,MobileCloseHeader,CrossButton
-import {BookUsSelector} from "../Navigation/Selector/BookUsSelector";
+// import {BookUsSelector} from "../Navigation/Selector/BookUsSelector";
 
 
 export const Header = () => {
@@ -35,8 +33,8 @@ export const Header = () => {
   const navItems = [
       { href: `/Home`, text: 'Home' },
       { href: '/Reviews', text: 'Reviews' },
-      // { href: '/Book us', text: 'Book us' },
-      // { href: '/Contacts', text: 'Contacts' },
+      { href: '/Book us', text: 'Book us' },
+      { href: '/Contacts', text: 'Contacts' },
        ];
 
     return  (
@@ -73,12 +71,12 @@ export const Header = () => {
 </NavItem>)
 )}
 
-<NavItem>
+{/* <NavItem>
    <StyledLink>
    <BookUsSelector/>
    </StyledLink>
 
-</NavItem>
+</NavItem> */}
 </NavList>
     </Wrap>
   

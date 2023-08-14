@@ -5,38 +5,42 @@ export const FooterCon = styled.div`
 background-color: #202020;
 padding-top: 60px;
 padding-bottom: 60px;
-`
+`;
 
 export const FooterWrap = styled.div`
-display: flex;
 
-`
+`;
+
+export const Wrap = styled.div`
+
+`;
 
 export const FooterText = styled.p`
-color:#ffffff;
-`
-export const FooterSpan = styled.span`
-color:#ffffff;
-display:flex;
-`
-export const FooterButton = styled.button`
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: 24px;
-padding: 0;
-background-color: transparent;
-border: none;
-outline: none;
-cursor: pointer;
-svg {
-    fill: #ffffff;
-    &:hover{fill: #FF8C00;}
-  }
-`
+font-family: Montserrat;
+font-size: 15px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: left;
+color: #DDDDDD;
+
+`;
+export const FooterTextInfo = styled.p`
+font-family: Montserrat;
+font-size: 15px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: right;
+color: #DDDDDD;
+
+`;
+
+
+
 export const LogoFooter = styled.img`
-width:75px;
-height:50px;
+width:134px;
+height:101px;
 margin:0 auto;
 @media screen and (min-width: 1440px) {
 } 
@@ -56,5 +60,47 @@ export const Container = styled.div`
   @media screen and (min-width: 1440px) {
     width: 1440px;
     padding: 0 100px;
+  }
+`;
+
+export const ContactsList = styled.ul`
+padding:0;
+list-style: none;
+`;
+
+export const ContactsItem = styled.li``;
+
+export const FooterLink = styled.a`
+font-family: Montserrat;
+font-size: 15px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: left;
+color: #797276;
+outline: none;
+text-decoration: none;
+&:hover{
+  color: #FFF;
+  }
+`;
+
+export const InfoList = styled.ul`
+text-align: right;
+padding:0;
+list-style: none;
+`;
+
+export const InfoLinks = styled.p`
+margin:0;
+font-family: Montserrat;
+font-size: 15px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0px;
+
+color: #797276;
+&:hover{
+  color: #FFF;
   }
 `;

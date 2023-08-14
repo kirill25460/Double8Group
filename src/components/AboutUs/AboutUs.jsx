@@ -1,13 +1,13 @@
 // import {MainText,Container,HomeText,MainPar,WhyUsText,HomePar,WhyWrap,WhyUsTop,WhyPictures,WhyTextWrap,WhyWrapPictures,PicturesItem,PicturesList, MainPage,HomeList,HomeItem,HomeItemButton,PhoneButton, Wrap, MainPicture} from './HomePage.styled'
 // import mainPicture from "images/main.PNG";
-import {Container,HomeWrap,HomeText,HomePar,AboutUsPic,Wrap} from "./HomePage.styled";
-import man from "images/Untitled-3-removebg-preview 1.png"
+import {Container,HomeWrap,HomeText,HomePar,AboutUsPic,Wrap} from "./AboutUs.styled";
+import man from "images/Group 2 1.png"
 // import firstUS from "images/first.jpg";
 // import secondUS from "images/second.jpg";
 // import thirdUS from "images/third.jpg"
 // import { BsFillTelephoneFill} from "react-icons/bs";
 
-export const HomePage = () => {
+export const AboutUs = () => {
     return(
     <HomeWrap>
     <Container>
