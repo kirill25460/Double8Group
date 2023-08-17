@@ -9,9 +9,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import './Slider.css';
-import{ButtonSlider,TopText,TextSlider,Container} from './Slider.styled'
-// Container,
-import Slide1 from "images/Group1.png"
+// import{ButtonSlider,Container} from './Slider.styled';
+import {Avatar,ListWrap,Container,ItemWrap,UserWrap} from "./OtherReviews.styled"
+// Container,,TopText,TextSlider
+
+// import Avatar21 from "images/avatar2.png";
+// import Avatar31 from "images/avatar3.png";
 
 
 // import required modules
@@ -20,7 +23,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 
-export default function MySlider() {
+export const MySlider = ({ body,type, user:{username, avatar} }) =>  {
   return (
     <>
    
@@ -40,21 +43,28 @@ export default function MySlider() {
       >
          <Container>
 
-   
+
         <SwiperSlide> 
-          <img src={Slide1} alt='Slide1'/>
-          <TopText>AIR DUCT & DRYER VENT CLEANING SERVICE</TopText>
-          <TextSlider>Optional text about itOptional text about itOptional text about itOptional text about itOptional text about itOptional text about </TextSlider>
+         
+          <ListWrap>
+        <ItemWrap>
+    <Avatar src={avatar} alt="User avatar" width="48" />
+    <UserWrap>
+    <p>  {username}</p>
+    <p>  {type}</p>
+    </UserWrap>
+    </ItemWrap>
+    <p> Message : {body}</p>
+    </ListWrap>
+        </SwiperSlide>
+        {/* <SwiperSlide>
+          <img src={Avatar21} alt='Slide2'/>
         <ButtonSlider>Details</ButtonSlider>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Slide1} alt='Slide2'/>
+          <img src={Avatar31} alt='Slide3'/>
         <ButtonSlider>Details</ButtonSlider>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Slide1} alt='Slide3'/>
-        <ButtonSlider>Details</ButtonSlider>
-        </SwiperSlide>
+        </SwiperSlide> */}
 
    
         </Container>

@@ -1,11 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import { Header } from "./Header/Header";
+import SharedLayout from  "./SharedLayout";
+// import { Header } from "./Header/Header";
 import { HomePage } from "pages/HomePage/HomePage";
 import { ReviewsPage } from 'pages/Reviews/ReviewsPage';
 import { BookUsPage } from 'pages/BookUs/BookUsPage';
 import { ContactsPage } from 'pages/Contacts/ContactsPage';
 // import { Navigation } from "./Navigation/Navigation";
-import {Footer} from "./Footer/Footer"
+// import {Footer} from "./Footer/Footer"
 // import {Global} from "./Global.styled"
 
 
@@ -13,15 +14,16 @@ import {Footer} from "./Footer/Footer"
 export const App = () => {
   return (
 <>  
-  <Header/>
+  
   <Routes>
-    <Route path="Home" element={<HomePage/>}/>
-    <Route path="Reviews" element={<ReviewsPage/>}/>
-    <Route path="Book Us" element={<BookUsPage/>}/>    
-    <Route path="Contacts" element={<ContactsPage/>}/>
-
+  <Route path='/' element={<SharedLayout/>}>
+    <Route index element={<HomePage/>}/>
+    <Route path="reviews" element={<ReviewsPage/>}/>
+    <Route path="book_us" element={<BookUsPage/>}/>    
+    <Route path="contacts" element={<ContactsPage/>}/>
+    <Route path="*" element={<HomePage/>}/>
+  </Route>
   </Routes>
-  <Footer/>
   
 </>
 

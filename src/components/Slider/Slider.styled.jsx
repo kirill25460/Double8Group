@@ -22,7 +22,7 @@ display: inline-block;
 width: 228px;
 height: 83px;
 line-height: 18px;
-border-radius: 45px;
+
 border:none;
 left:245px;
 top:572px;
