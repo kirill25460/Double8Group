@@ -65,25 +65,34 @@ color:#C5C5C5;
 
 `;
 
-const InputFileReview = styled.input``;
+const InputFileReview = styled.input`
+top:706px;
+left:850px;
+position:absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+width: 35px;
+height: 37px;
+
+color:#fff;
+border: 2px solid #F8821E;
+`;
 
 export const ButtonAdd = styled.button`
+top:756px;
+left:850px;
+position:absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-top:18px;
-  right: 25px;
-  width: 113px;
-  height: 52px;
-  background-color:#22252A;
+  width: 39px;
+  height: 39px;
+  background-color:#F8821E;
   color:#fff;
-  border-radius: 24px 44px;
   border: none;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
 `;
 
 const SharePic = styled.img`

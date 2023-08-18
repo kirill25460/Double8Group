@@ -6,10 +6,11 @@ import {
   UserWrap,
 } from './OtherReviews.styled';
 
-export const OtherReviews = ({ body, type, user: { username, avatar } }) => {
+export const OtherReviewsSlider = ({ body, type, user: { username, avatar } }) => {
   return (
     <>
       <Container>
+        
         <ListWrap>
           <ItemWrap>
             <Avatar src={avatar} alt="User avatar" width="48" />
