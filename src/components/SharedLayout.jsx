@@ -4,6 +4,7 @@ import { HomePage } from "pages/HomePage/HomePage";
 import { ReviewsPage } from "pages/Reviews/ReviewsPage";
 import { ContactsPage } from "pages/Contacts/ContactsPage";
 import { BookUsPage } from "pages/BookUs/BookUsPage";
+import { AirDuctPage } from "pages/AirDuctService/AirDuctPage";
 import { useLocation } from "react-router-dom";
 
 
@@ -17,6 +18,7 @@ const SharedLayout = () => {
       {location.pathname === '/reviews' && <ReviewsPage/>}
       {location.pathname === '/contacts' && <ContactsPage/>}
       {location.pathname === '/book_us' && <BookUsPage/>}
+      {location.pathname === '/air_duct' && <AirDuctPage/>}
       <Footer />
     </div>
   );
