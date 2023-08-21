@@ -1,5 +1,6 @@
 import styled from 'styled-components'; 
 
+
 export const Container = styled.div`
 
 width: 375px;
@@ -72,4 +73,5 @@ width: 395px;
 height: 140px;
 top: 327px;
 
-`
+`;
+

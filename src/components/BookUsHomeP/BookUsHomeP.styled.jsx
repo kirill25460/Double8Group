@@ -67,23 +67,12 @@ transition: .3s;
 `;
 
 export const PicToolsL = styled.img`
-position:absolute;
-top:2594px;
-left:585px;
-width:220px;
-height:201px;
-margin:0 ;
-@media screen and (min-width: 1440px) {
-} 
+vertical-align: bottom;
+margin-bottom: -63px;
 `;
 
 export const PicToolsR = styled.img`
-position:absolute;
-top:2622px;
-left:1100px;
-width:174px;
-height:173px;
-margin:0 ;
-@media screen and (min-width: 1440px) {
-} 
+vertical-align: bottom;
+margin-bottom: -63px;
+margin-right: 46px;
 `;

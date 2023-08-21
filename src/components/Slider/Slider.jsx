@@ -2,16 +2,15 @@ import React from 'react';
 // useRef, useState 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { NavLink } from 'react-router-dom'; 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import './Slider.css';
-import{ButtonSlider,TopText,TextSlider,Container} from './Slider.styled'
-// Container,
-import Slide1 from "images/Group1.png"
+import{ButtonSlider,TopText,TextSlider,Container,} from './Slider.styled';
+import Slide1 from "images/Group1.png";
 
 
 // import required modules
@@ -45,7 +44,7 @@ export default function MySlider() {
           <img src={Slide1} alt='Slide1'/>
           <TopText>AIR DUCT & DRYER VENT CLEANING SERVICE</TopText>
           <TextSlider>Optional text about itOptional text about itOptional text about itOptional text about itOptional text about itOptional text about </TextSlider>
-        <ButtonSlider>Details</ButtonSlider>
+        <NavLink to={"air_duct"} ><ButtonSlider>Details</ButtonSlider></NavLink>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Slide1} alt='Slide2'/>
