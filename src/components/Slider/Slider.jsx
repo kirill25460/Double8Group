@@ -44,7 +44,7 @@ export default function MySlider() {
           <img src={Slide1} alt='Slide1'/>
           <TopText>AIR DUCT & DRYER VENT CLEANING SERVICE</TopText>
           <TextSlider>Optional text about itOptional text about itOptional text about itOptional text about itOptional text about itOptional text about </TextSlider>
-        <NavLink to={"air_duct"} ><ButtonSlider>Details</ButtonSlider></NavLink>
+        <NavLink to="air_duct" ><ButtonSlider>Details</ButtonSlider></NavLink>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Slide1} alt='Slide2'/>
