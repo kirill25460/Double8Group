@@ -4,7 +4,7 @@ export const AirDuctPage = () => {
     return(
     <>
       <AirDuctP/>
-     TRYRTRYR
+  
     </>
     )
 }
