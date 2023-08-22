@@ -8,11 +8,11 @@ padding-bottom: 60px;
 `;
 
 export const FooterWrap = styled.div`
-
+width:280px;
 `;
 
 export const Wrap = styled.div`
-
+width:280px;
 `;
 
 export const FooterText = styled.p`

@@ -38,3 +38,8 @@ line-height: 17px;
 letter-spacing: 0px;
 text-align: left;
 `;
+
+export const WrapSlider = styled.div`
+max-width: 345px; 
+max-height: 458px;
+`;

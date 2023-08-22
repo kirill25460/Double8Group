@@ -1,5 +1,5 @@
 
-import { AboutUs } from "components/AboutUs/AboutUs";
+import { AboutUs } from "components/HomePageComp/AboutUs/AboutUs";
 
 
 export const ContactsPage = () => {

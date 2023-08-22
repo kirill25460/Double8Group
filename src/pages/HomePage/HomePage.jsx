@@ -1,6 +1,6 @@
 import MySlider from "components/Slider/Slider";
-import { AboutUs } from "components/AboutUs/AboutUs";
-import {Experience} from "components/Experience/Experience";
+import { AboutUs } from "components/HomePageComp/AboutUs/AboutUs";
+import {Experience} from "components/HomePageComp/Experience/Experience";
 import {BookUsHomeP} from "components/BookUsHomeP/BookUsHomeP";
 
 

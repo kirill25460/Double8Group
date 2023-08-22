@@ -2,10 +2,12 @@ import React from 'react';
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
 
-import { Container, NameService, TextService } from './AirDuctP.styled';
+import { Container, NameService, TextService,WrapSlider } from './AirDuctP.styled';
 
 import after from 'images/AirDuct1.jpg';
 import before from 'images/AirDuct2.jpg';
+import BeforeAfterText from "images/before-after.png";
+
 
 const FIRST_IMAGE = {
   imageUrl: before,
@@ -21,7 +23,8 @@ const delimiterIconStyles = {
   height: '50px',
   backgroundSize: 'cover',
   borderRadius: 'none',
-  backgroundImage: 'url(images/before-after.png)'
+  backgroundImage: `url(${BeforeAfterText})`,
+
   
 }
 export const AirDuctP = () => {
@@ -40,6 +43,7 @@ export const AirDuctP = () => {
         </TextService>
         <button></button>
         <button></button>
+        <WrapSlider>
         <ReactBeforeSliderComponent
           firstImage={FIRST_IMAGE}
           secondImage={SECOND_IMAGE}
@@ -48,6 +52,8 @@ export const AirDuctP = () => {
           width={345}
           height={500}
         />
+        </WrapSlider>
+        
       </Container>
     </>
   );
