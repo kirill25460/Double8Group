@@ -36,7 +36,6 @@ color:#F8821F;
 export const BookUsPar = styled.p`
 margin:0;
 width:347px;
-padding-bottom:52px;
 font-family: DM Sans;
 font-size: 17px;
 font-weight: 400;
@@ -59,6 +58,7 @@ letter-spacing: 3px;
 font-weight: 500;
 box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
 transition: .3s;
+margin: 0 44px;
 &:hover{
    
     box-shadow: 0 15px 20px rgba(32, 32, 32, .4);
