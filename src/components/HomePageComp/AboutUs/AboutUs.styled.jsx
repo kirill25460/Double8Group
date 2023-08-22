@@ -52,12 +52,12 @@ text-align: left;
 
 `
 export const AboutUsPic = styled.img`
-width: 774px;
-height: 763px;
-padding-top: 30px;
+
+padding-top:10px;
 padding-left:103px;
 
 @media screen and (min-width: 1440px) {
+  width: 774px;
 } 
 `;
 

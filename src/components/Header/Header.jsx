@@ -1,7 +1,7 @@
 // import { useState, useEffect } from 'react';
 // import { HiMenuAlt2 } from 'react-icons/hi';
 // import { IoClose } from 'react-icons/io5';
-
+import { NavLink } from 'react-router-dom';
 import HeaderLogo from "images/firstLogo.png"
 import {LogoHeader,Container, AppBar,LogoWrap,Wrap,NavList,NavItem,StyledLink,} from "./Header.styled";
 // MobileOpenHeader,BurgerButton,MobileMenu,MobileCloseHeader,CrossButton
@@ -59,7 +59,8 @@ export const Header = () => {
         {/* </MobileMenu> */} 
       
    <LogoWrap>
-   <LogoHeader src={HeaderLogo} alt="Logo" /> 
+    <NavLink to="/" > <LogoHeader src={HeaderLogo} alt="Logo" /> </NavLink>
+  
    </LogoWrap>
    <Wrap>
    <NavList>

@@ -1,4 +1,4 @@
-import {AirDuctP} from 'components/AirDuctP/AirDuctP';
+import {AirDuctP} from 'components/ServicePagesComp/AirDuctP/AirDuctP';
 
 export const AirDuctPage = () => {
     return(

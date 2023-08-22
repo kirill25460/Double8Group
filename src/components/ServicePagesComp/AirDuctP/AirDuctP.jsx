@@ -2,13 +2,14 @@ import React from 'react';
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
 
-import { Container, NameService, TextService,WrapSlider } from './AirDuctP.styled';
+import { Container, NameService, TextService,WrapSlider,ButtonServices,AnotherButtonServ,WrapService,WrapImages,ImgText,SeerviceImages } from './AirDuctP.styled';
 
 import after from 'images/AirDuct1.jpg';
 import before from 'images/AirDuct2.jpg';
 import BeforeAfterText from "images/before-after.png";
-
-
+import Clock from "images/icon_clock.png";
+import Photo from "images/icon_camera.png";
+ 
 const FIRST_IMAGE = {
   imageUrl: before,
  
@@ -31,6 +32,7 @@ export const AirDuctP = () => {
   return (
     <>
       <Container>
+        <WrapService>
         <NameService>DRYER VENT CLEANING</NameService>
         <TextService>
           Usually people don`t care about dryer cleaning, but it is very
@@ -41,8 +43,10 @@ export const AirDuctP = () => {
           Vent cleaning , clean the dryer inside ,fan cleaning , filter and back
           panel cleaning.
         </TextService>
-        <button></button>
-        <button></button>
+        <ButtonServices>BOOK THIS SERVICE</ButtonServices>
+        <AnotherButtonServ>ANOTHER BUTTON</AnotherButtonServ>
+        </WrapService>
+       
         <WrapSlider>
         <ReactBeforeSliderComponent
           firstImage={FIRST_IMAGE}
@@ -53,6 +57,12 @@ export const AirDuctP = () => {
           height={500}
         />
         </WrapSlider>
+        <WrapImages>
+        <SeerviceImages src={Clock} alt="Logo" />
+        <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
+        <SeerviceImages src={Photo} alt="Logo" />
+        <ImgText>FULL PHOTO REPORT</ImgText>
+        </WrapImages>
         
       </Container>
     </>

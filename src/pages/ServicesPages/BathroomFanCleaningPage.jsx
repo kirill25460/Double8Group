@@ -1,0 +1,13 @@
+
+
+
+
+
+export const BathroomFanCleaningPage = () => {
+    return(
+    <>
+      
+  
+    </>
+    )
+}

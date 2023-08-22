@@ -46,11 +46,36 @@ export default function MySlider() {
           </SwiperSlide>
           <SwiperSlide>
             <img src={Slide1} alt="Slide2" />
-            <ButtonSlider>Details</ButtonSlider>
+            <TopText>CHIMNEY CLEANING</TopText>
+            <TextSlider>
+              Optional text about itOptional text about itOptional text about
+              itOptional text about itOptional text about itOptional text about{' '}
+            </TextSlider>
+            <NavLink to="chimney_cleaning">
+              <ButtonSlider>Details</ButtonSlider>
+            </NavLink>
           </SwiperSlide>
           <SwiperSlide>
             <img src={Slide1} alt="Slide3" />
-            <ButtonSlider>Details</ButtonSlider>
+            <TopText>BATHROOM FAN CLEANING</TopText>
+            <TextSlider>
+              Optional text about itOptional text about itOptional text about
+              itOptional text about itOptional text about itOptional text about{' '}
+            </TextSlider>
+            <NavLink to="bathroom_fan_cleaning">
+              <ButtonSlider>Details</ButtonSlider>
+            </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={Slide1} alt="Slide4" />
+            <TopText>POWER WASHING</TopText>
+            <TextSlider>
+              Optional text about itOptional text about itOptional text about
+              itOptional text about itOptional text about itOptional text about{' '}
+            </TextSlider>
+            <NavLink to="power_washing">
+              <ButtonSlider>Details</ButtonSlider>
+            </NavLink>
           </SwiperSlide>
         </Container>
       </Swiper>

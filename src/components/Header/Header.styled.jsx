@@ -18,7 +18,7 @@ export const Container = styled.div`
 display: flex;
 align-items: center;
 height: 110px;
-
+box-shadow: 0px 4px 21px 0px #00000008;
 width: 375px;
 margin: 0 auto;
 padding: 0 10px;
