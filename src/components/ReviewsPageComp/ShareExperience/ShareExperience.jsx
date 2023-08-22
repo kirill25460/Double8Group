@@ -20,7 +20,7 @@ import woman from 'images/ShareWoman.png';
 
 export const ShareExperience = ({ onInput, inputs }) => {
   const types = [
-    { id: 0, type: 'Air duct cleaning photos before and after' },
+    { id: 0, type: 'Air duct cleaning' },
     { id: 1, type: 'Dryer vent cleaning' },
     { id: 2, type: 'Chimney cleaning' },
     { id: 3, type: 'Bathroom fan cleaning' },
