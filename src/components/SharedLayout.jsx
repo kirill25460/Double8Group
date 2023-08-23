@@ -8,6 +8,7 @@ import { AirDuctPage } from "pages/ServicesPages/AirDuctPage";
 import { PowerWashingPage } from "pages/ServicesPages/PowerWashingPage";
 import { BathroomFanCleaningPage } from "pages/ServicesPages/BathroomFanCleaningPage";
 import { ChimneyCleaningPage } from "pages/ServicesPages/ChimneyCleaningPage";
+import { ReviewsDetails } from "../components/ReviewsPageComp/ReviewDetails/ReviewDetails";
 import { useLocation } from "react-router-dom";
 
 
@@ -25,6 +26,7 @@ const SharedLayout = () => {
       {location.pathname === '/chimney_cleaning' && <ChimneyCleaningPage/>}
       {location.pathname === '/bathroom_fan_cleaning' && <BathroomFanCleaningPage/>}
       {location.pathname === '/power_washing' && <PowerWashingPage/>}
+      {location.pathname === '/reviews/:id' && <ReviewsDetails/>}
       <Footer />
     </div>
   );
