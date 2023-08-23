@@ -35,7 +35,7 @@ const Wrap = styled.div``;
 
 const WrapInput = styled.div``;
 
-const WrapFor3Inputs = styled.div``;
+const WrapFor3Inputs = styled.form``;
 
 const InputName = styled.input`
   width: 266px;
@@ -64,36 +64,6 @@ const InputReview = styled.input`
   color: #c5c5c5;
 `;
 
-const InputFileReview = styled.input`
-  flex: 1;
-  top: 706px;
-  left: 850px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 35px;
-  height: 37px;
-  color: #fff;
-  border: 2px solid #f8821e;
-`;
-
-export const ButtonAdd = styled.button`
-  top: 756px;
-  left: 850px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 39px;
-  height: 39px;
-  background-color: #f8821e;
-  color: #fff;
-  border: none;
-`;
-
 const SharePic = styled.img`
   height: 749px;
 `;
@@ -102,14 +72,30 @@ const MainInput = styled.div`
   position: relative;
 `;
 
+const InputFileReview = styled.input`
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  display: none;
+`;
+
 const InputContainer = styled.div`
   position: absolute;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   right: 10px;
   bottom: 5px;
   align-items: center;
 `;
+
+const SubBtn = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+`
 
 const SvgClip = styled(TfiClip)`
   width: 22px;
@@ -148,4 +134,5 @@ export {
   InputContainer,
   SvgClip,
   SvgTg,
+  SubBtn
 };

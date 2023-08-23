@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { useRef } from 'react';
 import {
   Container,
   WrapInput,
@@ -15,6 +14,7 @@ import {
   InputContainer,
   SvgClip,
   SvgTg,
+  SubBtn
 } from './ShareExperience.styled';
 import woman from 'images/ShareWoman.png';
 
@@ -27,16 +27,33 @@ export const ShareExperience = ({ onInput, inputs }) => {
     { id: 4, type: 'Power washing' },
   ];
 
-  const handleInputChange = e => {
-    onInput(e);
-    console.log(e);
+  const inputRef = useRef(null);
+
+  const handleArrowClick = () => {
+    inputRef.current.click();
   };
+
+  // const sendData = ({title, type, review, photo}) => {
+    
+  // }
+
+  const handleSubmit = evt => {
+    evt.preventDefault();
+    const form = evt.currentTarget;
+    const title = form.elements.title.value;
+    const type = form.elements.type.value;
+    const review = form.elements.review.value;
+    const photo = form.elements.photo.value;
+    console.log(title,type, review, photo);
+    form.reset();
+  };
+
   return (
     <>
       <Container>
         <Wrap>
           <TxtExp>SHARE YOUR EXPERIENCE WITH OTHERS!</TxtExp>
-          <WrapFor3Inputs>
+          <WrapFor3Inputs onSubmit={handleSubmit}>
             <WrapInput>
               <InputName
                 required
@@ -45,14 +62,12 @@ export const ShareExperience = ({ onInput, inputs }) => {
                 id="title"
                 // value={inputs.title}
                 placeholder="Name"
-                onChange={handleInputChange}
               ></InputName>
               <SelectType
                 required
                 name="type"
                 id="type"
                 // value={inputs.email}
-                onChange={handleInputChange}
                 defaultValue="Type of Service"
               >
                 <option value="Type of Service">Type of Service</option>
@@ -65,28 +80,30 @@ export const ShareExperience = ({ onInput, inputs }) => {
                 })}
               </SelectType>
             </WrapInput>
+
+            <InputReview
+              required
+              type="text"
+              name="review"
+              id="review"
+              // value={inputs.review}
+              placeholder="Write your review here..."
+            ></InputReview>
             <MainInput>
-              <InputReview
-                required
-                type="text"
-                name="review"
-                id="review"
-                // value={inputs.review}
-                placeholder="Write your review here..."
-                onChange={handleInputChange}
-              ></InputReview>
               <InputContainer>
                 <InputFileReview
                   required
+                  ref={inputRef}
                   type="file"
-                  name="review"
-                  id="review"
+                  name="photo"
+                  id="photo"
                   // value={inputs.review}
                   placeholder="Write your review here..."
-                  onChange={handleInputChange}
                 />
-                <SvgClip />
-                <SvgTg />
+                <SvgClip onClick={handleArrowClick} />
+                <SubBtn type="submit">
+                  <SvgTg />
+                </SubBtn>
               </InputContainer>
             </MainInput>
           </WrapFor3Inputs>
