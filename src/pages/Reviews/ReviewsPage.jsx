@@ -6,13 +6,14 @@ import {OtherReviewsText} from 'components/ReviewsPageComp/OtherReviewsText/Othe
 // import {SimpleSlider} from "components/ReviewsPageComp/OtherReviewsSlider/TrySlider";
 // import {MySlider} from "components/OtherReviews/TryExampleSlide"
 export const ReviewsPage = () => {
+  
   return (
     <>
       <ShareExperience />
       <OtherReviewsText/>
       <Container>
         {example.comments.map(ex => (
-          <OtherReviewsSlider user={ex.user} body={ex.body} type={ex.type} />
+          <OtherReviewsSlider key={ex.id} user={ex.user} body={ex.body} type={ex.type} />
         ))}
       </Container>
     </>
