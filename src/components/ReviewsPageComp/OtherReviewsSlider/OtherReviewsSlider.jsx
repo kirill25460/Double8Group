@@ -1,3 +1,4 @@
+import { getReviews, getReviewsById } from 'helper/api';
 import {
   Container,
   Avatar,
@@ -7,6 +8,7 @@ import {
 } from './OtherReviews.styled';
 
 export const OtherReviewsSlider = ({ body, type, user: { username, avatar } }) => {
+
   return (
     <>
       <Container>
