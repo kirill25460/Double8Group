@@ -5,5 +5,5 @@ export const getReviews = () =>{
 }
 
 export const getReviewsById = (reviewId) =>{
-    return reviews.comments.find(({id}) => id == reviewId)
+    return reviews.comments.find(({id}) => parseInt(id) === parseInt(reviewId))
 }
