@@ -4,8 +4,8 @@ import 'react-before-after-slider-component/dist/build.css';
 
 import { Container, NameService, TextService,WrapSlider,ButtonServices,AnotherButtonServ,WrapService,WrapImages,ImgText,SeerviceImages } from './BathroomFanCleaningP.styled';
 
-import after from 'images/AirDuct1.jpg';
-import before from 'images/AirDuct2.jpg';
+import after from 'images/bathFanAfter.jpg';
+import before from 'images/bathFanBefore.jpg';
 import BeforeAfterText from "images/before-after.png";
 import Clock from "images/icon_clock.png";
 import Photo from "images/icon_camera.png";
@@ -22,7 +22,8 @@ const SECOND_IMAGE = {
 const delimiterIconStyles = {
   width: '50px',
   height: '50px',
-  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center center',
   borderRadius: 'none',
   backgroundImage: `url(${BeforeAfterText})`,
 
@@ -33,7 +34,7 @@ export const BathroomFanCleaningP = () => {
     <>
       <Container>
         <WrapService>
-        <NameService>DRYER VENT CLEANING</NameService>
+        <NameService>BATHROOM FAN CLEANING</NameService>
         <TextService>
           Usually people don`t care about dryer cleaning, but it is very
           important thing. If your dryer has a problem with air flow , full of
@@ -49,8 +50,8 @@ export const BathroomFanCleaningP = () => {
        
         <WrapSlider>
         <ReactBeforeSliderComponent
-          firstImage={FIRST_IMAGE}
-          secondImage={SECOND_IMAGE}
+          firstImage={SECOND_IMAGE}
+          secondImage={FIRST_IMAGE}
           delimiterColor={'#F8821E'}
           delimiterIconStyles={delimiterIconStyles}
           width={345}
