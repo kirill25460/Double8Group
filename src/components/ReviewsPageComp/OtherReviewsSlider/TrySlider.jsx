@@ -1,33 +1,46 @@
 import Slider from "react-slick";
-import { useState, useEffect, useRef } from 'react';
+// import { useState, useEffect, useRef } from 'react';
 import {ReviewCard} from "./TryCard"
 // import data from 'example.json';
 // import { OtherReviewsCard } from "./OtherReviewsCard";
 
-export const SimpleSlider = ({ initialSlide = 0 }) => {
+import React, { Component } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-  const [hasSetPosition, setHasSetPosition] = useState(false);
-  const slider = useRef();
 
-  useEffect(() => {
-    if (slider.current && !hasSetPosition) {
-      slider.current.slickGoTo(initialSlide);
-      setHasSetPosition(true);
-    }
-  }, [initialSlide, hasSetPosition, slider]);
+export default class SimpleSlider extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    };
+  return ( <div>
 
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide,
-  };
-
-  return (
-    <Slider ref={slider} {...settings}>
+    <Slider {...settings}>
+      <div>
+        <ReviewCard/>
+      </div>
+      <div>
       <ReviewCard/>
+      </div>
+      <div>
+      <ReviewCard/>
+      </div>
+      <div>
+      <ReviewCard/>
+      </div>
+      <div>
+      <ReviewCard/>
+      </div>
+      <div>
+      <ReviewCard/>
+      </div>
     </Slider>
-  )
+  </div>
+);
+}
 }

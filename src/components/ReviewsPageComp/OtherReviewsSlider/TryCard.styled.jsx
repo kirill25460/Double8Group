@@ -33,6 +33,7 @@ height:50px;
 `;
 
 export const WrapCard = styled.div`
+margin-bottom:100px;
 width: 267px;
 display:flex;
 flex-direction: column;
