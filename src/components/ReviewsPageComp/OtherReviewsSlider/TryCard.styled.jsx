@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div`
 display:flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 align-items: normal;
   width: 375px;
@@ -19,42 +18,28 @@ align-items: normal;
   }
 `;
 
-
-export const ORText = styled.h2`
-font-family: Montserrat;
-font-size: 56px;
-font-weight: 800;
-line-height: 61px;
-letter-spacing: 0px;
-text-align: right;
-
+export const TryCardPhoto = styled.img`
+width:267px;
+height:238px;
 `;
 
-export const Avatar = styled.img`
- margin-right:12px;
-`;
-
-export const UserName = styled.p`
-
-`;
-
-export const ListWrap = styled.div`
-width:268px;
-margin-bottom:100px;
-
-`;
-
-export const ItemWrap = styled.div`
-
-align-items: center;
+export const WrapAvatar = styled.div`
 display:flex;
 `;
 
-export const UserWrap =  styled.div`
-
+export const AvatarCard = styled.img`
+width:50px;
+height:50px;
 `;
 
-export const ButtonReview = styled.button`
+export const WrapCard = styled.div`
+width: 267px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+`;
+
+export const TryButtonReview = styled.button`
 
 width: 125px;
 height: 30px;

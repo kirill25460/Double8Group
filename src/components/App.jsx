@@ -18,6 +18,9 @@ export const App = () => {
           <Route path="book_us" />
           <Route path="contacts" />
           <Route path="air_duct" />
+          <Route path="chimney_cleaning"/>
+          <Route path="bathroom_fan_cleaning"/>
+          <Route path="power_washing"/>
         </Route>
         <Route path="reviews/:id" element={<ReviewDetails />}/>
       </Routes>

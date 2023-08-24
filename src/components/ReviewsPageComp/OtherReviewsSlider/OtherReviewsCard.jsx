@@ -4,9 +4,10 @@ import {
   ListWrap,
   ItemWrap,
   UserWrap,
+  ButtonReview,
 } from './OtherReviews.styled';
 
-export const OtherReviewsSlider = ({ body, type, user: { username, avatar } }) => {
+export const OtherReviewsCard = ({ body, type,photomessage, user: { username, avatar } }) => {
   return (
     <>
       <Container>
@@ -19,7 +20,9 @@ export const OtherReviewsSlider = ({ body, type, user: { username, avatar } }) =
               <p> {type}</p>
             </UserWrap>
           </ItemWrap>
-          <p> Message : {body}</p>
+          <img src={photomessage} alt="user p review"/>
+          <p> {body}</p>
+          <ButtonReview>Read Full Review</ButtonReview>
         </ListWrap>
       </Container>
     </>

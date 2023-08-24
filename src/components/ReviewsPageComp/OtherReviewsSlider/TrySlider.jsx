@@ -1,8 +1,8 @@
 import Slider from "react-slick";
 import { useState, useEffect, useRef } from 'react';
-
-import data from 'example.json';
-import { ReviewCard } from "./TryCard";
+import {ReviewCard} from "./TryCard"
+// import data from 'example.json';
+// import { OtherReviewsCard } from "./OtherReviewsCard";
 
 export const SimpleSlider = ({ initialSlide = 0 }) => {
 
@@ -27,7 +27,7 @@ export const SimpleSlider = ({ initialSlide = 0 }) => {
 
   return (
     <Slider ref={slider} {...settings}>
-      {data.map((review) => <ReviewCard review={review}/>)}
+      <ReviewCard/>
     </Slider>
   )
 }

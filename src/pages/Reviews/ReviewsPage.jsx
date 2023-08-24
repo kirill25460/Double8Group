@@ -1,21 +1,24 @@
-import example from 'example.json';
-import { Container } from 'components/Global.styled';
+// import example from 'example.json';
+// import { Container } from 'components/Global.styled';
 import { ShareExperience } from 'components/ReviewsPageComp/ShareExperience/ShareExperience';
-import { OtherReviewsSlider } from 'components/ReviewsPageComp/OtherReviewsSlider/OtherReviewsSlider';
+// import { OtherReviewsCard } from 'components/ReviewsPageComp/OtherReviewsSlider/OtherReviewsCard';
 import {OtherReviewsText} from 'components/ReviewsPageComp/OtherReviewsText/OtherReviewsText';
-// import {SimpleSlider} from "components/ReviewsPageComp/OtherReviewsSlider/TrySlider";
-// import {MySlider} from "components/OtherReviews/TryExampleSlide"
+// import {ReviewCard} from "components/ReviewsPageComp/OtherReviewsSlider/TryCard";
+import {SimpleSlider} from "components/ReviewsPageComp/OtherReviewsSlider/TrySlider";
+
 export const ReviewsPage = () => {
   
   return (
     <>
       <ShareExperience />
       <OtherReviewsText/>
-      <Container>
+      {/* <ReviewCard/> */}
+      <SimpleSlider/>
+      {/* <Container>
         {example.comments.map(ex => (
-          <OtherReviewsSlider key={ex.id} user={ex.user} body={ex.body} type={ex.type} />
+          <OtherReviewsCard key={ex.id} user={ex.user} body={ex.body} type={ex.type} />
         ))}
-      </Container>
+      </Container> */}
     </>
   );
 };
