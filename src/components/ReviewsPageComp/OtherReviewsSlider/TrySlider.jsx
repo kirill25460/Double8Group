@@ -8,6 +8,10 @@ import React, { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
+import { Container } from "./TryCard.styled";
+
+
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -66,7 +70,7 @@ export default class SimpleSlider extends Component {
         }
       ]
     };
-  return ( <div>
+  return ( <Container>
 
     <Slider {...settings}>
       <div>
@@ -88,7 +92,7 @@ export default class SimpleSlider extends Component {
       <ReviewCard/>
       </div>
     </Slider>
-  </div>
+  </Container>
 );
 }
 }

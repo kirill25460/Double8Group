@@ -1,20 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-display:flex;
-flex-direction: column;
-justify-content: center;
-align-items: normal;
+
   width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding: 0 32px;
+    
   }
   @media screen and (min-width: 1440px) {
     width: 1440px;
-    padding: 0 100px;
+   
   }
 `;
 
@@ -33,11 +29,13 @@ height:50px;
 `;
 
 export const WrapCard = styled.div`
-margin-bottom:100px;
+height:600px;
+position: relative;
 width: 267px;
 display:flex;
 flex-direction: column;
 justify-content: center;
+
 `;
 
 export const TryButtonReview = styled.button`
@@ -59,4 +57,15 @@ margin: 0 44px;
 &:hover{
     box-shadow: 0 15px 20px rgba(32, 32, 32, .4);
     transform: translateY(-7px);}
+`;
+
+export const CardButton = styled.div`
+  position: absolute;
+  display: none;
+`;
+
+export const CardContainerHover = styled(WrapCard)`
+  &:hover ${CardButton} {
+    display: block;
+  }
 `;
