@@ -219,6 +219,10 @@ export const SideMenu = styled.div`
   &.open {
     left: 0; /* Показывает меню */
   }
+
+  @media (min-width: 768px) {
+    display: none ;
+  }
 `;
 
 export const SideItems = styled.div`
