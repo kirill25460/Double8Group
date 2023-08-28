@@ -15,7 +15,11 @@ import {
   BurgerMenu,
   BurgerIcon,
   SideMenu,
-  CloseBtn
+  CloseBtn,
+  HomeSvg,
+  SideItems,
+  PersonSvg,
+  BookSvg
 } from './Header.styled';
 import { useState } from 'react';
 // MobileOpenHeader,BurgerButton,MobileMenu,MobileCloseHeader,CrossButton
@@ -46,6 +50,12 @@ export const Header = () => {
     { href: '/contacts', text: 'Contacts' },
   ];
 
+  const navSideItems = [
+    { href: `/`, text: 'Home', svg: <HomeSvg /> },
+    { href: '/reviews', text: 'Reviews', svg: <PersonSvg /> },
+    { href: '/book_us', text: 'Book us', svg: <BookSvg /> },
+  ]
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -69,17 +79,26 @@ export const Header = () => {
             </div>
           </BurgerMenu>
           <NavList>
-              {navItems.map(({ href, text }) => (
-                <NavItem>
-                  <StyledLink to={href}>
-                    <span>{text}</span>
-                  </StyledLink>
-                </NavItem>
-              ))}
-            </NavList>
+            {navItems.map(({ href, text }) => (
+              <NavItem>
+                <StyledLink to={href}>
+                  <span>{text}</span>
+                </StyledLink>
+              </NavItem>
+            ))}
+          </NavList>
           <SideMenu className={isOpen ? 'open' : ''}>
             <CloseBtn onClick={toggleMenu} />
-            
+            {navSideItems.map(({ href, text, svg }) => {
+              return (
+                <StyledLink to={href}>
+                  <SideItems>
+                    {svg}
+                    {text}
+                  </SideItems>
+                </StyledLink>
+              )
+            })}
           </SideMenu>
         </Wrap>
       </Container>
