@@ -2,90 +2,87 @@
 // import { HiMenuAlt2 } from 'react-icons/hi';
 // import { IoClose } from 'react-icons/io5';
 import { NavLink } from 'react-router-dom';
-import HeaderLogo from "images/firstLogo.png"
-import {LogoHeader,Container, AppBar,LogoWrap,Wrap,NavList,NavItem,StyledLink,} from "./Header.styled";
+import HeaderLogo from 'images/firstLogo.png';
+import {
+  LogoHeader,
+  Container,
+  AppBar,
+  LogoWrap,
+  Wrap,
+  NavList,
+  NavItem,
+  StyledLink,
+  BurgerMenu,
+  BurgerIcon,
+  SideMenu,
+  CloseBtn
+} from './Header.styled';
+import { useState } from 'react';
 // MobileOpenHeader,BurgerButton,MobileMenu,MobileCloseHeader,CrossButton
 // import {BookUsSelector} from "../Navigation/Selector/BookUsSelector";
 
-
 export const Header = () => {
-   // const [toggleMenu, setToggleMenu] = useState(false);
+  // const [toggleMenu, setToggleMenu] = useState(false);
 
+  // useEffect(() => {
+  //   const bodyEl = document.getElementById('body');
 
- 
-   // useEffect(() => {
-   //   const bodyEl = document.getElementById('body');
- 
-   //   bodyEl.style.overflow = toggleMenu ? 'hidden' : 'visible';
-   // }, [toggleMenu]);
- 
-   // const toggleMenuHandler = () => {
-   //   return setToggleMenu(prevState => !prevState);
-   // };
- 
+  //   bodyEl.style.overflow = toggleMenu ? 'hidden' : 'visible';
+  // }, [toggleMenu]);
 
- 
-   // const mobileMenuHandler = e => {
-   //   if (e.target.closest('li') && window.innerWidth < 1439) {
-   //     return setToggleMenu(prevState => !prevState);
-   //   }
-   // };
+  // const toggleMenuHandler = () => {
+  //   return setToggleMenu(prevState => !prevState);
+  // };
+
+  // const mobileMenuHandler = e => {
+  //   if (e.target.closest('li') && window.innerWidth < 1439) {
+  //     return setToggleMenu(prevState => !prevState);
+  //   }
+  // };
   const navItems = [
-      { href: `/`, text: 'Home' },
-      { href: '/reviews', text: 'Reviews' },
-      { href: '/book_us', text: 'Book us' },
-      { href: '/contacts', text: 'Contacts' },
-       ];
+    { href: `/`, text: 'Home' },
+    { href: '/reviews', text: 'Reviews' },
+    { href: '/book_us', text: 'Book us' },
+    { href: '/contacts', text: 'Contacts' },
+  ];
 
-    return  (
- <AppBar>
-    <Container>
-    {/* <MobileOpenHeader>
-         
-          
-          <BurgerButton type="button" onClick={toggleMenuHandler}>
-            <HiMenuAlt2 size={28} />
-          </BurgerButton>
-        </MobileOpenHeader>
-        <MobileMenu status={toggleMenu} onClick={mobileMenuHandler}>
-          <MobileCloseHeader>
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+  };
+
+  return (
+    <AppBar>
+      <Container>
+        <LogoWrap>
+          <NavLink to="/">
+            {' '}
+            <LogoHeader src={HeaderLogo} alt="Logo" />{' '}
+          </NavLink>
+        </LogoWrap>
+        <Wrap>
+          <BurgerMenu>
+            <div onClick={toggleMenu}>
+              <BurgerIcon />
+            </div>
+          </BurgerMenu>
+          <NavList>
+              {navItems.map(({ href, text }) => (
+                <NavItem>
+                  <StyledLink to={href}>
+                    <span>{text}</span>
+                  </StyledLink>
+                </NavItem>
+              ))}
+            </NavList>
+          <SideMenu className={isOpen ? 'open' : ''}>
+            <CloseBtn onClick={toggleMenu} />
             
-            <CrossButton type="button" onClick={toggleMenuHandler}>
-              <IoClose size={32} />
-            </CrossButton>
-          </MobileCloseHeader>
-          {/* <Navigation /> */}
-          
-        {/* </MobileMenu> */} 
-      
-   <LogoWrap>
-    <NavLink to="/" > <LogoHeader src={HeaderLogo} alt="Logo" /> </NavLink>
-  
-   </LogoWrap>
-   <Wrap>
-   <NavList>
-{navItems.map(({ href, text }) =>( 
-<NavItem>
-        <StyledLink to={href}>
-              <span>{text}</span>
-            </StyledLink>
-</NavItem>)
-)}
-
-{/* <NavItem>
-   <StyledLink>
-   <BookUsSelector/>
-   </StyledLink>
-
-</NavItem> */}
-</NavList>
-    </Wrap>
-  
-    
-   
-    </Container>
-
- </AppBar>
-
-    )
-}
+          </SideMenu>
+        </Wrap>
+      </Container>
+    </AppBar>
+  );
+};
