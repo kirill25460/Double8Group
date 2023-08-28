@@ -40,11 +40,11 @@ export const Header = () => {
   //   }
   // };
   const navItems = [
-    { href: `/`, text: 'Home' },
-    { href: '/reviews', text: 'Reviews' },
-    { href: '/book_us', text: 'Book us' },
-    { href: '/contacts', text: 'Contacts' },
-  ];
+      { href: `/`, text: 'Home' },
+      { href: '/reviews', text: 'Reviews' },
+      { href: '/book_us', text: 'Book us' },
+     
+       ];
 
   const [isOpen, setIsOpen] = useState(false);
 

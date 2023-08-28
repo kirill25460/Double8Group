@@ -46,6 +46,7 @@ color:#F8821F;
 `;
 
 export const BookUsBtn = styled.button`
+cursor: pointer;
 width: 210px;
 height: 75px;
 color: #fff;

@@ -29,6 +29,7 @@ height:50px;
 `;
 
 export const WrapCard = styled.div`
+margin-right:50px;
 height:600px;
 position: relative;
 width: 267px;
@@ -39,7 +40,7 @@ justify-content: center;
 `;
 
 export const TryButtonReview = styled.button`
-
+cursor: pointer;
 width: 125px;
 height: 30px;
 color: #fff;

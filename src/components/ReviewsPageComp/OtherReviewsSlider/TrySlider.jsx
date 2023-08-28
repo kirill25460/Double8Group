@@ -1,23 +1,36 @@
-import Slider from "react-slick";
+import Slider from 'react-slick';
 // import { useState, useEffect, useRef } from 'react';
-import {ReviewCard} from "./TryCard"
+import { ReviewCard } from './TryCard';
 // import data from 'example.json';
 // import { OtherReviewsCard } from "./OtherReviewsCard";
 
-import React, { Component } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { Component } from 'react';
+import "./slick.css";
+import "./slick-theme.css";
 
+import { Container } from './TryCard.styled';
 
-import { Container } from "./TryCard.styled";
-
+import NextArr from "images/Next.png";
+import PrevArr from "images/Prev.png";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "red",width: "50px", height: "50px", }}
+      style={{
+        ...style,
+        display: 'block',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        borderRadius: '123px',
+        border: '3px solid #F8821E',
+        opacity: '0.76',
+        backgroundImage: `url(${NextArr})`,
+        width: '50px',
+        height: '50px',
+        
+      }}
       onClick={onClick}
     />
   );
@@ -28,7 +41,18 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" ,width: "50px", height: "50px",}}
+      style={{
+        ...style,
+        display: 'block',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        borderRadius: '123px',
+        border: '3px solid #F8821E',
+        opacity: '0.76',
+        backgroundImage: `url(${PrevArr})`,
+        width: '50px',
+        height: '50px',
+      }}
       onClick={onClick}
     />
   );
@@ -50,49 +74,49 @@ export default class SimpleSlider extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true
-          }
+            dots: true,
+          },
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            initialSlide: 2
-          }
+            initialSlide: 2,
+          },
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+            slidesToScroll: 1,
+          },
+        },
+      ],
     };
-  return ( <Container>
-
-    <Slider {...settings}>
-      <div>
-        <ReviewCard/>
-      </div>
-      <div>
-      <ReviewCard/>
-      </div>
-      <div>
-      <ReviewCard/>
-      </div>
-      <div>
-      <ReviewCard/>
-      </div>
-      <div>
-      <ReviewCard/>
-      </div>
-      <div>
-      <ReviewCard/>
-      </div>
-    </Slider>
-  </Container>
-);
-}
+    return (
+      <Container>
+        <Slider {...settings}>
+          <div>
+            <ReviewCard />
+          </div>
+          <div>
+            <ReviewCard />
+          </div>
+          <div>
+            <ReviewCard />
+          </div>
+          <div>
+            <ReviewCard />
+          </div>
+          <div>
+            <ReviewCard />
+          </div>
+          <div>
+            <ReviewCard />
+          </div>
+        </Slider>
+      </Container>
+    );
+  }
 }

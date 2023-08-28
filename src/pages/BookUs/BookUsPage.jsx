@@ -1,13 +1,13 @@
 
 
-import { AboutUs } from "components/HomePageComp/AboutUs/AboutUs";
+import { BookUsForm } from "components/BookUsPageComp/BookUsForm";
 
 
 
 export const BookUsPage = () => {
     return(
     <>
-      <AboutUs/>
+      <BookUsForm/>
      
     </>
     )

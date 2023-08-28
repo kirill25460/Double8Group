@@ -4,9 +4,10 @@ import {
   TryCardPhoto,
   WrapAvatar,
   AvatarCard,
-  WrapCard,
+
   TryButtonReview,
   CardButton,
+  CardContainerHover,
 } from './TryCard.styled';
 import avatar from 'images/avatar1.png';
 import CardPhoto from 'images/Rectangle.png';
@@ -25,7 +26,7 @@ export const ReviewCard = () => {
   return (
     <>
     
-        <WrapCard
+        <CardContainerHover
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -49,7 +50,7 @@ export const ReviewCard = () => {
             <TryButtonReview>Read Full Review</TryButtonReview>
           </CardButton>
            )}
-        </WrapCard>
+        </CardContainerHover>
       </>
     
   );
