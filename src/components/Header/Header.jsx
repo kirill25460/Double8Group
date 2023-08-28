@@ -19,7 +19,7 @@ import {
   HomeSvg,
   SideItems,
   PersonSvg,
-  BookSvg
+  BookSvg,
 } from './Header.styled';
 import { useState } from 'react';
 // MobileOpenHeader,BurgerButton,MobileMenu,MobileCloseHeader,CrossButton
@@ -54,7 +54,7 @@ export const Header = () => {
     { href: `/`, text: 'Home', svg: <HomeSvg /> },
     { href: '/reviews', text: 'Reviews', svg: <PersonSvg /> },
     { href: '/book_us', text: 'Book us', svg: <BookSvg /> },
-  ]
+  ];
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -67,17 +67,17 @@ export const Header = () => {
     <AppBar>
       <Container>
         <LogoWrap>
+          <BurgerMenu>
+            <div onClick={toggleMenu}>
+              <BurgerIcon />
+            </div>
+          </BurgerMenu>
           <NavLink to="/">
             {' '}
             <LogoHeader src={HeaderLogo} alt="Logo" />{' '}
           </NavLink>
         </LogoWrap>
         <Wrap>
-          <BurgerMenu>
-            <div onClick={toggleMenu}>
-              <BurgerIcon />
-            </div>
-          </BurgerMenu>
           <NavList>
             {navItems.map(({ href, text }) => (
               <NavItem>
@@ -97,7 +97,7 @@ export const Header = () => {
                     {text}
                   </SideItems>
                 </StyledLink>
-              )
+              );
             })}
           </SideMenu>
         </Wrap>

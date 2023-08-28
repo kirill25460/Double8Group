@@ -40,6 +40,9 @@ export const Container = styled.div`
 `;
 
 export const LogoWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Nav = styled.div`
@@ -187,7 +190,8 @@ export const BurgerMenu = styled.div`
   display: none; /* Начинаем с скрытого бургер-меню */
 
   @media (max-width: 768px) {
-    display: block; /* Показываем бургер-меню на экранах <= 768px */
+    margin-right: 138px;
+    display: block; 
   }
   @media screen and (min-width: 1440px) {
     display: none;
@@ -218,9 +222,12 @@ export const SideMenu = styled.div`
 `;
 
 export const SideItems = styled.div`
-display:flex;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto 35px;
+
 `
 
 export const CloseBtn = styled(BiArrowBack)`
