@@ -62,10 +62,10 @@ export const BookUsForm = ({ onInput, inputs }) => {
             <InputReview
               required
               type="text"
-              name="review"
-              id="review"
+              name="bookus"
+              id="bookus"
               // value={inputs.review}
-              placeholder="Write your review here..."
+              placeholder="Write your task here..."
             ></InputReview>
             <MainInput>
               <InputContainer>
@@ -76,7 +76,7 @@ export const BookUsForm = ({ onInput, inputs }) => {
                   name="photo"
                   id="photo"
                   // value={inputs.review}
-                  placeholder="Write your review here..."
+                 
                 />
                 <SvgClip onClick={handleArrowClick} />
                 <SubBtn type="submit">
