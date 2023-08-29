@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { VscChromeClose } from 'react-icons/vsc';
+import { BiArrowBack } from 'react-icons/bi';
+import { AiOutlineHome } from 'react-icons/ai';
+import { IoPersonSharp } from 'react-icons/io5';
+import { MdMenuBook } from 'react-icons/md'
+
 
 export const LogoHeader = styled.img`
   width: 89px;
@@ -35,7 +39,11 @@ export const Container = styled.div`
   }
 `;
 
-export const LogoWrap = styled.div``;
+export const LogoWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const Nav = styled.div`
   border-top: 2px solid #ff8c00;
@@ -182,7 +190,8 @@ export const BurgerMenu = styled.div`
   display: none; /* Начинаем с скрытого бургер-меню */
 
   @media (max-width: 768px) {
-    display: block; /* Показываем бургер-меню на экранах <= 768px */
+    margin-right: 138px;
+    display: block; 
   }
   @media screen and (min-width: 1440px) {
     display: none;
@@ -192,6 +201,7 @@ export const BurgerMenu = styled.div`
 export const BurgerIcon = styled(RxHamburgerMenu)`
   width: 30px;
   height: 30px;
+  color: #F8821E;
 `;
 
 export const SideMenu = styled.div`
@@ -209,13 +219,44 @@ export const SideMenu = styled.div`
   &.open {
     left: 0; /* Показывает меню */
   }
+
+  @media (min-width: 768px) {
+    display: none ;
+  }
 `;
 
-export const CloseBtn = styled(VscChromeClose)`
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 20px;
-  right: 20px;
+export const SideItems = styled.div`
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 35px;
+
+`
+
+export const CloseBtn = styled(BiArrowBack)`
+  width: 20px;
+  height: 20px;
+  margin-top: 25px;
+  margin-left: 45px;
+  margin-bottom: 60px;
+  fill:#F8821E;
   cursor: pointer;
+`
+
+export const HomeSvg = styled(AiOutlineHome)`
+  width: 29px;
+  height: 22px;
+  fill: #F8821E;
+`
+export const PersonSvg = styled(IoPersonSharp)`
+  width: 22px;
+  height: 24px;
+  fill: #F8821E;
+`
+
+export const BookSvg = styled(MdMenuBook)`
+  width: 23px;
+  height: 22px;
+  fill: #F8821E;
 `
