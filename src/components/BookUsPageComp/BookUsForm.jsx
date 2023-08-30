@@ -6,7 +6,6 @@ import {
   Wrap,
   TxtExp,
   InputName,
-
   InputReview,
   SharePic,
   InputFileReview,
@@ -14,30 +13,26 @@ import {
   InputContainer,
   SvgClip,
   SvgTg,
-  SubBtn
+  SubBtn,
+  InputPhone,
 } from './BookUsForm.styled';
 import man from 'images/BookUsMan.png';
 
 export const BookUsForm = ({ onInput, inputs }) => {
-
   const inputRef = useRef(null);
 
   const handleArrowClick = () => {
     inputRef.current.click();
   };
 
-  // const sendData = ({title, type, review, photo}) => {
-    
-  // }
-
   const handleSubmit = evt => {
     evt.preventDefault();
     const form = evt.currentTarget;
     const title = form.elements.title.value;
-    const type = form.elements.type.value;
-    const review = form.elements.review.value;
+    const number = form.elements.number.value;
+    const bookus = form.elements.bookus.value;
     const photo = form.elements.photo.value;
-    console.log(title,type, review, photo);
+    console.log(title, number, bookus, photo);
     form.reset();
   };
 
@@ -56,7 +51,14 @@ export const BookUsForm = ({ onInput, inputs }) => {
                 // value={inputs.title}
                 placeholder="Name"
               ></InputName>
-            
+              <InputPhone
+                required
+                type="text"
+                name="number"
+                id="number"
+                // value={inputs.title}
+                placeholder="Phone number"
+              />
             </WrapInput>
 
             <InputReview
@@ -76,7 +78,6 @@ export const BookUsForm = ({ onInput, inputs }) => {
                   name="photo"
                   id="photo"
                   // value={inputs.review}
-                 
                 />
                 <SvgClip onClick={handleArrowClick} />
                 <SubBtn type="submit">

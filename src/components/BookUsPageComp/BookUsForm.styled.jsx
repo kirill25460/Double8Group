@@ -120,6 +120,14 @@ const SvgTg = styled(PiTelegramLogo)`
   cursor: pointer;
 `;
 
+const InputPhone = styled.input`
+  width: 196px;
+  height: 29px;
+  border-radius: 2px;
+  border: 2px solid #f8821e;
+  color: #c5c5c5;
+`
+
 export {
   WrapInput,
   WrapFor3Inputs,
@@ -134,5 +142,6 @@ export {
   InputContainer,
   SvgClip,
   SvgTg,
-  SubBtn
+  SubBtn,
+  InputPhone
 };
