@@ -5,6 +5,7 @@ import {
   BookUsBtn,
   PicToolsL,
   PicToolsR,
+  ButPicContainer
 } from './BookUsHomeP.styled';
 import Left from 'images/HammerL.png';
 import Right from 'images/HammerR.png';
@@ -19,13 +20,13 @@ export const BookUsHomeP = () => {
           THE MANAGER WILL CONTACT YOU TO CLARIFY YOUR ORDER IN NO MORE THAN 5
           MINUTES!
         </BookUsPar>
-        <div>
+        <ButPicContainer>
           <PicToolsL src={Left} alt="Logo" />
           <NavLink to="/book_us">
             <BookUsBtn>Book Us</BookUsBtn>
           </NavLink>
           <PicToolsR src={Right} alt="Logo" />
-        </div>
+        </ButPicContainer>
       </Container>
     </>
   );
