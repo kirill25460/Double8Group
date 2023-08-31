@@ -19,13 +19,14 @@ export const ReviewDetails = ({ id }) => {
   return (
     <>
       <Container>
+      <div>
         <StyledLink to="reviews">
           <ReviewButton>
             <ArrowButton />
             Back to all reviews
           </ReviewButton>
         </StyledLink>
-        <div>
+        
           <WrapAvatar>
             <ReviewName>{review.user.username}</ReviewName>
             <ReviewType>{review.user.type}</ReviewType>

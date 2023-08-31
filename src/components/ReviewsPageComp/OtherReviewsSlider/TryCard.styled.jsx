@@ -98,7 +98,7 @@ line-height: 12.5px; /* 104.167% */
 export const ReviewText = styled.p`
 overflow: hidden;
 padding:13px 16px;
-
+text-align: start;
 width: 235px;
 height: 103px;
 margin:0;

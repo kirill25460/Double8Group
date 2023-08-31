@@ -56,6 +56,7 @@ export const ReviewType = styled.p`
 `;
 
 export const ReviewText = styled.p`
+text-align: start;
   width: 460px;
   padding-right: 91px;
   margin: 0;
