@@ -15,8 +15,8 @@ export const Container = styled.div`
 `;
 
 export const TryCardPhoto = styled.img`
-width:267px;
-height:238px;
+width:260px;
+height:230px;
 `;
 
 export const WrapAvatar = styled.div`
@@ -26,7 +26,7 @@ export const WrapAvatar = styled.div`
 
 
 export const WrapCard = styled.div`
-
+margin-left:120px;
 height:600px;
 position: relative;
 width: 267px;
@@ -67,6 +67,7 @@ export const CardButton = styled.div`
 
 export const CardContainerHover = styled(WrapCard)`
   &:hover ${CardButton} {
+
     display: block;
   }
 `;
