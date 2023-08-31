@@ -22,27 +22,10 @@ import {
   BookSvg,
 } from './Header.styled';
 import { useState } from 'react';
-// MobileOpenHeader,BurgerButton,MobileMenu,MobileCloseHeader,CrossButton
-// import {BookUsSelector} from "../Navigation/Selector/BookUsSelector";
+
 
 export const Header = () => {
-  // const [toggleMenu, setToggleMenu] = useState(false);
 
-  // useEffect(() => {
-  //   const bodyEl = document.getElementById('body');
-
-  //   bodyEl.style.overflow = toggleMenu ? 'hidden' : 'visible';
-  // }, [toggleMenu]);
-
-  // const toggleMenuHandler = () => {
-  //   return setToggleMenu(prevState => !prevState);
-  // };
-
-  // const mobileMenuHandler = e => {
-  //   if (e.target.closest('li') && window.innerWidth < 1439) {
-  //     return setToggleMenu(prevState => !prevState);
-  //   }
-  // };
   const navItems = [
       { href: `/`, text: 'Home' },
       { href: '/reviews', text: 'Reviews' },

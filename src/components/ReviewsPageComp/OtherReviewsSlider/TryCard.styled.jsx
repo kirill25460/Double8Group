@@ -20,7 +20,7 @@ height:238px;
 `;
 
 export const WrapAvatar = styled.div`
-display:flex;
+
 `;
 
 export const AvatarCard = styled.img`

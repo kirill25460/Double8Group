@@ -1,7 +1,7 @@
 import Slider from 'react-slick';
 // import { useState, useEffect, useRef } from 'react';
 import { ReviewCard } from './TryCard';
-// import data from 'example.json';
+import example from 'example.json';
 // import { OtherReviewsCard } from "./OtherReviewsCard";
 
 import React, { Component } from 'react';
@@ -74,7 +74,7 @@ export default class SimpleSlider extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true,
+            dots: false,
           },
         },
         {
@@ -97,24 +97,9 @@ export default class SimpleSlider extends Component {
     return (
       <Container>
         <Slider {...settings}>
-          <div>
-            <ReviewCard />
-          </div>
-          <div>
-            <ReviewCard />
-          </div>
-          <div>
-            <ReviewCard />
-          </div>
-          <div>
-            <ReviewCard />
-          </div>
-          <div>
-            <ReviewCard />
-          </div>
-          <div>
-            <ReviewCard />
-          </div>
+        {example.comments.map(ex => (
+          <ReviewCard key={ex.id} user={ex.user} body={ex.body} type={ex.type} />
+        ))}
         </Slider>
       </Container>
     );
