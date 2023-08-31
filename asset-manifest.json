@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/double8group/static/css/main.97a0fede.css",
-    "main.js": "/double8group/static/js/main.684247b6.js",
+    "main.js": "/double8group/static/js/main.69663c40.js",
     "static/media/Group 2 1.png": "/double8group/static/media/Group 2 1.ad0655e8d55a70c30c8e.png",
     "static/media/Group1.png": "/double8group/static/media/Group1.caa39035fd752421a9b0.png",
     "static/media/BookUsMan.png": "/double8group/static/media/BookUsMan.812204d653f8c5393f9b.png",
@@ -13,7 +13,6 @@
     "static/media/bathFanBefore.jpg": "/double8group/static/media/bathFanBefore.09c4dc86a1014711d6c8.jpg",
     "static/media/Experience2.png": "/double8group/static/media/Experience2.000a1439fb2f16fc3194.png",
     "static/media/AirDuct2.jpg": "/double8group/static/media/AirDuct2.448b428776978f659077.jpg",
-    "static/media/Rectangle.png": "/double8group/static/media/Rectangle.33a6b593e6fb6a06f76d.png",
     "static/media/ChimneyAfter.jpg": "/double8group/static/media/ChimneyAfter.6bc1b2c00a83a7e9145e.jpg",
     "static/media/bathFanAfter.jpg": "/double8group/static/media/bathFanAfter.edec235deedfbda17297.jpg",
     "static/media/ChimneyBefore.jpg": "/double8group/static/media/ChimneyBefore.cd0b15d723ba9befaeb9.jpg",
@@ -23,10 +22,10 @@
     "static/media/HammerR.png": "/double8group/static/media/HammerR.367cec0c464c210ab213.png",
     "index.html": "/double8group/index.html",
     "main.97a0fede.css.map": "/double8group/static/css/main.97a0fede.css.map",
-    "main.684247b6.js.map": "/double8group/static/js/main.684247b6.js.map"
+    "main.69663c40.js.map": "/double8group/static/js/main.69663c40.js.map"
   },
   "entrypoints": [
     "static/css/main.97a0fede.css",
-    "static/js/main.684247b6.js"
+    "static/js/main.69663c40.js"
   ]
 }
