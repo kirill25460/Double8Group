@@ -27,7 +27,6 @@ export const ReviewCard = ({ body,photomessage, user: { username, type } }) => {
           onMouseLeave={handleMouseLeave}
         >
           <WrapAvatar>
-
               <p>{username}</p>
               <p>{type}</p>
 

@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 
-  width: 375px;
+  
   margin: 0 auto;
   @media screen and (min-width: 768px) {
-    width: 768px;
+   
     
   }
   @media screen and (min-width: 1440px) {
-    width: 1440px;
+   
    
   }
 `;
@@ -23,13 +23,10 @@ export const WrapAvatar = styled.div`
 
 `;
 
-export const AvatarCard = styled.img`
-width:50px;
-height:50px;
-`;
+
 
 export const WrapCard = styled.div`
-margin-right:50px;
+
 height:600px;
 position: relative;
 width: 267px;
@@ -62,6 +59,9 @@ margin: 0 44px;
 
 export const CardButton = styled.div`
   position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
 `;
 

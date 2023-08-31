@@ -3,7 +3,6 @@
 import { ShareExperience } from 'components/ReviewsPageComp/ShareExperience/ShareExperience';
 // import { OtherReviewsCard } from 'components/ReviewsPageComp/OtherReviewsSlider/OtherReviewsCard';
 import {OtherReviewsText} from 'components/ReviewsPageComp/OtherReviewsText/OtherReviewsText';
-// import {ReviewCard} from "components/ReviewsPageComp/OtherReviewsSlider/TryCard";
 import SimpleSlider from "components/ReviewsPageComp/OtherReviewsSlider/TrySlider";
 
 export const ReviewsPage = () => {
@@ -12,7 +11,6 @@ export const ReviewsPage = () => {
     <>
       <ShareExperience />
       <OtherReviewsText/>
-      {/* <ReviewCard/> */}
       <SimpleSlider/>
       {/* <Container>
         {example.comments.map(ex => (
