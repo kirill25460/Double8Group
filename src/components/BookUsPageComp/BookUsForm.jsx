@@ -67,9 +67,10 @@ export const BookUsForm = ({ onInput, inputs }) => {
                 placeholder="Name"
               ></InputName>
               <InputPhone
-                type="text"
+                type="tel"
                 name="number"
                 id="number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 // value={inputs.title}
                 placeholder="Phone number"
               />

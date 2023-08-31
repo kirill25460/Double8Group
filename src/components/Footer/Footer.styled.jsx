@@ -7,37 +7,94 @@ export const FooterCon = styled.div`
 `;
 
 export const FooterWrap = styled.div`
-  width: 280px;
+  width: 100px;
+  @media screen and (min-width: 768px) {
+    width: 280px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 280px;
+  }
 `;
 
 export const Wrap = styled.div`
-  width: 280px;
+  width: 140px;
+  @media screen and (min-width: 768px) {
+    width: 280px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 280px;
+  }
 `;
 
 export const FooterText = styled.p`
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0px;
   text-align: left;
   color: #dddddd;
+
+  @media screen and (min-width: 768px) {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #dddddd;
+  }
+  @media screen and (min-width: 1440px) {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #dddddd;
+  }
 `;
 export const FooterTextInfo = styled.p`
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0px;
   text-align: right;
   color: #dddddd;
+  @media screen and (min-width: 768px) {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #dddddd;
+  }
+  @media screen and (min-width: 1440px) {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #dddddd;
+  }
 `;
 
 export const LogoFooter = styled.img`
-  width: 134px;
-  height: 101px;
+  width: 94px;
+  height: 61px;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 114px;
+    height: 81px;
+    margin: 0 auto;
+  }
   @media screen and (min-width: 1440px) {
+    width: 134px;
+    height: 101px;
+    margin: 0 auto;
   }
 `;
 
@@ -67,7 +124,7 @@ export const ContactsItem = styled.li``;
 
 export const FooterLink = styled.a`
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0px;
@@ -75,6 +132,28 @@ export const FooterLink = styled.a`
   color: #797276;
   outline: none;
   text-decoration: none;
+  @media screen and (min-width: 768px) {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #797276;
+    outline: none;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 1440px) {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #797276;
+    outline: none;
+    text-decoration: none;
+  }
   &:hover {
     color: #fff;
   }
@@ -89,12 +168,33 @@ export const InfoList = styled.ul`
 export const InfoLinks = styled.p`
   margin: 0;
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0px;
 
   color: #797276;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+
+    color: #797276;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+
+    color: #797276;
+  }
   &:hover {
     color: #fff;
   }
