@@ -87,6 +87,7 @@ export const TopText = styled.h2`
 `;
 
 export const TextSlider = styled.p`
+color: #FFFFFF;
   position: absolute;
   left: 245px;
   font-family: Montserrat;

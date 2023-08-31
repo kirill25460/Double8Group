@@ -1,17 +1,17 @@
 import Slider from 'react-slick';
-// import { useState, useEffect, useRef } from 'react';
+
 import { ReviewCard } from './TryCard';
 import example from 'example.json';
-// import { OtherReviewsCard } from "./OtherReviewsCard";
 
+// AiOutlineLeft , AiOutlineRight
 import React, { Component } from 'react';
 import "./slick.css";
 import "./slick-theme.css";
 
 import { Container } from './TryCard.styled';
 
-import NextArr from "images/Next.png";
-import PrevArr from "images/Prev.png";
+import NextArr from "images/ArrowNext.svg";
+import PrevArr from "images/ArrowPrev.svg";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;

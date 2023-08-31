@@ -10,7 +10,7 @@ import {
   ArrowButton,
   WrapAvatar,
   StyledLink,
-  Wrap,
+  Container,
 } from './ReviewDetails.styled';
 
 export const ReviewDetails = ({ id }) => {
@@ -18,7 +18,7 @@ export const ReviewDetails = ({ id }) => {
 
   return (
     <>
-      <Wrap>
+      <Container>
         <StyledLink to="reviews">
           <ReviewButton>
             <ArrowButton />
@@ -26,20 +26,14 @@ export const ReviewDetails = ({ id }) => {
           </ReviewButton>
         </StyledLink>
         <div>
-        <WrapAvatar>
-          <ReviewName>{review.user.username}</ReviewName>
-          <ReviewType>{review.user.type}</ReviewType>
-        </WrapAvatar>
-
-       
-        <ReviewText>{review.body}</ReviewText>
-
-
-</div>
+          <WrapAvatar>
+            <ReviewName>{review.user.username}</ReviewName>
+            <ReviewType>{review.user.type}</ReviewType>
+          </WrapAvatar>
+          <ReviewText>{review.body}</ReviewText>
+        </div>
         <p>{review.photomessage}</p>
-      </Wrap>
-
-      
+      </Container>
     </>
   );
 };

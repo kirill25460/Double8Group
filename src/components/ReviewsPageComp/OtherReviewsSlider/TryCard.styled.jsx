@@ -10,7 +10,7 @@ export const Container = styled.div`
   }
   @media screen and (min-width: 1440px) {
     width: 1440px;
-   padding-bottom:50px;
+   padding-bottom: 100px;
   }
 `;
 
@@ -27,7 +27,7 @@ padding-bottom:21px;
 
 export const WrapCard = styled.div`
 margin-left:120px;
-height:600px;
+height: 530px;
 position: relative;
 width: 267px;
 display:flex;
@@ -59,7 +59,7 @@ margin: 0 44px;
 
 export const CardButton = styled.div`
   position: absolute;
-  bottom: 60px;
+  bottom: 18px;
   left: 50%;
   transform: translateX(-50%);
   display: none;
@@ -96,6 +96,11 @@ line-height: 12.5px; /* 104.167% */
 `;
 
 export const ReviewText = styled.p`
+overflow: hidden;
+padding:13px 16px;
+
+width: 235px;
+height: 103px;
 margin:0;
 padding-bottom:23px;
 padding-top:12px;

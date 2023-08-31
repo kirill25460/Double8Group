@@ -35,8 +35,8 @@ export const ReviewButton = styled.button`
 `;
 
 export const ReviewName = styled.h3`
-margin:0;
-padding-bottom:2px;
+  margin: 0;
+  padding-bottom: 2px;
   color: #222021;
   font-family: DM Sans;
   font-size: 20px;
@@ -46,7 +46,7 @@ padding-bottom:2px;
 `;
 
 export const ReviewType = styled.p`
-margin:0;
+  margin: 0;
   color: #2c2c2c;
   font-family: DM Sans;
   font-size: 12px;
@@ -56,9 +56,9 @@ margin:0;
 `;
 
 export const ReviewText = styled.p`
-width: 460px;
-padding-right:91px;
-margin:0;
+  width: 460px;
+  padding-right: 91px;
+  margin: 0;
   color: #2c2c2c;
   font-family: DM Sans;
   font-size: 14px;
@@ -68,7 +68,7 @@ margin:0;
 `;
 
 export const ArrowButton = styled(BsArrowLeft)`
-  margin-right:8px;
+  margin-right: 8px;
   width: 20px;
   height: 20px;
   fill: #f8821e;
@@ -76,13 +76,35 @@ export const ArrowButton = styled(BsArrowLeft)`
   cursor: pointer;
 `;
 
-
 export const WrapAvatar = styled.div`
-padding-top:60px;
+  padding-top: 60px;
 `;
 
-export const Wrap = styled.div`
-padding-top:45px;
-padding-bottom:65px;
-display:flex;
+export const Container = styled.div`
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 52px;
+  display: flex;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    padding-top: 45px;
+    padding-bottom: 65px;
+    justify-content: space-between;
+  }
 `;
+
+// width: 375px;
+// margin: 0 auto;
+// @media screen and (min-width: 768px) {
+//   width: 768px;
+//       text-align: center;
+// }
+// @media screen and (min-width: 1440px) {
+//   width: 1440px;
+//   display: flex;
+//   justify-content: space-between;
+// }
