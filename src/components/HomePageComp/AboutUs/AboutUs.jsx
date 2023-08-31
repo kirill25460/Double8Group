@@ -7,7 +7,7 @@ import {
   AboutUsPic,
   Wrap,
 } from './AboutUs.styled';
-import man from 'images/Group 2 1.png';
+import man from 'images/worker.png';
 
 export const AboutUs = () => {
   return (

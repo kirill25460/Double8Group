@@ -110,8 +110,7 @@ export const Container = styled.div`
     padding: 0 32px;
   }
   @media screen and (min-width: 1440px) {
-    width: 1440px;
-    padding: 0 100px;
+    width: 1200px;
   }
 `;
 
