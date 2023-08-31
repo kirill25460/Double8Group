@@ -32,7 +32,9 @@ export const ReviewDetails = ({ id }) => {
           </WrapAvatar>
           <ReviewText>{review.body}</ReviewText>
         </div>
-        <p>{review.photomessage}</p>
+        <img src={review.photomessage[0]} alt="asdsad" />
+        <img src={review.photomessage[1]} alt="asdsad" />
+        <img src={review.photomessage[2]} alt="asdsad" />
       </Container>
     </>
   );
