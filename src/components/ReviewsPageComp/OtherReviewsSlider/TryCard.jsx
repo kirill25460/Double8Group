@@ -38,7 +38,7 @@ export const ReviewCard = ({
           <ReviewName>{username}</ReviewName>
           <ReviewType>{type}</ReviewType>
         </WrapAvatar>
-        <TryCardPhoto src={photomessage} alt="ph" />
+        <TryCardPhoto src={photomessage[0]} alt="ph" />
         <ReviewText>{body}</ReviewText>
         {isHovered && (
           <CardButton>
