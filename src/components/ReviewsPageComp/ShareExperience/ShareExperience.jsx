@@ -17,6 +17,7 @@ import {
   SubBtn
 } from './ShareExperience.styled';
 import woman from 'images/ShareWoman.png';
+import Notiflix from 'notiflix'
 
 export const ShareExperience = ({ onInput, inputs }) => {
   const types = [
@@ -33,18 +34,35 @@ export const ShareExperience = ({ onInput, inputs }) => {
     inputRef.current.click();
   };
 
+  const handleFileChange = (event) => {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+      Notiflix.Notify.success('Photos added');
+    }else{
+      Notiflix.Notify.failure('Photos didn`t added');
+    }
+  };
+
   // const sendData = ({title, type, review, photo}) => {
     
   // }
 
   const handleSubmit = evt => {
     evt.preventDefault();
+    
     const form = evt.currentTarget;
     const title = form.elements.title.value;
     const type = form.elements.type.value;
     const review = form.elements.review.value;
     const photo = form.elements.photo.value;
+
+    if(title !== null && type !== null && review !== null && photo !== null){
+      Notiflix.Notify.success('Rewiew send');
+    }else{
+      Notiflix.Notify.failure('Rewiew didn`t send');
+    }
     console.log(title,type, review, photo);
+    
     form.reset();
   };
 
@@ -99,6 +117,7 @@ export const ShareExperience = ({ onInput, inputs }) => {
                   id="photo"
                   // value={inputs.review}
                   placeholder="Write your review here..."
+                  onChange={handleFileChange}
                 />
                 <SvgClip onClick={handleArrowClick} />
                 <SubBtn type="submit">

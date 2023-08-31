@@ -17,12 +17,22 @@ import {
   InputPhone,
 } from './BookUsForm.styled';
 import man from 'images/BookUsMan.png';
+import Notiflix from 'notiflix'
 
 export const BookUsForm = ({ onInput, inputs }) => {
   const inputRef = useRef(null);
 
   const handleArrowClick = () => {
     inputRef.current.click();
+  };
+
+  const handleFileChange = (event) => {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+      Notiflix.Notify.success('Photos added');
+    }else{
+      Notiflix.Notify.failure('Photos didn`t added');
+    }
   };
 
   const handleSubmit = evt => {
@@ -32,6 +42,12 @@ export const BookUsForm = ({ onInput, inputs }) => {
     const number = form.elements.number.value;
     const bookus = form.elements.bookus.value;
     const photo = form.elements.photo.value;
+    if(title !== null && number !== null && bookus !== null && photo !== null){
+      Notiflix.Notify.success('Rewiew send');
+    }else{
+      Notiflix.Notify.failure('Rewiew didn`t send');
+    }
+
     console.log(title, number, bookus, photo);
     form.reset();
   };
@@ -77,6 +93,7 @@ export const BookUsForm = ({ onInput, inputs }) => {
                   type="file"
                   name="photo"
                   id="photo"
+                  onChange={handleFileChange}
                   // value={inputs.review}
                 />
                 <SvgClip onClick={handleArrowClick} />
