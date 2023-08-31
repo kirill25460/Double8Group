@@ -26,7 +26,7 @@ const SharedLayout = () => {
       {location.pathname === '/chimney_cleaning' && <ChimneyCleaningPage/>}
       {location.pathname === '/bathroom_fan_cleaning' && <BathroomFanCleaningPage/>}
       {location.pathname === '/power_washing' && <PowerWashingPage/>}
-      {location.pathname === `/reviews/ + ${id}` && <ReviewDetails id={id}/>}
+      {location.pathname === `/reviews/${id}` && <ReviewDetails id = {id}/>}
       <Footer />
     </div>
   );

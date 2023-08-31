@@ -38,7 +38,7 @@ export const ReviewCard = ({id,body,photomessage, user: { username, type } }) =>
           </p>
           {isHovered && (
           <CardButton>
-            <NavLink to='reviews/{id}'><TryButtonReview>Read Full Review</TryButtonReview></NavLink>
+            <NavLink to={`reviews/${id}`}><TryButtonReview>Read Full Review</TryButtonReview></NavLink>
           </CardButton>
            )}
         </CardContainerHover>
