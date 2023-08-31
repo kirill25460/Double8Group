@@ -42,7 +42,7 @@ export const BookUsForm = ({ onInput, inputs }) => {
     const number = form.elements.number.value;
     const bookus = form.elements.bookus.value;
     const photo = form.elements.photo.value;
-    if(title !== null && number !== null && bookus !== null && photo !== null){
+    if(title !== "" && number !== "" && bookus !== "" && photo !== ""){
       Notiflix.Notify.success('Rewiew send');
     }else{
       Notiflix.Notify.failure('Rewiew didn`t send');
@@ -60,7 +60,6 @@ export const BookUsForm = ({ onInput, inputs }) => {
           <WrapFor3Inputs onSubmit={handleSubmit}>
             <WrapInput>
               <InputName
-                required
                 type="text"
                 name="title"
                 id="title"
@@ -68,7 +67,6 @@ export const BookUsForm = ({ onInput, inputs }) => {
                 placeholder="Name"
               ></InputName>
               <InputPhone
-                required
                 type="text"
                 name="number"
                 id="number"
@@ -78,7 +76,6 @@ export const BookUsForm = ({ onInput, inputs }) => {
             </WrapInput>
 
             <InputReview
-              required
               type="text"
               name="bookus"
               id="bookus"
@@ -88,7 +85,6 @@ export const BookUsForm = ({ onInput, inputs }) => {
             <MainInput>
               <InputContainer>
                 <InputFileReview
-                  required
                   ref={inputRef}
                   type="file"
                   name="photo"

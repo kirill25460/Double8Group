@@ -56,7 +56,7 @@ export const ShareExperience = ({ onInput, inputs }) => {
     const review = form.elements.review.value;
     const photo = form.elements.photo.value;
 
-    if(title !== null && type !== null && review !== null && photo !== null){
+    if(title !== "" && type !== "" && review !== "" && photo !== ""){
       Notiflix.Notify.success('Rewiew send');
     }else{
       Notiflix.Notify.failure('Rewiew didn`t send');
@@ -74,7 +74,6 @@ export const ShareExperience = ({ onInput, inputs }) => {
           <WrapFor3Inputs onSubmit={handleSubmit}>
             <WrapInput>
               <InputName
-                required
                 type="text"
                 name="title"
                 id="title"
@@ -82,7 +81,6 @@ export const ShareExperience = ({ onInput, inputs }) => {
                 placeholder="Name"
               ></InputName>
               <SelectType
-                required
                 name="type"
                 id="type"
                 // value={inputs.email}
@@ -100,7 +98,6 @@ export const ShareExperience = ({ onInput, inputs }) => {
             </WrapInput>
 
             <InputReview
-              required
               type="text"
               name="review"
               id="review"
@@ -110,7 +107,6 @@ export const ShareExperience = ({ onInput, inputs }) => {
             <MainInput>
               <InputContainer>
                 <InputFileReview
-                  required
                   ref={inputRef}
                   type="file"
                   name="photo"
