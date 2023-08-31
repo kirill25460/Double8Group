@@ -7,13 +7,10 @@ flex-direction: column;
 align-items: center;
   width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding: 0 32px;
   }
   @media screen and (min-width: 1440px) {
-    width: 1440px;
     padding: 0 100px;
   }
 `;
@@ -39,6 +36,7 @@ width: 605px;
 
 export const ExpList = styled.ul`
 margin:0;
+padding: 0;
 gap:56px;
 display:flex;
 justify-content: center;
@@ -53,8 +51,6 @@ padding-bottom:58px;
   @media screen and (min-width: 1440px) {
     flex-direction: row;
     align-items: normal;
-    
-
   }
 `;
 

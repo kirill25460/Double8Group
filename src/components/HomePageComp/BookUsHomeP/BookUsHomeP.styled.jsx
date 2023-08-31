@@ -15,13 +15,13 @@ padding-bottom: 63px;
     padding-bottom: 63px;
   }
   @media screen and (min-width: 1440px) {
-    width: 1440px;
     padding: 0 100px;
     padding-bottom: 63px;
   }
 `;
 
 export const BookUsTxt = styled.h2`
+width: 777px;
 padding-top:46px;
 margin:0;
 font-family: Montserrat;

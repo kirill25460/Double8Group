@@ -30,11 +30,11 @@ export const Container = styled.div`
   padding: 0 10px;
   @media screen and (min-width: 768px) {
     display: flex;
-    width: 768px;
+    width: 700px;
     padding: 0 32px;
   }
   @media screen and (min-width: 1440px) {
-    width: 1440px;
+    min-width: 1200px;
     padding: 0 100px;
   }
 `;
