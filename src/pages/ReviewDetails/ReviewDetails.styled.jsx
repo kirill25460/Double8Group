@@ -82,6 +82,7 @@ padding-top:60px;
 `;
 
 export const Wrap = styled.div`
+padding-top:45px;
 padding-bottom:65px;
 display:flex;
 `;
