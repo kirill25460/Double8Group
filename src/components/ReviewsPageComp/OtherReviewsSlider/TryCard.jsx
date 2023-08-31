@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   
   TryCardPhoto,
@@ -8,7 +9,7 @@ import {
   CardContainerHover,
 } from './TryCard.styled';
 
-export const ReviewCard = ({ body,photomessage, user: { username, type } }) => {
+export const ReviewCard = ({id,body,photomessage, user: { username, type } }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -37,7 +38,7 @@ export const ReviewCard = ({ body,photomessage, user: { username, type } }) => {
           </p>
           {isHovered && (
           <CardButton>
-            <TryButtonReview>Read Full Review</TryButtonReview>
+            <NavLink to='reviews/${id}'><TryButtonReview>Read Full Review</TryButtonReview></NavLink>
           </CardButton>
            )}
         </CardContainerHover>

@@ -98,7 +98,7 @@ export default class SimpleSlider extends Component {
       <Container>
         <Slider {...settings}>
         {example.comments.map(ex => (
-          <ReviewCard key={ex.id} user={ex.user} body={ex.body} type={ex.type} />
+          <ReviewCard id={ex.id} user={ex.user} body={ex.body} type={ex.type} />
         ))}
         </Slider>
       </Container>
