@@ -10,7 +10,7 @@ export const Container = styled.div`
   }
   @media screen and (min-width: 1440px) {
     width: 1440px;
-   
+   padding-bottom:50px;
   }
 `;
 
@@ -20,7 +20,7 @@ height:230px;
 `;
 
 export const WrapAvatar = styled.div`
-
+padding-bottom:21px;
 `;
 
 
@@ -59,7 +59,7 @@ margin: 0 44px;
 
 export const CardButton = styled.div`
   position: absolute;
-  bottom: 10px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   display: none;
@@ -70,4 +70,39 @@ export const CardContainerHover = styled(WrapCard)`
 
     display: block;
   }
+`;
+
+
+export const ReviewName = styled.h3`
+margin:0;
+padding-bottom:2px;
+color: #222021;
+font-family: DM Sans;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 105.882% */
+text-transform: capitalize;
+`;
+
+export const ReviewType = styled.p`
+margin:0;
+color: #2C2C2C;
+font-family: DM Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12.5px; /* 104.167% */
+`;
+
+export const ReviewText = styled.p`
+margin:0;
+padding-bottom:23px;
+padding-top:12px;
+color: #2C2C2C;
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 12.5px; /* 89.286% */
 `;

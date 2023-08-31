@@ -2,15 +2,22 @@ import React, { useState } from 'react';
 
 import { NavLink } from 'react-router-dom';
 import {
-  
+  ReviewName,
   TryCardPhoto,
   WrapAvatar,
   TryButtonReview,
   CardButton,
   CardContainerHover,
+  ReviewType,
+  ReviewText,
 } from './TryCard.styled';
 
-export const ReviewCard = ({id,body,photomessage, user: { username, type } }) => {
+export const ReviewCard = ({
+  id,
+  body,
+  photomessage,
+  user: { username, type },
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -23,30 +30,24 @@ export const ReviewCard = ({id,body,photomessage, user: { username, type } }) =>
 
   return (
     <>
-    
-        <CardContainerHover
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <WrapAvatar>
-              <p>{username}</p>
-              <p>{type}</p>
-
-          </WrapAvatar>
-          <TryCardPhoto src={photomessage} alt="ph" />
-          <p>
-            {body}
-          </p>
-          {isHovered && (
+      <CardContainerHover
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <WrapAvatar>
+          <ReviewName>{username}</ReviewName>
+          <ReviewType>{type}</ReviewType>
+        </WrapAvatar>
+        <TryCardPhoto src={photomessage} alt="ph" />
+        <ReviewText>{body}</ReviewText>
+        {isHovered && (
           <CardButton>
-            <NavLink to={`reviews/${id}`}><TryButtonReview>Read Full Review</TryButtonReview></NavLink>
+            <NavLink to={`reviews/${id}`}>
+              <TryButtonReview>Read Full Review</TryButtonReview>
+            </NavLink>
           </CardButton>
-           )}
-        </CardContainerHover>
-      </>
-    
+        )}
+      </CardContainerHover>
+    </>
   );
 };
-
-
-
