@@ -76,7 +76,7 @@ const InputName = styled.input`
   border: 2px solid #f8821e;
   color: #c5c5c5;
   margin-bottom: 20px;
-  margin-right: 23px;
+  margin-right: 15px;
   @media screen and (min-width: 768px) {
     width: 266px;
     height: 29px;
