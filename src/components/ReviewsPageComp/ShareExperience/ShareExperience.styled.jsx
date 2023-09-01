@@ -150,10 +150,12 @@ const SharePic = styled.img`
   margin-top:-170px;
   @media screen and (min-width: 768px) {
     height: 749px;
+    width: 550px;
     margin-top:0;
   }
   @media screen and (min-width: 1440px) {
     height: 749px;
+    width: 550px;
     margin-top:0;
   }
 `;
