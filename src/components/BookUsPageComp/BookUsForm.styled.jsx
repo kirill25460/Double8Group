@@ -29,9 +29,9 @@ const TxtExp = styled.h2`
   letter-spacing: 0px;
   text-align: left;
   color: #f8821e;
-  margin-bottom: 265px;
+  margin-bottom: 345px;
   @media screen and (min-width: 768px) {
-    width: 324px;
+    width: 264px;
     font-family: Montserrat;
     font-size: 46px;
     font-weight: 800;
@@ -39,7 +39,7 @@ const TxtExp = styled.h2`
     letter-spacing: 0px;
     text-align: left;
     color: #f8821e;
-    margin-bottom: 44px;
+    margin-bottom: 100px;
   }
   @media screen and (min-width: 1440px) {
     width: 497px;
@@ -56,7 +56,8 @@ const TxtExp = styled.h2`
 
 const Wrap = styled.div``;
 
-const WrapInput = styled.div``;
+const WrapInput = styled.div`
+display: flex;`;
 
 const WrapFor3Inputs = styled.form`
   margin-bottom: 65px;
@@ -135,14 +136,14 @@ const SharePic = styled.img`
   height: 456px;
   width: 466px;
   top: 210px;
-  left: 70px;
+  left: 50px;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    height: 456px;
-    width: 466px;
-    top: 150px;
-    left: 210px;
+    height: 356px;
+    width: 366px;
+    top: 90px;
+    left: 640px;
   }
   @media screen and (min-width: 1440px) {
     display: none;
