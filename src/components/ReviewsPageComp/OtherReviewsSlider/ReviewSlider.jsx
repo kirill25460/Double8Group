@@ -10,8 +10,8 @@ import "./slick-theme.css";
 
 import { Container } from './OtherReviewsCard.styled';
 
-import NextArr from "images/ArrowNext.svg";
-import PrevArr from "images/ArrowPrev.svg";
+import NextArr from "images/ArrowNext.png";
+import PrevArr from "images/ArrowPrev.png";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -79,15 +79,7 @@ export default class SimpleSlider extends Component {
           },
         },
         {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 480,
+          breakpoint: 768,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,

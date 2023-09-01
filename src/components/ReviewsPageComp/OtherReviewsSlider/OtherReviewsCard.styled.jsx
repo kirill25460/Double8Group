@@ -26,13 +26,23 @@ padding-bottom:21px;
 
 
 export const WrapCard = styled.div`
-margin-left:120px;
-height: 530px;
-position: relative;
+margin-left:60px;
 width: 267px;
 display:flex;
 flex-direction: column;
 justify-content: center;
+position: relative;
+height: 530px;
+@media screen and (min-width: 768px) {
+margin-right: 60px;
+}
+@media screen and (min-width: 1440px) {
+  margin-left:120px;
+}
+
+
+
+
 
 `;
 
