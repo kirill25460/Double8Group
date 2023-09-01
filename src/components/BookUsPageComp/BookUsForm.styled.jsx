@@ -21,7 +21,7 @@ export const Container = styled.div`
 `;
 
 const TxtExp = styled.h2`
-  width: 324px;
+  width: 355px;
   font-family: Montserrat;
   font-size: 46px;
   font-weight: 800;
@@ -29,7 +29,7 @@ const TxtExp = styled.h2`
   letter-spacing: 0px;
   text-align: left;
   color: #f8821e;
-  margin-bottom: 245px;
+  margin-bottom: 265px;
   @media screen and (min-width: 768px) {
     width: 324px;
     font-family: Montserrat;
@@ -69,7 +69,7 @@ const WrapFor3Inputs = styled.form`
 `;
 
 const InputName = styled.input`
-  width: 151px;
+  width: 147px;
   height: 33px;
   border-radius: 2px;
   border: 2px solid #f8821e;
@@ -134,8 +134,8 @@ const SharePic = styled.img`
   position: absolute;
   height: 456px;
   width: 466px;
-  top: 150px;
-  left: 210px;
+  top: 210px;
+  left: 70px;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
