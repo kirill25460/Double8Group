@@ -1,16 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 375px;
+  
   margin: 0 auto;
-  padding: 0 10px;
+
   @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 0 32px;
+    
   }
   @media screen and (min-width: 1440px) {
-    width: 1440px;
-    padding: 0 100px;
+ 
+   
   }
 `;
 
@@ -23,7 +22,7 @@ export const ButtonSlider = styled.button`
   line-height: 18px;
   cursor: pointer;
   border: none;
-  left: 95px;
+  left: 35px;
   top: 530px;
   font-family: 'DM Sans';
   font-size: 23px;
@@ -102,7 +101,7 @@ export const ButtonSlider = styled.button`
 
 export const TopText = styled.h2`
   position: absolute;
-  left: 95px;
+  left: 35px;
   top: 80px;
   font-family: Montserrat;
   font-size: 55px;

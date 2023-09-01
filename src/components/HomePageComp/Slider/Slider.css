@@ -59,7 +59,7 @@
 
   .swiper-pagination {
     text-align: start;
-    margin-left: 100px;
+    margin-left: 35px;
     margin-bottom: 65px;
     @media screen and (min-width: 768px) {
     position: absolute;

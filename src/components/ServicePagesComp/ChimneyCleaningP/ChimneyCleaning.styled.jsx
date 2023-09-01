@@ -193,3 +193,62 @@ color:#F8821E;
 padding-bottom:50px;
 padding-top:8px;
 `;
+
+
+export const MobButtonServices = styled.button`
+margin-right: 25px;
+width: 158px;
+height: 45px;
+color: #fff;
+border:none;
+background-color:#F8821F;
+font-family: 'DM Sans';
+font-size: 12px;
+text-align: center;
+letter-spacing: 0px;
+font-weight: 500;
+box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+transition: .3s;
+&:hover{
+   
+    box-shadow: 0 15px 20px rgba(32, 32, 32, .4);
+    
+    transform: translateY(-7px);}
+@media screen and (min-width: 768px) {
+  display: none;
+
+}
+@media screen and (min-width: 1440px) {
+
+}
+
+`;
+
+
+
+export const AnotherMobButton = styled.button`
+
+
+width: 158px;
+height: 45px;
+color: #2C2C2C;
+border:2px solid #F8821F;
+background-color:#FFF;
+font-family: 'DM Sans';
+font-size: 12px;
+text-align: center;
+letter-spacing: 0px;
+font-weight: 500;
+box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+transition: .3s;
+&:hover{
+   
+    box-shadow: 0 15px 20px rgba(32, 32, 32, .4);
+    
+    transform: translateY(-7px);}
+@media screen and (min-width: 768px) {
+  display:none;
+}
+
+
+`;
