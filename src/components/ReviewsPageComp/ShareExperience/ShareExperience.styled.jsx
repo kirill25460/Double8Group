@@ -8,31 +8,29 @@ export const Container = styled.div`
   justify-content: center;
   align-items: normal;
   flex-wrap: wrap;
-  
+
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
-   
   }
   @media screen and (min-width: 1440px) {
-    
-   
   }
 `;
 
 const TxtExp = styled.h2`
-font-family: Montserrat;
-font-size: 46px;
-font-style: normal;
-font-weight: 800;
-line-height: 43px; 
+  width: 324px;
+  font-family: Montserrat;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 43px;
   color: #f8821e;
   @media screen and (min-width: 768px) {
     font-family: Montserrat;
     font-size: 46px;
     font-style: normal;
     font-weight: 800;
-    line-height: 43px; 
+    line-height: 43px;
   }
   @media screen and (min-width: 1440px) {
     width: 497px;
@@ -46,21 +44,57 @@ line-height: 43px;
 `;
 
 const Wrap = styled.div`
-
+  width: 370px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 505px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0;
+  }
 `;
 
 const WrapInput = styled.div``;
 
-const WrapFor3Inputs = styled.form``;
+const WrapFor3Inputs = styled.form`
+  width: 430px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 505px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0;
+  }
+`;
 
 const InputName = styled.input`
-  width: 266px;
+  width: 151px;
   height: 29px;
   border-radius: 2px;
   border: 2px solid #f8821e;
   color: #c5c5c5;
   margin-bottom: 20px;
-  margin-right: 31px;
+  margin-right: 23px;
+  @media screen and (min-width: 768px) {
+    width: 266px;
+    height: 29px;
+    border-radius: 2px;
+    border: 2px solid #f8821e;
+    color: #c5c5c5;
+    margin-bottom: 20px;
+    margin-right: 31px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 266px;
+    height: 29px;
+    border-radius: 2px;
+    border: 2px solid #f8821e;
+    color: #c5c5c5;
+    margin-bottom: 20px;
+    margin-right: 31px;
+  }
 `;
 
 const SelectType = styled.select`
@@ -69,19 +103,59 @@ const SelectType = styled.select`
   border-radius: 2px;
   border: 2px solid #f8821e;
   color: #c5c5c5;
+  @media screen and (min-width: 768px) {
+    width: 196px;
+    height: 35px;
+    border-radius: 2px;
+    border: 2px solid #f8821e;
+    color: #c5c5c5;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 196px;
+    height: 35px;
+    border-radius: 2px;
+    border: 2px solid #f8821e;
+    color: #c5c5c5;
+  }
 `;
 
 const InputReview = styled.input`
-  width: 497px;
+  width: 370px;
   height: 32px;
   padding-bottom: 320px;
   border-radius: 2px solid #f8821e;
   border: 2px solid #f8821e;
   color: #c5c5c5;
+  @media screen and (min-width: 768px) {
+    width: 497px;
+    height: 32px;
+    padding-bottom: 320px;
+    border-radius: 2px solid #f8821e;
+    border: 2px solid #f8821e;
+    color: #c5c5c5;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 497px;
+    height: 32px;
+    padding-bottom: 320px;
+    border-radius: 2px solid #f8821e;
+    border: 2px solid #f8821e;
+    color: #c5c5c5;
+  }
 `;
 
 const SharePic = styled.img`
-  height: 749px;
+  width: 446px;
+  height: 614px;
+  margin-top:-170px;
+  @media screen and (min-width: 768px) {
+    height: 749px;
+    margin-top:0;
+  }
+  @media screen and (min-width: 1440px) {
+    height: 749px;
+    margin-top:0;
+  }
 `;
 
 const MainInput = styled.div`
@@ -101,9 +175,25 @@ const InputContainer = styled.div`
   position: absolute;
   display: inline-flex;
   flex-direction: column;
-  right: 10px;
+  right: 55px;
   bottom: 5px;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    right: 10px;
+    bottom: 5px;
+    align-items: center;
+  }
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    right: 10px;
+    bottom: 5px;
+    align-items: center;
+  }
 `;
 
 const SubBtn = styled.button`
@@ -111,7 +201,7 @@ const SubBtn = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-`
+`;
 
 const SvgClip = styled(TfiClip)`
   width: 22px;
@@ -136,6 +226,29 @@ const SvgTg = styled(PiTelegramLogo)`
   cursor: pointer;
 `;
 
+const OtherText = styled.h2`
+    display: block;
+    margin: 0;
+    width: 370px;
+    color: #222021;
+    font-family: Montserrat;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 42px;
+    text-align: left;
+    margin-top: 50px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+`;
+
+const OtherSpan = styled.span`
+color:#F8821E;
+`;
 
 export {
   WrapInput,
@@ -151,5 +264,7 @@ export {
   InputContainer,
   SvgClip,
   SvgTg,
-  SubBtn
+  SubBtn,
+  OtherText,
+  OtherSpan
 };

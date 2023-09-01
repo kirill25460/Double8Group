@@ -14,7 +14,9 @@ import {
   InputContainer,
   SvgClip,
   SvgTg,
-  SubBtn
+  SubBtn,
+  OtherText,
+  OtherSpan
 } from './ShareExperience.styled';
 import woman from 'images/ShareWoman.png';
 import Notiflix from 'notiflix'
@@ -123,6 +125,9 @@ export const ShareExperience = ({ onInput, inputs }) => {
             </MainInput>
           </WrapFor3Inputs>
         </Wrap>
+        <OtherText>
+          CHECK OTHER CUSTOMERS <OtherSpan>REVIEW</OtherSpan>
+        </OtherText>
         <SharePic src={woman} alt="woman" />
       </Container>
     </>
