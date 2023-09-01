@@ -58,7 +58,7 @@ const Wrap = styled.div`
 const WrapInput = styled.div``;
 
 const WrapFor3Inputs = styled.form`
-  width: 430px;
+  width: 378px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     width: 505px;
@@ -145,7 +145,7 @@ const InputReview = styled.input`
 `;
 
 const SharePic = styled.img`
-  width: 446px;
+  width: 400px;
   height: 614px;
   margin-top:-170px;
   @media screen and (min-width: 768px) {
@@ -175,7 +175,7 @@ const InputContainer = styled.div`
   position: absolute;
   display: inline-flex;
   flex-direction: column;
-  right: 55px;
+  right: 5px;
   bottom: 5px;
   align-items: center;
   @media screen and (min-width: 768px) {
