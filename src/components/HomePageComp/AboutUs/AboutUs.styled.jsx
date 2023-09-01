@@ -4,8 +4,8 @@ export const Container = styled.div`
   width: 375px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
-    width: 768px;
-        text-align: center;
+    width: 700px;
+    text-align: center;
   }
   @media screen and (min-width: 1440px) {
     width: 1440px;
@@ -17,6 +17,8 @@ export const Container = styled.div`
 export const Wrap = styled.div``;
 
 export const HomeWrap = styled.div`
+    height: 780px;
+    background-color: #222021;
   @media screen and (min-width: 768px) {
     height: 1200px;
     background-color: #222021;
@@ -27,6 +29,17 @@ export const HomeWrap = styled.div`
   }
 `;
 export const HomeText = styled.h2`
+    margin: 0;
+    padding-top: 40px;
+    font-family: Montserrat;
+    font-size: 51px;
+    font-weight: 400;
+    line-height: 86px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #f8821e;
+    text-shadow: 4px 4px 31px rgba(248, 130, 30, 0.65);
+
   @media screen and (min-width: 768px) {
     margin: 0;
     padding-top: 130px;
@@ -54,6 +67,17 @@ export const HomeText = styled.h2`
 `;
 
 export const HomePar = styled.p`
+    margin: 0;
+    color: #ffffff;
+    height: 287px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.5px;
+    letter-spacing: 0px;
+    text-align: right;
+    margin-bottom: -10px;
+
   @media screen and (min-width: 768px) {
     margin: 0;
     padding-top: 32px;
@@ -82,6 +106,9 @@ export const HomePar = styled.p`
   }
 `;
 export const AboutUsPic = styled.img`
+    width: 400px;
+    height: 377px;
+    align-items: center;
   @media screen and (min-width: 768px) {
     margin-top: 85px;
     width: 654px;
