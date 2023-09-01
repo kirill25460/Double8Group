@@ -3,7 +3,7 @@
 import { ShareExperience } from 'components/ReviewsPageComp/ShareExperience/ShareExperience';
 // import { OtherReviewsCard } from 'components/ReviewsPageComp/OtherReviewsSlider/OtherReviewsCard';
 import {OtherReviewsText} from 'components/ReviewsPageComp/OtherReviewsText/OtherReviewsText';
-import SimpleSlider from "components/ReviewsPageComp/OtherReviewsSlider/TrySlider";
+import SimpleSlider from "components/ReviewsPageComp/OtherReviewsSlider/ReviewSlider";
 
 export const ReviewsPage = () => {
   

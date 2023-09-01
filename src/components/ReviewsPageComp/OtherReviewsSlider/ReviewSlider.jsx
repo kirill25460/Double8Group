@@ -1,6 +1,6 @@
 import Slider from 'react-slick';
 
-import { ReviewCard } from './TryCard';
+import { ReviewCard } from './OtherReviewsCard';
 import example from 'example.json';
 
 // AiOutlineLeft , AiOutlineRight
@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import "./slick.css";
 import "./slick-theme.css";
 
-import { Container } from './TryCard.styled';
+import { Container } from './OtherReviewsCard.styled';
 
 import NextArr from "images/ArrowNext.svg";
 import PrevArr from "images/ArrowPrev.svg";

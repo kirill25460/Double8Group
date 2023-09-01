@@ -9,8 +9,17 @@ import {
   ReviewText,
   ArrowButton,
   WrapAvatar,
+  ReviewButtonMob,
   StyledLink,
+  ReviewPic1,
+  ButtonWrap,
+  ReviewPic2,
+  WrapWrap,
   Container,
+  MobText,
+  FotoWrap,
+  ReviewPic3,
+  MainWrap
 } from './ReviewDetails.styled';
 
 export const ReviewDetails = ({ id }) => {
@@ -19,7 +28,7 @@ export const ReviewDetails = ({ id }) => {
   return (
     <>
       <Container>
-      <div>
+      <MainWrap>
         <StyledLink to="reviews">
           <ReviewButton>
             <ArrowButton />
@@ -32,10 +41,24 @@ export const ReviewDetails = ({ id }) => {
             <ReviewType>{review.user.type}</ReviewType>
           </WrapAvatar>
           <ReviewText>{review.body}</ReviewText>
-        </div>
-        <img src={review.photomessage[0]} alt="asdsad" />
-        <img src={review.photomessage[1]} alt="asdsad" />
-        <img src={review.photomessage[2]} alt="asdsad" />
+        </MainWrap>
+       <MobText>See atached photos</MobText>
+        <FotoWrap>
+        <ReviewPic1 src={review.photomessage[1]} alt="review" />
+        <WrapWrap>
+        <ReviewPic2 src={review.photomessage[2]} alt="review" />
+        <ReviewPic3 src={review.photomessage[3]} alt="review" />
+        </WrapWrap>
+        </FotoWrap>
+        <ButtonWrap>
+        <StyledLink to="reviews">
+          <ReviewButtonMob>
+            <ArrowButton />
+            Back to all reviews
+          </ReviewButtonMob>
+        </StyledLink>
+        </ButtonWrap>
+       
       </Container>
     </>
   );
