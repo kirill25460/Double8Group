@@ -106,7 +106,7 @@ export const HomePar = styled.p`
   }
 `;
 export const AboutUsPic = styled.img`
-    width: 400px;
+    width: 390px;
     height: 377px;
     align-items: center;
   @media screen and (min-width: 768px) {
