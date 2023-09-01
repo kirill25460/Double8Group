@@ -36,6 +36,9 @@ height: 530px;
 @media screen and (min-width: 768px) {
 margin-right: 60px;
 }
+@media screen and (min-width: 1024px) {
+  margin-left:120px;
+  }
 @media screen and (min-width: 1440px) {
   margin-left:120px;
 }

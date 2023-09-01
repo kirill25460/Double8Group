@@ -21,7 +21,7 @@
     height: 100%;
     object-fit: cover;
   }
-  .swiper-button-prev,
+ 
   .swiper-button-next {
     
     display: none;
@@ -37,6 +37,8 @@
     display: none;
     @media screen and (min-width: 768px) {
       display: flex;
+      color: #FFFFFF;
+      opacity: 1;
     left: 105px;}
   }
 
