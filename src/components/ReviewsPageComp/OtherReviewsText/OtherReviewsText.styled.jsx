@@ -17,7 +17,6 @@ display: none;
 @media screen and (min-width: 768px) {
   display: block;
   margin:0;
-  margin-top: 30px;
   color:#222021;
   font-family: Montserrat;
   font-size: 42px;
@@ -28,9 +27,11 @@ display: none;
 }
 @media screen and (min-width: 1440px) {
   display: block;
-  padding-top:75px;
-  padding-bottom:60px;
-  padding-right: 283px;
+  padding-top:105px;
+padding-bottom:60px;
+padding-left:450px;
+margin:0;
+width:747px;
   font-size: 56px;
   line-height: 61px;
   letter-spacing: 0px;
