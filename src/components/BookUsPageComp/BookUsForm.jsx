@@ -15,6 +15,7 @@ import {
   SvgTg,
   SubBtn,
   InputPhone,
+  SharePicDesc
 } from './BookUsForm.styled';
 import man from 'images/BookUsMan.png';
 import Notiflix from 'notiflix'
@@ -102,6 +103,7 @@ export const BookUsForm = ({ onInput, inputs }) => {
           </WrapFor3Inputs>
         </Wrap>
         <SharePic src={man} alt="man" />
+        <SharePicDesc src={man} alt="desc" />
       </Container>
     </>
   );
