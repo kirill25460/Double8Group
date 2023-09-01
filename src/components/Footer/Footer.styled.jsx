@@ -101,13 +101,13 @@ export const LogoFooter = styled.img`
 export const Container = styled.div`
   width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 768px) {
     width: 700px;
-    padding: 0 32px;
+    
   }
   @media screen and (min-width: 1440px) {
     width: 1200px;

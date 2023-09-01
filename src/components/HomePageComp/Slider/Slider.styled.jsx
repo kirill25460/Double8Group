@@ -23,8 +23,8 @@ export const ButtonSlider = styled.button`
   line-height: 18px;
   cursor: pointer;
   border: none;
-  left: 100px;
-  top: 472px;
+  left: 95px;
+  top: 530px;
   font-family: 'DM Sans';
   font-size: 23px;
 
@@ -102,14 +102,14 @@ export const ButtonSlider = styled.button`
 
 export const TopText = styled.h2`
   position: absolute;
-
-  top: 109px;
+  left: 95px;
+  top: 80px;
   font-family: Montserrat;
   font-size: 55px;
   font-weight: 800;
   line-height: 61px;
   letter-spacing: 0px;
-  text-align: center;
+  text-align: start;
   height: 212px;
   color: #ffffff;
   @media screen and (min-width: 768px) {

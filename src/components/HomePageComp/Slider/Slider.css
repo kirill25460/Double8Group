@@ -23,22 +23,51 @@
   }
   .swiper-button-prev,
   .swiper-button-next {
-    right: 105px;
-    color: #FFFFFF;
-    opacity: 1;
+    
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      right: 105px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+    
   }
   .swiper-button-prev{
-    left: 105px;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    left: 105px;}
   }
 
 
   .swiper-pagination-bullet {
+   
+    width: 8px;
+    height: 8px;
+    border-radius:8px;
+     background-color: #D9D9D9; /* Прозорий колір фону */
+    opacity: 50%;
+    @media screen and (min-width: 768px) {
+    
     width: 40px;
     height: 4px;
-    background-color: #D9D9D9; /* Прозорий колір фону */
-    opacity: 50%;
+   
    border-radius:8px;
+    }
   }
+
+  .swiper-pagination {
+    text-align: start;
+    margin-left: 100px;
+    margin-bottom: 65px;
+    @media screen and (min-width: 768px) {
+    position: absolute;
+    text-align: center;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;}
+}
 
   .swiper-pagination-bullet-active {
     opacity: 1;

@@ -91,6 +91,7 @@ export default class SimpleSlider extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            
           },
         },
       ],
