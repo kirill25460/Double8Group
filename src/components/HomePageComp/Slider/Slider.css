@@ -1,77 +1,74 @@
-
 .swiper {
-    width: 100%;
-    height: 794px;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
+  width: 100%;
+  height: 794px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next {
+  display: none;
+  @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    right: 105px;
+    color: #ffffff;
+    opacity: 1;
   }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
- 
-  .swiper-button-next {
-    
-    display: none;
-    @media screen and (min-width: 768px) {
-      display: flex;
-      right: 105px;
-      color: #FFFFFF;
-      opacity: 1;
-    }
-    
-  }
-  .swiper-button-prev{
-    display: none;
-    @media screen and (min-width: 768px) {
-      display: flex;
-      color: #FFFFFF;
-      opacity: 1;
-    left: 105px;}
-  }
+}
 
+.swiper-button-prev {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    color: #ffffff;
+    opacity: 1;
+    left: 105px;
+  }
+}
 
-  .swiper-pagination-bullet {
-   
-    width: 8px;
-    height: 8px;
-    border-radius:8px;
-     background-color: #D9D9D9; /* Прозорий колір фону */
-    opacity: 50%;
-    @media screen and (min-width: 768px) {
-    
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #d9d9d9; /* Прозорий колір фону */
+  opacity: 50%;
+  @media screen and (min-width: 768px) {
     width: 40px;
     height: 4px;
-   
-   border-radius:8px;
-    }
-  }
 
-  .swiper-pagination {
-    text-align: start;
-    margin-left: 35px;
-    margin-bottom: 65px;
-    @media screen and (min-width: 768px) {
+    border-radius: 8px;
+  }
+}
+
+.swiper-pagination {
+  text-align: start;
+  margin-left: 35px;
+  margin-bottom: 65px;
+  @media screen and (min-width: 768px) {
     position: absolute;
     text-align: center;
     transition: 300ms opacity;
     transform: translate3d(0, 0, 0);
-    z-index: 10;}
+    z-index: 10;
+  }
 }
 
-  .swiper-pagination-bullet-active {
-    opacity: 1;
-    transform: scale(1.2); /* Збільшення активної точки */
-  }
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2); /* Збільшення активної точки */
+}
