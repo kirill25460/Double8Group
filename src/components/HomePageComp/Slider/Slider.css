@@ -21,24 +21,23 @@
   object-fit: cover;
 }
 
+.swiper-button-prev,
 .swiper-button-next {
+  
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
     right: 105px;
-    color: #ffffff;
+    color: #FFFFFF;
     opacity: 1;
   }
+  
 }
-
-.swiper-button-prev {
+.swiper-button-prev{
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
-    color: #ffffff;
-    opacity: 1;
-    left: 105px;
-  }
+  left: 105px;}
 }
 
 .swiper-pagination-bullet {
