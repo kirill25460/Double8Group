@@ -7,31 +7,47 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: normal;
-  width: 375px;
+  flex-wrap: wrap;
+  
   margin: 0 auto;
-  padding: 0 16px;
+
   @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 0 32px;
+   
   }
   @media screen and (min-width: 1440px) {
-    width: 1440px;
-    padding: 0 100px;
+    
+   
   }
 `;
 
 const TxtExp = styled.h2`
-  width: 497px;
-  font-family: Montserrat;
-  font-size: 56px;
-  font-weight: 800;
-  line-height: 61px;
-  letter-spacing: 0px;
-  text-align: left;
+font-family: Montserrat;
+font-size: 46px;
+font-style: normal;
+font-weight: 800;
+line-height: 43px; 
   color: #f8821e;
+  @media screen and (min-width: 768px) {
+    font-family: Montserrat;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 43px; 
+  }
+  @media screen and (min-width: 1440px) {
+    width: 497px;
+    font-family: Montserrat;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 61px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
 `;
 
-const Wrap = styled.div``;
+const Wrap = styled.div`
+
+`;
 
 const WrapInput = styled.div``;
 
