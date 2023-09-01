@@ -29,7 +29,7 @@ const TxtExp = styled.h2`
   letter-spacing: 0px;
   text-align: left;
   color: #f8821e;
-  margin-bottom: 345px;
+  margin-bottom: 305px;
   @media screen and (min-width: 768px) {
     width: 264px;
     font-family: Montserrat;
@@ -133,10 +133,10 @@ const InputReview = styled.input`
 const SharePic = styled.img`
   display: block;
   position: absolute;
-  height: 456px;
-  width: 466px;
-  top: 210px;
-  left: 50px;
+  height: 356px;
+  width: 366px;
+  top: 240px;
+  left: 70px;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
