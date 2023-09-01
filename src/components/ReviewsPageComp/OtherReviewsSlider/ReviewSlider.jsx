@@ -29,7 +29,7 @@ function SampleNextArrow(props) {
         backgroundImage: `url(${NextArr})`,
         width: '40px',
         height: '40px',
-        right: '-40px'
+        right: '-30px'
       }}
       onClick={onClick}
     />
@@ -52,7 +52,7 @@ function SamplePrevArrow(props) {
         backgroundImage: `url(${PrevArr})`,
         width: '40px',
         height: '40px',
-        left: '-40px'
+        left: '-30px'
       }}
       onClick={onClick}
     />
