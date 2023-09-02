@@ -21,6 +21,7 @@ export const App = () => {
           <Route path="chimney_cleaning"/>
           <Route path="bathroom_fan_cleaning"/>
           <Route path="power_washing"/>
+          <Route path="dry_vent"/>
         </Route>
         
       </Routes>

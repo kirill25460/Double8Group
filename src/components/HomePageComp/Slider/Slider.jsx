@@ -35,7 +35,7 @@ export default function MySlider() {
         <Container>
           <SwiperSlide>
             <img src={Slide1} alt="Slide1" />
-            <TopText>AIR DUCT & DRYER VENT CLEANING SERVICE</TopText>
+            <TopText>AIR DUCT CLEANING</TopText>
             <TextSlider>
               Optional text about itOptional text about itOptional text about
               itOptional text about itOptional text about itOptional text about{' '}
@@ -46,6 +46,17 @@ export default function MySlider() {
           </SwiperSlide>
           <SwiperSlide>
             <img src={Slide1} alt="Slide2" />
+            <TopText>DRYER VENT CLEANING</TopText>
+            <TextSlider>
+              Optional text about itOptional text about itOptional text about
+              itOptional text about itOptional text about itOptional text about{' '}
+            </TextSlider>
+            <NavLink to="dry_vent">
+              <ButtonSlider>Details</ButtonSlider>
+            </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={Slide1} alt="Slide3" />
             <TopText>CHIMNEY CLEANING</TopText>
             <TextSlider>
               Optional text about itOptional text about itOptional text about
@@ -56,7 +67,7 @@ export default function MySlider() {
             </NavLink>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slide1} alt="Slide3" />
+            <img src={Slide1} alt="Slide4" />
             <TopText>BATHROOM FAN CLEANING</TopText>
             <TextSlider>
               Optional text about itOptional text about itOptional text about
@@ -67,7 +78,7 @@ export default function MySlider() {
             </NavLink>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slide1} alt="Slide4" />
+            <img src={Slide1} alt="Slide5" />
             <TopText>POWER WASHING</TopText>
             <TextSlider>
               Optional text about itOptional text about itOptional text about

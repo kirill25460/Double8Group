@@ -16,7 +16,7 @@ import {
   AnotherMobButton,
   ImgText,
   SeerviceImages,
-} from './AirDuctP.styled';
+} from './DrVentCl.styled';
 
 import before from 'images/AirDuct1.jpg';
 import after from 'images/AirDuct2.jpg';
@@ -38,14 +38,20 @@ const delimiterIconStyles = {
   borderRadius: 'none',
   backgroundImage: `url(${BeforeAfterText})`,
 };
-export const AirDuctP = () => {
+export const DrVentCl = () => {
   return (
     <>
       <Container>
         <WrapService>
-          <NameService>AIR DUCT CLEANING</NameService>
+          <NameService>DRYER VENT CLEANING</NameService>
           <TextService>
-          Air duct wanted to be in clean condition .Why you have to clean your air duct? Because environment is very polluted – dust ,dirt , bacteries in a ducts can trigger allergies and problems with health , usually people forget about ventilation system for a long time and it can have a mold inside and lots of dirt . If you want breathe easy just call us , we will come , expect your system and do very properly cleaning . Also we can deodorize to kill all mold and bacterial.
+            Usually people don`t care about dryer cleaning, but it is very
+            important thing. If your dryer has a problem with air flow , full of
+            lint , moldy smell , birdnest inside or clothes taking longer to dry
+            – we can help you If your dryer clean – you stay safe , cause dryer
+            vent cleaning can prevent the fire of your pipe. Wich services
+            include? Vent cleaning , clean the dryer inside ,fan cleaning ,
+            filter and back panel cleaning.
           </TextService>
           <ButtonServices>BOOK THIS SERVICE</ButtonServices>
           <AnotherButtonServ>ANOTHER BUTTON</AnotherButtonServ>

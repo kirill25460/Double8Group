@@ -10,6 +10,7 @@ import { BathroomFanCleaningPage } from "pages/ServicesPages/BathroomFanCleaning
 import { ChimneyCleaningPage } from "pages/ServicesPages/ChimneyCleaningPage";
 import { ReviewDetails } from "pages/ReviewDetails/ReviewDetails";
 import { useLocation, useParams } from "react-router-dom";
+import { DryerVentCleaningPage } from "pages/ServicesPages/DryerVentCleaningPage";
 
 
 const SharedLayout = () => {
@@ -23,6 +24,7 @@ const SharedLayout = () => {
       {location.pathname === '/reviews' && <ReviewsPage/>}
       {location.pathname === '/book_us' && <BookUsPage/>}
       {location.pathname === '/air_duct' && <AirDuctPage/>}
+      {location.pathname === '/dry_vent' && <DryerVentCleaningPage/>}
       {location.pathname === '/chimney_cleaning' && <ChimneyCleaningPage/>}
       {location.pathname === '/bathroom_fan_cleaning' && <BathroomFanCleaningPage/>}
       {location.pathname === '/power_washing' && <PowerWashingPage/>}
