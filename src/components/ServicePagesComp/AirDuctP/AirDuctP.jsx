@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
+
+import { SliderServices } from 'helper/SliderServices';
 
 import {
   Container,
@@ -24,6 +26,9 @@ import after from 'images/AirDuct2.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
 import Photo from 'images/icon_camera.png';
+import arr from "images/services/PhotoObject";
+
+const photo = arr.airDuct;
 
 const FIRST_IMAGE = {
   imageUrl: before,
@@ -39,7 +44,19 @@ const delimiterIconStyles = {
   borderRadius: 'none',
   backgroundImage: `url(${BeforeAfterText})`,
 };
+
+
 export const AirDuctP = () => {
+  const [isSliderOpen, setIsSliderOpen] = useState(false);
+
+  const openSlider = () => {
+    setIsSliderOpen(true);
+  };
+
+  const closeSlider = () => {
+    setIsSliderOpen(false);
+  };
+
   return (
     <>
       <Container>
@@ -65,7 +82,10 @@ export const AirDuctP = () => {
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
-          <DivPhoto onClick={() => { console.log("dsadsad") }}>
+          <DivPhoto onClick={openSlider}>
+            {isSliderOpen && (
+              <SliderServices images={photo} onClose={closeSlider} />
+            )}
             <SeerviceImages src={Photo} alt="Logo" />
             <ImgText>FULL PHOTO REPORT</ImgText>
           </DivPhoto>
