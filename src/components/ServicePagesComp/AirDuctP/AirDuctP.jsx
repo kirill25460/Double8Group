@@ -16,6 +16,7 @@ import {
   AnotherMobButton,
   ImgText,
   SeerviceImages,
+  DivPhoto
 } from './AirDuctP.styled';
 
 import before from 'images/AirDuct1.jpg';
@@ -45,7 +46,7 @@ export const AirDuctP = () => {
         <WrapService>
           <NameService>AIR DUCT CLEANING</NameService>
           <TextService>
-          Air duct wanted to be in clean condition .Why you have to clean your air duct? Because environment is very polluted – dust ,dirt , bacteries in a ducts can trigger allergies and problems with health , usually people forget about ventilation system for a long time and it can have a mold inside and lots of dirt . If you want breathe easy just call us , we will come , expect your system and do very properly cleaning . Also we can deodorize to kill all mold and bacterial.
+            Air duct wanted to be in clean condition .Why you have to clean your air duct? Because environment is very polluted – dust ,dirt , bacteries in a ducts can trigger allergies and problems with health , usually people forget about ventilation system for a long time and it can have a mold inside and lots of dirt . If you want breathe easy just call us , we will come , expect your system and do very properly cleaning . Also we can deodorize to kill all mold and bacterial.
           </TextService>
           <ButtonServices>BOOK THIS SERVICE</ButtonServices>
           <AnotherButtonServ>ANOTHER BUTTON</AnotherButtonServ>
@@ -64,8 +65,10 @@ export const AirDuctP = () => {
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
-          <SeerviceImages src={Photo} alt="Logo" />
-          <ImgText>FULL PHOTO REPORT</ImgText>
+          <DivPhoto onClick={() => { console.log("dsadsad") }}>
+            <SeerviceImages src={Photo} alt="Logo" />
+            <ImgText>FULL PHOTO REPORT</ImgText>
+          </DivPhoto>
         </WrapImages>
         <div>
           <NavLink to="book_us">

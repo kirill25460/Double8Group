@@ -227,8 +227,6 @@ transition: .3s;
 
 
 export const AnotherMobButton = styled.button`
-
-
 width: 158px;
 height: 45px;
 color: #2C2C2C;
@@ -249,6 +247,9 @@ transition: .3s;
 @media screen and (min-width: 768px) {
   display:none;
 }
-
-
 `;
+
+export const DivPhoto = styled.div`
+  display: flex;
+  cursor:pointer;
+`
