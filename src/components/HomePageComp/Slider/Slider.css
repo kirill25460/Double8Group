@@ -43,13 +43,11 @@ display: flex;
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
-    left: 105px;
     color: #FFFFFF;
     opacity: 1;
   }
   @media screen and (min-width: 1440px) {
 display: flex;
-    left: 105px;
     color: #FFFFFF;
     opacity: 1;
 }
