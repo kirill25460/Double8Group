@@ -31,6 +31,12 @@
     color: #FFFFFF;
     opacity: 1;
   }
+    @media screen and (min-width: 1440px) {
+display: flex;
+    right: 105px;
+    color: #FFFFFF;
+    opacity: 1;
+}
   
 }
 .swiper-button-prev{
@@ -41,6 +47,12 @@
     color: #FFFFFF;
     opacity: 1;
   }
+  @media screen and (min-width: 1440px) {
+display: flex;
+    left: 105px;
+    color: #FFFFFF;
+    opacity: 1;
+}
 }
 
 .swiper-pagination-bullet {
