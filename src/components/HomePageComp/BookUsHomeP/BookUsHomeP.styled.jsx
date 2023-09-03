@@ -153,8 +153,8 @@ export const BookUsBtn = styled.button`
 `;
 
 export const PicToolsL = styled.img`
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   @media screen and (min-width: 768px) {
     vertical-align: bottom;
     margin-bottom: -63px;
@@ -171,8 +171,8 @@ export const PicToolsL = styled.img`
 
 export const PicToolsR = styled.img`
 
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   @media screen and (min-width: 768px) {
     vertical-align: bottom;
     margin-bottom: -63px;
