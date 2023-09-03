@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
@@ -16,6 +16,7 @@ import {
   WrapImages,
   ImgText,
   SeerviceImages,
+  DivPhoto
 } from './PowerWashing.styled';
 
 import after from 'images/powerwashingAfter.jpg';
@@ -23,6 +24,11 @@ import before from 'images/powerWashingBefore.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
 import Photo from 'images/icon_camera.png';
+
+import arr from "images/services/PhotoObject";
+import { SliderServices } from 'helper/SliderServices';
+
+const photo = arr.powerWashing;
 
 const FIRST_IMAGE = {
   imageUrl: before,
@@ -39,6 +45,15 @@ const delimiterIconStyles = {
   backgroundImage: `url(${BeforeAfterText})`,
 };
 export const PowerWashingP = () => {
+  const [isSliderOpen, setIsSliderOpen] = useState(false);
+
+  const openSlider = () => {
+    setIsSliderOpen(true);
+  };
+
+  const closeSlider = () => {
+    setIsSliderOpen(false);
+  };
   return (
     <>
       <Container>
@@ -70,8 +85,13 @@ export const PowerWashingP = () => {
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
-          <SeerviceImages src={Photo} alt="Logo" />
-          <ImgText>FULL PHOTO REPORT</ImgText>
+          <DivPhoto onClick={openSlider}>
+            {isSliderOpen && (
+              <SliderServices images={photo} onClose={closeSlider} />
+            )}
+            <SeerviceImages src={Photo} alt="Logo" />
+            <ImgText>FULL PHOTO REPORT</ImgText>
+          </DivPhoto>
         </WrapImages>
         <div>
           <NavLink to="book_us">
