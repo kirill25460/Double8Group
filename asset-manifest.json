@@ -1,24 +1,38 @@
 {
   "files": {
     "main.css": "/double8group/static/css/main.36deb1ad.css",
-    "main.js": "/double8group/static/js/main.815bf1db.js",
+    "main.js": "/double8group/static/js/main.32983b3d.js",
     "static/media/Group1.png": "/double8group/static/media/Group1.caa39035fd752421a9b0.png",
     "static/media/worker.png": "/double8group/static/media/worker.960b65b72ca53a1bc05c.png",
     "static/media/BookUsMan.png": "/double8group/static/media/BookUsMan.812204d653f8c5393f9b.png",
     "static/media/ShareWoman.png": "/double8group/static/media/ShareWoman.0794215d592972c48fe1.png",
+    "static/media/8.jpg": "/double8group/static/media/8.773a27ab116e5bf4bd36.jpg",
+    "static/media/1.jpg": "/double8group/static/media/1.cd0b15d723ba9befaeb9.jpg",
+    "static/media/2.jpg": "/double8group/static/media/2.00dd3c2b2f5ce4fea64d.jpg",
+    "static/media/6.jpg": "/double8group/static/media/6.448b428776978f659077.jpg",
     "static/media/3.jpeg": "/double8group/static/media/3.8192ce21a78100ba1437.jpeg",
     "static/media/9.jpeg": "/double8group/static/media/9.d1668e70efe64e4bbc6f.jpeg",
+    "static/media/7.jpg": "/double8group/static/media/7.793de9d13f50411ed9e2.jpg",
     "static/media/10.jpeg": "/double8group/static/media/10.6b81078405c898ba5e7b.jpeg",
+    "static/media/9.jpg": "/double8group/static/media/9.e7dcd78163bcb28577bc.jpg",
     "static/media/1.jpeg": "/double8group/static/media/1.57cb55ce442588a0472e.jpeg",
+    "static/media/AirDuct3.jpg": "/double8group/static/media/AirDuct3.57cb55ce442588a0472e.jpg",
     "static/media/Experience3.png": "/double8group/static/media/Experience3.8882e9906147c4fb10d3.png",
     "static/media/firstLogo.png": "/double8group/static/media/firstLogo.d63749f2a0477a1cb831.png",
     "static/media/Experience1.png": "/double8group/static/media/Experience1.46c27b9e761467da4665.png",
+    "static/media/10.jpg": "/double8group/static/media/10.f99b640f2a300978c58a.jpg",
+    "static/media/5.jpg": "/double8group/static/media/5.4b2451f30bf39ef7ab17.jpg",
     "static/media/8.jpeg": "/double8group/static/media/8.bffe4a526e45d4fff71b.jpeg",
+    "static/media/3.jpg": "/double8group/static/media/3.edec235deedfbda17297.jpg",
+    "static/media/4.jpg": "/double8group/static/media/4.6ae6a7e6b82f40dfb10c.jpg",
     "static/media/AirDuct1.jpg": "/double8group/static/media/AirDuct1.532eef883bf5a6d3f375.jpg",
     "static/media/bathFanBefore.jpg": "/double8group/static/media/bathFanBefore.09c4dc86a1014711d6c8.jpg",
+    "static/media/13.jpg": "/double8group/static/media/13.732c12fc17e599001d5e.jpg",
     "static/media/5.jpeg": "/double8group/static/media/5.21d45661d5c409885b7d.jpeg",
     "static/media/2.jpeg": "/double8group/static/media/2.a6a2e00ca538e14df6b3.jpeg",
+    "static/media/AirDuct4.jpg": "/double8group/static/media/AirDuct4.a6a2e00ca538e14df6b3.jpg",
     "static/media/7.jpeg": "/double8group/static/media/7.bf47cc06a6918aedab7c.jpeg",
+    "static/media/12.jpg": "/double8group/static/media/12.2e1e07690491c46aa76b.jpg",
     "static/media/Experience2.png": "/double8group/static/media/Experience2.000a1439fb2f16fc3194.png",
     "static/media/AirDuct2.jpg": "/double8group/static/media/AirDuct2.448b428776978f659077.jpg",
     "static/media/ChimneyAfter.jpg": "/double8group/static/media/ChimneyAfter.6bc1b2c00a83a7e9145e.jpg",
@@ -28,14 +42,16 @@
     "static/media/ChimneyBefore.jpg": "/double8group/static/media/ChimneyBefore.cd0b15d723ba9befaeb9.jpg",
     "static/media/powerWashingBefore.jpg": "/double8group/static/media/powerWashingBefore.6ae6a7e6b82f40dfb10c.jpg",
     "static/media/powerwashingAfter.jpg": "/double8group/static/media/powerwashingAfter.4b2451f30bf39ef7ab17.jpg",
+    "static/media/14.jpg": "/double8group/static/media/14.10a46e40c8989f718875.jpg",
+    "static/media/11.jpg": "/double8group/static/media/11.de5e40cbde306cf58557.jpg",
     "static/media/HammerL.png": "/double8group/static/media/HammerL.7482776ce48ac6e215e6.png",
     "static/media/HammerR.png": "/double8group/static/media/HammerR.367cec0c464c210ab213.png",
     "index.html": "/double8group/index.html",
     "main.36deb1ad.css.map": "/double8group/static/css/main.36deb1ad.css.map",
-    "main.815bf1db.js.map": "/double8group/static/js/main.815bf1db.js.map"
+    "main.32983b3d.js.map": "/double8group/static/js/main.32983b3d.js.map"
   },
   "entrypoints": [
     "static/css/main.36deb1ad.css",
-    "static/js/main.815bf1db.js"
+    "static/js/main.32983b3d.js"
   ]
 }
