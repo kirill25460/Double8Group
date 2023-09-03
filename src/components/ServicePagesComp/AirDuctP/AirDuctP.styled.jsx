@@ -250,14 +250,17 @@ transition: .3s;
 `;
 
 export const DivPhoto = styled.div`
+display: flex;
+cursor:pointer;
 
   @media screen and (min-width: 768px) {
-    display:block;
+    display:flex;
     flex-direction:column;
     align-items:center;
   }
   @media screen and (min-width: 1440px) {
-    display: flex;
-    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
   }
 `

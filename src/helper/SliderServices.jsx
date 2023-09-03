@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Modal from './Modal';
+import { ImgSlide } from './SliderServices.styled';
 // import { height, width } from '@mui/system';
 
 export const SliderServices = ({ images, onClose }) => {
@@ -17,7 +18,7 @@ export const SliderServices = ({ images, onClose }) => {
             <Carousel selectedItem={currentSlide} onChange={setCurrentSlide} showThumbs={false}>
                 {images.map((image, index) => (
                     <div key={index}>
-                        <img src={image.url} alt={`Service ${index}`} style={{width:"100vh", height:"100vh"}}/>
+                        <ImgSlide src={image.url} alt={`Service ${index}`}/>
                     </div>
                 ))}
             </Carousel>

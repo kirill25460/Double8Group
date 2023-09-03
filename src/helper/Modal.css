@@ -30,3 +30,17 @@
     z-index: 999;
   }
 
+  .carousel.carousel-slider .control-arrow {
+    width: 50px;
+    @media screen and (min-width: 768px) {
+      width: 150px;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 300px;
+    }
+
+  }
+
+  .carousel .carousel-status {
+    display: none;
+  }
