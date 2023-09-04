@@ -39,9 +39,23 @@ export const Container = styled.div`
 `;
 
 export const LogoWrap = styled.div`
-  display: flex;
+    display: flex;
   align-items: center;
   justify-content: center;
+
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    margin: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    margin: 0;
+  }
 `;
 
 export const Nav = styled.div`
@@ -53,10 +67,10 @@ export const NavList = styled.ul`
   
   @media screen and (min-width: 768px) {
     display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 36px;
-  list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    list-style: none;
   }
 
   @media (max-width: 768px) {
