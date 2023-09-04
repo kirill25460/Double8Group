@@ -12,8 +12,15 @@ import { Container } from './OtherReviewsCard.styled';
 
 import NextArr from "images/ArrowNext.png";
 import PrevArr from "images/ArrowPrev.png";
+import { useMediaQuery } from '@mui/material';
 
 function SampleNextArrow(props) {
+  const SmallDisp = useMediaQuery('(max-width: 767px)')
+
+  if(SmallDisp){
+    return null;
+  }
+
   const { className, style, onClick } = props;
   return (
     <div
@@ -37,6 +44,12 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
+
+  const SmallDisp = useMediaQuery('(max-width: 767px)')
+
+  if(SmallDisp){
+    return null;
+  }
   const { className, style, onClick } = props;
   return (
     <div

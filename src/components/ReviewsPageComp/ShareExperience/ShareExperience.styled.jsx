@@ -58,7 +58,6 @@ const Wrap = styled.div`
 const WrapInput = styled.div``;
 
 const WrapFor3Inputs = styled.form`
-  width: 378px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     width: 505px;
@@ -70,7 +69,7 @@ const WrapFor3Inputs = styled.form`
 `;
 
 const InputName = styled.input`
-  width: 151px;
+  width: 140px;
   height: 29px;
   border-radius: 2px;
   border: 2px solid #f8821e;
@@ -98,7 +97,7 @@ const InputName = styled.input`
 `;
 
 const SelectType = styled.select`
-  width: 196px;
+  width: 170px;
   height: 35px;
   border-radius: 2px;
   border: 2px solid #f8821e;
@@ -120,7 +119,7 @@ const SelectType = styled.select`
 `;
 
 const InputReview = styled.input`
-  width: 370px;
+  width: 327px;
   height: 32px;
   padding-bottom: 320px;
   border-radius: 2px solid #f8821e;
@@ -145,9 +144,9 @@ const InputReview = styled.input`
 `;
 
 const SharePic = styled.img`
-  width: 400px;
-  height: 614px;
-  margin-top:-170px;
+  width: 326px;
+  height: 520px;
+  margin-top:-150px;
   @media screen and (min-width: 768px) {
     height: 749px;
     width: 550px;
@@ -177,7 +176,7 @@ const InputContainer = styled.div`
   position: absolute;
   display: inline-flex;
   flex-direction: column;
-  right: 5px;
+  right:5px;
   bottom: 5px;
   align-items: center;
   @media screen and (min-width: 768px) {

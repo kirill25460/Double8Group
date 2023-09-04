@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
-  width: 375px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -26,7 +24,8 @@ padding-bottom:21px;
 
 
 export const WrapCard = styled.div`
-margin-left:60px;
+margin-left:0;
+margin: 0 auto;
 width: 267px;
 display:flex;
 flex-direction: column;
