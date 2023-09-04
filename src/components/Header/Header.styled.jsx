@@ -203,7 +203,7 @@ export const BurgerMenu = styled.div`
   display: none; /* Начинаем с скрытого бургер-меню */
 
   @media (max-width: 768px) {
-    margin-right: 138px;
+    margin-right: 200px;
     display: block; 
   }
   @media screen and (min-width: 1440px) {
