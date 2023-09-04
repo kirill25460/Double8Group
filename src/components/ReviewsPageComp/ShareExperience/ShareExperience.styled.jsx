@@ -139,7 +139,7 @@ const InputContainer = styled.div`
   position: absolute;
   display: inline-flex;
   flex-direction: column;
-  right:5px;
+  right:35px;
   bottom: 5px;
   align-items: center;
   @media screen and (min-width: 768px) {
