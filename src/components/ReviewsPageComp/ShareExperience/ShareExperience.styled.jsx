@@ -12,12 +12,14 @@ export const Container = styled.div`
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
+    padding-top:84px;
   }
   @media screen and (min-width: 1440px) {
   }
 `;
 
 const TxtExp = styled.h2`
+margin:0;
   width: 324px;
   font-family: Montserrat;
   font-size: 46px;
@@ -29,6 +31,7 @@ const TxtExp = styled.h2`
   @media screen and (min-width: 768px) {
     font-size: 46px;
     line-height: 43px;
+    margin-bottom: 100px;
   }
   @media screen and (min-width: 1440px) {
     width: 497px;
