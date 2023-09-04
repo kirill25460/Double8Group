@@ -103,8 +103,8 @@ const SharePic = styled.img`
   position: absolute;
   height: 345px;
   width: 320px;
-  top: 270px;
-  left: 15px;
+  top: 280px;
+  left: 30px;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
