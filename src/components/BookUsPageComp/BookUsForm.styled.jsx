@@ -20,7 +20,7 @@ export const Container = styled.div`
 `;
 
 const TxtExp = styled.h2`
-  width: 324px;
+  width: 300px;
   font-family: Montserrat;
   font-size: 46px;
   font-weight: 800;
@@ -101,10 +101,10 @@ const InputReview = styled.input`
 const SharePic = styled.img`
   display: block;
   position: absolute;
-  height: 356px;
-  width: 366px;
-  top: 240px;
-  left: 40px;
+  height: 345px;
+  width: 320px;
+  top: 270px;
+  left: 15px;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;

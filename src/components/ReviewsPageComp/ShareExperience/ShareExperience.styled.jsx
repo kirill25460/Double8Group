@@ -111,7 +111,7 @@ const InputReview = styled.input`
 
 const SharePic = styled.img`
   width: 326px;
-  height: 520px;
+  height: 470px;
   margin-top:-150px;
   @media screen and (min-width: 768px) {
     height: 749px;
