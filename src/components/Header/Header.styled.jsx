@@ -16,6 +16,7 @@ export const LogoHeader = styled.img`
 `;
 
 export const AppBar = styled.header`
+
   width: 100%;
 `;
 
@@ -23,6 +24,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   height: 110px;
   box-shadow: 0px 4px 21px 0px #00000008;
   margin: 0 auto;
@@ -203,6 +205,7 @@ export const BurgerMenu = styled.div`
   display: none; /* Начинаем с скрытого бургер-меню */
 
   @media (max-width: 768px) {
+
     margin-right: 200px;
     display: block; 
   }

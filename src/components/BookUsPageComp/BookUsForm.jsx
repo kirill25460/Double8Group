@@ -4,6 +4,7 @@ import {
   WrapInput,
   WrapFor3Inputs,
   Wrap,
+  WrapForMobPhoto,
   TxtExp,
   InputName,
   InputReview,
@@ -57,7 +58,10 @@ export const BookUsForm = ({ onInput, inputs }) => {
     <>
       <Container>
         <Wrap>
+          <WrapForMobPhoto>
           <TxtExp>LEAVE YOUR TASK AND WE WILL CALL YOU</TxtExp>
+          <SharePic src={man} alt="man" />
+          </WrapForMobPhoto>
           <WrapFor3Inputs onSubmit={handleSubmit}>
             <WrapInput>
               <InputName
@@ -102,7 +106,7 @@ export const BookUsForm = ({ onInput, inputs }) => {
             </MainInput>
           </WrapFor3Inputs>
         </Wrap>
-        <SharePic src={man} alt="man" />
+        
         <SharePicDesc src={man} alt="desc" />
       </Container>
     </>

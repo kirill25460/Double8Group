@@ -8,10 +8,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: normal;
   margin: 0 auto;
-
+padding-top:30px;
   @media screen and (min-width: 768px) {
+padding-top:84px;
 
-    padding: 0 32px;
   }
   @media screen and (min-width: 1440px) {
 
@@ -20,6 +20,7 @@ export const Container = styled.div`
 `;
 
 const TxtExp = styled.h2`
+margin:0;
   width: 300px;
   font-family: Montserrat;
   font-size: 46px;
@@ -28,7 +29,6 @@ const TxtExp = styled.h2`
   letter-spacing: 0px;
   text-align: left;
   color: #f8821e;
-  margin-bottom: 305px;
   @media screen and (min-width: 768px) {
     width: 264px;
     font-size: 46px;
@@ -99,15 +99,13 @@ const InputReview = styled.input`
 `;
 
 const SharePic = styled.img`
-  display: block;
-  position: absolute;
+
   height: 345px;
   width: 320px;
   top: 285px;
   left: 35px;
   @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
+ 
     height: 356px;
     width: 366px;
     top: 90px;
@@ -149,7 +147,10 @@ const InputContainer = styled.div`
   bottom: 5px;
   align-items: center;
   @media screen and (min-width: 768px) {
-    right: 10px;
+    right: 130px;
+  }
+  @media screen and (min-width: 1440px) {
+    right: 5px;
   }
 `;
 
@@ -184,7 +185,7 @@ const SvgTg = styled(PiTelegramLogo)`
 `;
 
 const InputPhone = styled.input`
-  width: 163px;
+  width: 160px;
   height: 33px;
   border-radius: 2px;
   border: 2px solid #f8821e;
@@ -197,7 +198,12 @@ const InputPhone = styled.input`
   }
 `;
 
-export {
+const WrapForMobPhoto = styled.div`
+@media screen and (min-width: 768px) {
+  display:flex;
+}`;
+
+export {WrapForMobPhoto,
   WrapInput,
   WrapFor3Inputs,
   Wrap,
