@@ -23,22 +23,17 @@ const TxtExp = styled.h2`
   font-size: 46px;
   font-style: normal;
   font-weight: 800;
+  letter-spacing: 0px;
   line-height: 43px;
   color: #f8821e;
   @media screen and (min-width: 768px) {
-    font-family: Montserrat;
     font-size: 46px;
-    font-style: normal;
-    font-weight: 800;
     line-height: 43px;
   }
   @media screen and (min-width: 1440px) {
     width: 497px;
-    font-family: Montserrat;
     font-size: 56px;
-    font-weight: 800;
     line-height: 61px;
-    letter-spacing: 0px;
     text-align: left;
   }
 `;
@@ -78,21 +73,10 @@ const InputName = styled.input`
   margin-right: 15px;
   @media screen and (min-width: 768px) {
     width: 266px;
-    height: 29px;
-    border-radius: 2px;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
-    margin-bottom: 20px;
     margin-right: 31px;
   }
   @media screen and (min-width: 1440px) {
-    width: 266px;
-    height: 29px;
-    border-radius: 2px;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
-    margin-bottom: 20px;
-    margin-right: 31px;
+
   }
 `;
 
@@ -105,16 +89,8 @@ const SelectType = styled.select`
   @media screen and (min-width: 768px) {
     width: 196px;
     height: 35px;
-    border-radius: 2px;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
   }
   @media screen and (min-width: 1440px) {
-    width: 196px;
-    height: 35px;
-    border-radius: 2px;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
   }
 `;
 
@@ -128,18 +104,8 @@ const InputReview = styled.input`
   @media screen and (min-width: 768px) {
     width: 497px;
     height: 32px;
-    padding-bottom: 320px;
-    border-radius: 2px solid #f8821e;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
   }
   @media screen and (min-width: 1440px) {
-    width: 497px;
-    height: 32px;
-    padding-bottom: 320px;
-    border-radius: 2px solid #f8821e;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
   }
 `;
 
@@ -153,9 +119,6 @@ const SharePic = styled.img`
     margin-top:0;
   }
   @media screen and (min-width: 1440px) {
-    height: 749px;
-    width: 550px;
-    margin-top:0;
   }
 `;
 
@@ -180,20 +143,13 @@ const InputContainer = styled.div`
   bottom: 5px;
   align-items: center;
   @media screen and (min-width: 768px) {
-    position: absolute;
-    display: inline-flex;
-    flex-direction: column;
+
     right: 10px;
     bottom: 5px;
     align-items: center;
   }
   @media screen and (min-width: 1440px) {
-    position: absolute;
-    display: inline-flex;
-    flex-direction: column;
-    right: 10px;
-    bottom: 5px;
-    align-items: center;
+
   }
 `;
 

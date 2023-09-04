@@ -7,21 +7,20 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: normal;
-  width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+
   @media screen and (min-width: 768px) {
-    width: 768px;
+
     padding: 0 32px;
   }
   @media screen and (min-width: 1440px) {
-    width: 1440px;
+
     padding-bottom: 140px;
   }
 `;
 
 const TxtExp = styled.h2`
-  width: 355px;
+  width: 324px;
   font-family: Montserrat;
   font-size: 46px;
   font-weight: 800;
@@ -32,24 +31,14 @@ const TxtExp = styled.h2`
   margin-bottom: 305px;
   @media screen and (min-width: 768px) {
     width: 264px;
-    font-family: Montserrat;
     font-size: 46px;
-    font-weight: 800;
     line-height: 43px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #f8821e;
     margin-bottom: 100px;
   }
   @media screen and (min-width: 1440px) {
     width: 497px;
-    font-family: Montserrat;
     font-size: 56px;
-    font-weight: 800;
     line-height: 61px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #f8821e;
     margin-bottom:44px;
   }
 `;
@@ -70,30 +59,20 @@ const WrapFor3Inputs = styled.form`
 `;
 
 const InputName = styled.input`
-  width: 147px;
+  width: 140px;
   height: 33px;
   border-radius: 2px;
   border: 2px solid #f8821e;
   color: #c5c5c5;
   margin-bottom: 20px;
-  margin-right: 31px;
+  margin-right: 15px;
   @media screen and (min-width: 768px) {
     width: 266px;
     height: 29px;
-    border-radius: 2px;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
-    margin-bottom: 20px;
-    margin-right: 31px;
+    margin-right: 27px;
   }
   @media screen and (min-width: 1440px) {
-    width: 266px;
-    height: 29px;
-    border-radius: 2px;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
-    margin-bottom: 20px;
-    margin-right: 31px;
+
   }
 `;
 
@@ -106,27 +85,16 @@ const SelectType = styled.select`
 `;
 
 const InputReview = styled.input`
-  width: 362px;
+  width: 327px;
   height: 32px;
   padding-bottom: 320px;
-  border-radius: 2px solid #f8821e;
   border: 2px solid #f8821e;
   color: #c5c5c5;
   @media screen and (min-width: 768px) {
     width: 497px;
     height: 32px;
-    padding-bottom: 320px;
-    border-radius: 2px solid #f8821e;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
   }
   @media screen and (min-width: 1440px) {
-    width: 497px;
-    height: 32px;
-    padding-bottom: 320px;
-    border-radius: 2px solid #f8821e;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
   }
 `;
 
@@ -177,9 +145,12 @@ const InputContainer = styled.div`
   position: absolute;
   display: inline-flex;
   flex-direction: column;
-  right: 10px;
+  right: 5px;
   bottom: 5px;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    right: 10px;
+  }
 `;
 
 const SubBtn = styled.button`
@@ -213,7 +184,7 @@ const SvgTg = styled(PiTelegramLogo)`
 `;
 
 const InputPhone = styled.input`
-  width: 172px;
+  width: 163px;
   height: 33px;
   border-radius: 2px;
   border: 2px solid #f8821e;
@@ -221,16 +192,8 @@ const InputPhone = styled.input`
   @media screen and (min-width: 768px) {
     width: 196px;
     height: 29px;
-    border-radius: 2px;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
   }
   @media screen and (min-width: 1440px) {
-    width: 196px;
-    height: 29px;
-    border-radius: 2px;
-    border: 2px solid #f8821e;
-    color: #c5c5c5;
   }
 `;
 
