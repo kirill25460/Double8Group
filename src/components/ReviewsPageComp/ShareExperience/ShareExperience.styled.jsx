@@ -77,7 +77,7 @@ const InputName = styled.input`
   margin-bottom: 20px;
   margin-right: 15px;
   @media screen and (min-width: 768px) {
-    width: 260px;
+    width: 266px;
     height: 29px;
     border-radius: 2px;
     border: 2px solid #f8821e;
@@ -103,7 +103,7 @@ const SelectType = styled.select`
   border: 2px solid #f8821e;
   color: #c5c5c5;
   @media screen and (min-width: 768px) {
-    width: 190px;
+    width: 196px;
     height: 35px;
     border-radius: 2px;
     border: 2px solid #f8821e;
