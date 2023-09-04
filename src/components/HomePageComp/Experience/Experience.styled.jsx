@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 375px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     width: 768px;

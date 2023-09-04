@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 375px;
+  width: 325px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     width: 700px;
@@ -76,7 +76,7 @@ export const HomePar = styled.p`
     line-height: 19.5px;
     letter-spacing: 0px;
     text-align: right;
-    margin-bottom: -10px;
+    margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     margin: 0;
@@ -106,8 +106,8 @@ export const HomePar = styled.p`
   }
 `;
 export const AboutUsPic = styled.img`
-    width: 390px;
-    height: 377px;
+    width: 330px;
+    height: 337px;
     align-items: center;
   @media screen and (min-width: 768px) {
     margin-top: 85px;

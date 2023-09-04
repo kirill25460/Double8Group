@@ -83,9 +83,9 @@ export const FooterTextInfo = styled.p`
 `;
 
 export const LogoFooter = styled.img`
-  width: 94px;
+  width: 74px;
   height: 61px;
-  margin: 0 auto;
+  margin: 0;
   @media screen and (min-width: 768px) {
     width: 114px;
     height: 81px;
@@ -99,7 +99,6 @@ export const LogoFooter = styled.img`
 `;
 
 export const Container = styled.div`
-  width: 375px;
   margin: 0 auto;
  
   display: flex;

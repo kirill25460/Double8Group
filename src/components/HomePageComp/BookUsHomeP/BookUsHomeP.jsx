@@ -5,7 +5,7 @@ import {
   BookUsBtn,
   PicToolsL,
   PicToolsR,
-  ButPicContainer
+  ButPicContainer,
 } from './BookUsHomeP.styled';
 import Left from 'images/HammerL.png';
 import Right from 'images/HammerR.png';

@@ -4,9 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0;
   padding-bottom: 63px;
   @media screen and (min-width: 768px) {
     width: 740px;
@@ -153,7 +152,7 @@ export const BookUsBtn = styled.button`
 `;
 
 export const PicToolsL = styled.img`
-  width: 70px;
+  width: 50px;
   height: 70px;
   @media screen and (min-width: 768px) {
     vertical-align: bottom;
@@ -171,7 +170,7 @@ export const PicToolsL = styled.img`
 
 export const PicToolsR = styled.img`
 
-  width: 70px;
+  width: 50px;
   height: 70px;
   @media screen and (min-width: 768px) {
     vertical-align: bottom;

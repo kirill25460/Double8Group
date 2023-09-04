@@ -25,9 +25,8 @@ export const Container = styled.div`
   justify-content: space-between;
   height: 110px;
   box-shadow: 0px 4px 21px 0px #00000008;
-  width: 375px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
   @media screen and (min-width: 768px) {
     display: flex;
     width: 700px;
