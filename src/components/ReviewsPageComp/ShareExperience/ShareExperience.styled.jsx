@@ -19,7 +19,7 @@ export const Container = styled.div`
 `;
 
 const TxtExp = styled.h2`
-margin:0;
+  margin-top:20px;
   width: 324px;
   font-family: Montserrat;
   font-size: 46px;
@@ -97,7 +97,7 @@ const SelectType = styled.select`
   }
 `;
 
-const InputReview = styled.input`
+const InputReview = styled.textarea`
   width: 327px;
   height: 32px;
   padding-bottom: 320px;

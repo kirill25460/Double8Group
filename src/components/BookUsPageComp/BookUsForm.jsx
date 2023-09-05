@@ -82,6 +82,7 @@ export const BookUsForm = ({ onInput, inputs }) => {
             </WrapInput>
 
             <InputReview
+              rows="15"
               type="text"
               name="bookus"
               id="bookus"

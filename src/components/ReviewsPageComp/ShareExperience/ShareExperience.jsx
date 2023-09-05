@@ -100,6 +100,7 @@ export const ShareExperience = ({ onInput, inputs }) => {
             </WrapInput>
 
             <InputReview
+              rows="15"
               type="text"
               name="review"
               id="review"
