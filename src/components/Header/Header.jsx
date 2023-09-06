@@ -25,6 +25,10 @@ import {
   SvgMail,
   SvgInst,
   SvgFacebook,
+  Phone,
+  LinkWrap,
+  Link,
+  Email
 } from './Header.styled';
 import { useState } from 'react';
 
@@ -76,18 +80,24 @@ export const Header = () => {
               </NavItem>
             ))}
             <ContactWrap>
-              <a href="tel:+48 517-974-8830">
-                <PhoneSvg />
-              </a>
-              <a href="mailto:d8gllc@gmail.com">
-                <SvgMail />
-              </a>
-              <a href="https://instagram.com/double8group?igshid=MzRlODBiNWFlZA==">
+              <Link href="tel:+48 517-974-8830">
+                <LinkWrap>
+                  <PhoneSvg />
+                  <Phone>+48 517-974-8830</Phone>
+                </LinkWrap>
+              </Link>
+              <Link href="mailto:d8gllc@gmail.com">
+                <LinkWrap>
+                  <SvgMail />
+                  <Email>d8gllc@gmail.com</Email>
+                </LinkWrap>
+              </Link>
+              <Link href="https://instagram.com/double8group?igshid=MzRlODBiNWFlZA==">
                 <SvgInst />
-              </a>
-              <a href="https://www.facebook.com/double8group?mibextid=b06tZ0">
+              </Link>
+              <Link href="https://www.facebook.com/double8group?mibextid=b06tZ0">
                 <SvgFacebook />
-              </a>
+              </Link>
             </ContactWrap>
           </NavList>
           <SideMenu className={isOpen ? 'open' : ''}>

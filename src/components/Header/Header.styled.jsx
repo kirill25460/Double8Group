@@ -10,6 +10,9 @@ import { HiOutlineMailOpen } from 'react-icons/hi';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { FaFacebookSquare } from 'react-icons/fa';
 
+export const Link = styled.a`
+text-decoration: none;
+`
 
 export const LogoHeader = styled.img`
   width: 89px;
@@ -259,6 +262,11 @@ display: flex;
 justify-content: space-between;
 `
 
+export const LinkWrap = styled.div`
+  display: flex;
+  align-items:center;
+`
+
 export const CloseBtn = styled(BiArrowBack)`
   width: 20px;
   height: 20px;
@@ -285,6 +293,22 @@ export const BookSvg = styled(MdMenuBook)`
   height: 22px;
   fill: #F8821E;
 `
+
+export const Phone = styled.span`
+  display:none;
+  width:120px;
+  font-size:12px;
+  color:#F8821E;
+`
+
+
+export const Email = styled.span`
+  display:none;
+  width:120px;
+  font-size:12px;
+  color:#F8821E;
+`
+
 export const PhoneSvg = styled(FaPhoneAlt)`
   width: 15px;
   height: 15px;
@@ -293,7 +317,18 @@ export const PhoneSvg = styled(FaPhoneAlt)`
   fill: white;
   background-color: #f8821e;
   cursor: pointer;
+
+  &:hover{
+    margin-right:3px;
+  }
+
+  &:hover + ${Phone}{
+    display:block;
+  }
 `
+
+
+
 export const SvgMail = styled(HiOutlineMailOpen)`
 width: 15px;
 height: 15px;
@@ -303,6 +338,14 @@ border-radius: 12.5px;
   background-color: #f8821e;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover{
+    margin-right:3px;
+  }
+
+  &:hover + ${Email}{
+    display:block;
+  }
 `;
 
 export const SvgInst = styled(AiOutlineInstagram)`
