@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import { HiOutlineMailOpen } from 'react-icons/hi';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { FaFacebookSquare } from 'react-icons/fa';
 
 export const FooterCon = styled.div`
   background-color: #202020;
@@ -100,13 +103,12 @@ export const LogoFooter = styled.img`
 
 export const Container = styled.div`
   margin: 0 auto;
- 
+
   display: flex;
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 768px) {
     width: 700px;
-    
   }
   @media screen and (min-width: 1440px) {
     width: 1200px;
@@ -197,3 +199,47 @@ export const InfoLinks = styled.p`
     color: #fff;
   }
 `;
+
+export const SvgContainer = styled.div`
+  display: flex;
+  margin-top: 10px;
+`;
+
+export const SvgContainerMobile = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+`;
+
+export const SvgMail = styled(HiOutlineMailOpen)`
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 25px;
+  color: black;
+  background-color: #f8821e;
+  text-decoration: none;
+  cursor: pointer;
+`;
+
+export const SvgInst = styled(AiOutlineInstagram)`
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 25px;
+  fill: black;
+  background-color: #f8821e;
+  margin: 0 10px;
+  cursor: pointer;
+`;
+
+export const SvgFacebook = styled(FaFacebookSquare)`
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 25px;
+  fill: black;
+  background-color: #f8821e;
+  cursor: pointer;
+`

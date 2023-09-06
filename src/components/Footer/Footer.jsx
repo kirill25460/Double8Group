@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@mui/material';
 import {
   FooterCon,
   FooterWrap,
@@ -11,11 +12,18 @@ import {
   InfoList,
   InfoLinks,
   FooterTextInfo,
+  SvgContainer,
+  SvgMail,
+  SvgInst,
+  SvgFacebook,
+  SvgContainerMobile,
 } from './Footer.styled';
 
 import logo from 'images/LogoFooter.png';
 
 export const Footer = () => {
+  const smallDesc = useMediaQuery('(max-width: 767px)');
+
   return (
     <FooterCon>
       <Container>
@@ -38,6 +46,21 @@ export const Footer = () => {
                 email@example.com{' '}
               </FooterLink>
             </ContactsItem>
+            {smallDesc === false ? (
+              <SvgContainer>
+                <a href="mailto:d8gllc@gmail.com">
+                  <SvgMail />
+                </a>
+                <a href="https://instagram.com/double8group?igshid=MzRlODBiNWFlZA==">
+                  <SvgInst />
+                </a>
+                <a href="https://www.facebook.com/double8group?mibextid=b06tZ0">
+                  <SvgFacebook />
+                </a>
+              </SvgContainer>
+            ) : (
+              <></>
+            )}
           </ContactsList>
         </Wrap>
 
@@ -60,6 +83,15 @@ export const Footer = () => {
           </InfoList>
         </FooterWrap>
       </Container>
+      {smallDesc === true ? (
+        <SvgContainerMobile>
+          <SvgMail />
+          <SvgInst />
+          <SvgFacebook />
+        </SvgContainerMobile>
+      ) : (
+        <></>
+      )}
     </FooterCon>
   );
 };
