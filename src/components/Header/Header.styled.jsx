@@ -25,7 +25,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  height: 110px;
+  height: 70px;
   box-shadow: 0px 4px 21px 0px #00000008;
   margin: 0 auto;
   padding: 0;

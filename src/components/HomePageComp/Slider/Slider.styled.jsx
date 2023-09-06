@@ -23,7 +23,7 @@ export const ButtonSlider = styled.button`
   cursor: pointer;
   border: none;
   left: 35px;
-  top: 530px;
+  top: 425px;
   font-family: 'DM Sans';
   font-size: 23px;
 
@@ -51,7 +51,7 @@ export const ButtonSlider = styled.button`
     cursor: pointer;
     border: none;
     left: 245px;
-    top: 572px;
+    top: 425px;
     font-family: 'DM Sans';
     font-size: 23px;
 
@@ -79,7 +79,7 @@ export const ButtonSlider = styled.button`
     cursor: pointer;
     border: none;
     left: 245px;
-    top: 572px;
+    top: 450px;
     font-family: 'DM Sans';
     font-size: 23px;
 
@@ -128,7 +128,7 @@ export const TopText = styled.h2`
   @media screen and (min-width: 1440px) {
     position: absolute;
     left: 245px;
-    top: 109px;
+    top: 60px;
     font-family: Montserrat;
     font-size: 65px;
     font-weight: 800;
@@ -156,7 +156,7 @@ export const TextSlider = styled.p`
     text-align: left;
     width: 395px;
     height: 140px;
-    top: 327px;
+    top: 220px;
   }
   @media screen and (min-width: 1440px) {
     display: block;
@@ -171,6 +171,6 @@ export const TextSlider = styled.p`
     text-align: left;
     width: 395px;
     height: 140px;
-    top: 327px;
+    top: 220px;
   }
 `;
