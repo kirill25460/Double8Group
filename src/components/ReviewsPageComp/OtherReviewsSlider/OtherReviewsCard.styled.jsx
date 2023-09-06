@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const TryCardPhoto = styled.img`
-width:260px;
+width:267px;
 height:230px;
 `;
 

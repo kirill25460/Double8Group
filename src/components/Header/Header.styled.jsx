@@ -4,7 +4,11 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import { BiArrowBack } from 'react-icons/bi';
 import { AiOutlineHome } from 'react-icons/ai';
 import { IoPersonSharp } from 'react-icons/io5';
-import { MdMenuBook } from 'react-icons/md'
+import { MdMenuBook } from 'react-icons/md';
+import { FaPhoneAlt } from 'react-icons/fa';
+import { HiOutlineMailOpen } from 'react-icons/hi';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { FaFacebookSquare } from 'react-icons/fa';
 
 
 export const LogoHeader = styled.img`
@@ -247,7 +251,12 @@ export const SideItems = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 auto 35px;
+`
 
+export const ContactWrap = styled.div`
+width:130px;  
+display: flex;
+justify-content: space-between;
 `
 
 export const CloseBtn = styled(BiArrowBack)`
@@ -275,4 +284,43 @@ export const BookSvg = styled(MdMenuBook)`
   width: 23px;
   height: 22px;
   fill: #F8821E;
+`
+export const PhoneSvg = styled(FaPhoneAlt)`
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 12.5px;
+  fill: white;
+  background-color: #f8821e;
+  cursor: pointer;
+`
+export const SvgMail = styled(HiOutlineMailOpen)`
+width: 15px;
+height: 15px;
+padding: 5px;
+border-radius: 12.5px;
+  color: white;
+  background-color: #f8821e;
+  text-decoration: none;
+  cursor: pointer;
+`;
+
+export const SvgInst = styled(AiOutlineInstagram)`
+width: 15px;
+height: 15px;
+padding: 5px;
+border-radius: 12.5px;
+  fill: white;
+  background-color: #f8821e;
+  cursor: pointer;
+`;
+
+export const SvgFacebook = styled(FaFacebookSquare)`
+width: 15px;
+height: 15px;
+padding: 5px;
+border-radius: 12.5px;
+  fill: white;
+  background-color: #f8821e;
+  cursor: pointer;
 `

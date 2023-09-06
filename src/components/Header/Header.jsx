@@ -8,6 +8,7 @@ import {
   Container,
   AppBar,
   LogoWrap,
+  ContactWrap,
   Wrap,
   NavList,
   NavItem,
@@ -20,6 +21,10 @@ import {
   SideItems,
   PersonSvg,
   BookSvg,
+  PhoneSvg,
+  SvgMail,
+  SvgInst,
+  SvgFacebook,
 } from './Header.styled';
 import { useState } from 'react';
 
@@ -28,11 +33,11 @@ import { useState } from 'react';
 export const Header = () => {
 
   const navItems = [
-      { href: `/`, text: 'Home' },
-      { href: '/reviews', text: 'Reviews' },
-      { href: '/book_us', text: 'Book us' },
-     
-       ];
+    { href: `/`, text: 'Home' },
+    { href: '/reviews', text: 'Reviews' },
+    { href: '/book_us', text: 'Book us' },
+
+  ];
 
   const navSideItems = [
     { href: `/`, text: 'Home', svg: <HomeSvg /> },
@@ -70,6 +75,18 @@ export const Header = () => {
                 </StyledLink>
               </NavItem>
             ))}
+            <ContactWrap>
+          <PhoneSvg />
+          <a href="mailto:d8gllc@gmail.com">
+            <SvgMail />
+          </a>
+          <a href="https://instagram.com/double8group?igshid=MzRlODBiNWFlZA==">
+            <SvgInst />
+          </a>
+          <a href="https://www.facebook.com/double8group?mibextid=b06tZ0">
+            <SvgFacebook />
+          </a>
+        </ContactWrap>
           </NavList>
           <SideMenu className={isOpen ? 'open' : ''}>
             <CloseBtn onClick={toggleMenu} />
@@ -85,6 +102,7 @@ export const Header = () => {
             })}
           </SideMenu>
         </Wrap>
+        
       </Container>
     </AppBar>
   );

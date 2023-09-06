@@ -34,9 +34,10 @@ function SampleNextArrow(props) {
         border: '3px solid #F8821E',
         opacity: '0.76',
         backgroundImage: `url(${NextArr})`,
-        width: '35px',
-        height: '35px',
-        right: '-25px'
+        width: '50px',
+        height: '50px',
+        right: '0px',
+        zIndex: '999'
       }}
       onClick={onClick}
     />
@@ -63,9 +64,10 @@ function SamplePrevArrow(props) {
         border: '3px solid #F8821E',
         opacity: '0.76',
         backgroundImage: `url(${PrevArr})`,
-        width: '35px',
-        height: '35px',
-        left: '-25px'
+        width: '50px',
+        height: '50px',
+        left: '0px',
+        zIndex:'999'
       }}
       onClick={onClick}
     />
