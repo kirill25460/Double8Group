@@ -76,17 +76,19 @@ export const Header = () => {
               </NavItem>
             ))}
             <ContactWrap>
-          <PhoneSvg />
-          <a href="mailto:d8gllc@gmail.com">
-            <SvgMail />
-          </a>
-          <a href="https://instagram.com/double8group?igshid=MzRlODBiNWFlZA==">
-            <SvgInst />
-          </a>
-          <a href="https://www.facebook.com/double8group?mibextid=b06tZ0">
-            <SvgFacebook />
-          </a>
-        </ContactWrap>
+              <a href="tel:+48 517-974-8830">
+                <PhoneSvg />
+              </a>
+              <a href="mailto:d8gllc@gmail.com">
+                <SvgMail />
+              </a>
+              <a href="https://instagram.com/double8group?igshid=MzRlODBiNWFlZA==">
+                <SvgInst />
+              </a>
+              <a href="https://www.facebook.com/double8group?mibextid=b06tZ0">
+                <SvgFacebook />
+              </a>
+            </ContactWrap>
           </NavList>
           <SideMenu className={isOpen ? 'open' : ''}>
             <CloseBtn onClick={toggleMenu} />
@@ -102,7 +104,7 @@ export const Header = () => {
             })}
           </SideMenu>
         </Wrap>
-        
+
       </Container>
     </AppBar>
   );
