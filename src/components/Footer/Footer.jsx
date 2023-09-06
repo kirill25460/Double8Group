@@ -40,12 +40,12 @@ export const Footer = () => {
                 Phone: +48 908-463-5087
               </FooterLink>
             </ContactsItem>
-            <ContactsItem>
+            {/* <ContactsItem>
               <FooterLink href="mailto:email@example.com">
                 {' '}
                 email@example.com{' '}
               </FooterLink>
-            </ContactsItem>
+            </ContactsItem> */}
             {smallDesc === false ? (
               <SvgContainer>
                 <a href="mailto:d8gllc@gmail.com">
