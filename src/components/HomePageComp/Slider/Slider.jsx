@@ -22,7 +22,7 @@ export default function MySlider() {
         spaceBetween={40}
         centeredSlides={true}
         autoplay={{
-          delay: 20000,
+          delay: 18000,
           disableOnInteraction: false,
         }}
         pagination={{
