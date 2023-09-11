@@ -39,14 +39,14 @@ export const Header = () => {
   const navItems = [
     { href: `/`, text: 'Home' },
     { href: '/reviews', text: 'Reviews' },
-    { href: '/book_us', text: 'Book us' },
+    { href: '/contact_us', text: 'Contact us' },
 
   ];
 
   const navSideItems = [
     { href: `/`, text: 'Home', svg: <HomeSvg /> },
     { href: '/reviews', text: 'Reviews', svg: <PersonSvg /> },
-    { href: '/book_us', text: 'Book us', svg: <BookSvg /> },
+    { href: '/contact_us', text: 'Contact us', svg: <BookSvg /> },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -80,10 +80,10 @@ export const Header = () => {
               </NavItem>
             ))}
             <ContactWrap>
-              <Link href="tel:+48 517-974-8830">
+              <Link href="tel:+1 517-974-8830">
                 <LinkWrap>
                   <PhoneSvg />
-                  <Phone>+48 517-974-8830</Phone>
+                  <Phone>+1 517-974-8830</Phone>
                 </LinkWrap>
               </Link>
               <Link href="mailto:d8gllc@gmail.com">

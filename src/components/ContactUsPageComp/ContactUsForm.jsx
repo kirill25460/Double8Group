@@ -17,11 +17,11 @@ import {
   SubBtn,
   InputPhone,
   SharePicDesc
-} from './BookUsForm.styled';
+} from './ContactUsForm.styled';
 import man from 'images/BookUsMan.png';
 import Notiflix from 'notiflix'
 
-export const BookUsForm = ({ onInput, inputs }) => {
+export const ContactUsForm = ({ onInput, inputs }) => {
   const inputRef = useRef(null);
 
   const handleArrowClick = () => {

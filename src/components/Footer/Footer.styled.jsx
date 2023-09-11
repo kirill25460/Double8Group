@@ -11,16 +11,16 @@ export const FooterCon = styled.div`
 
 export const FooterWrap = styled.div`
   width: 100px;
+
+  z-index: 3;
   @media screen and (min-width: 768px) {
-    width: 280px;
-  }
-  @media screen and (min-width: 1440px) {
     width: 280px;
   }
 `;
 
 export const Wrap = styled.div`
   width: 140px;
+  z-index: 3;
   @media screen and (min-width: 768px) {
     width: 280px;
   }
@@ -30,6 +30,7 @@ export const Wrap = styled.div`
 `;
 
 export const FooterText = styled.p`
+margin:0;
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 500;
@@ -39,25 +40,12 @@ export const FooterText = styled.p`
   color: #dddddd;
 
   @media screen and (min-width: 768px) {
-    font-family: Montserrat;
     font-size: 15px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #dddddd;
   }
-  @media screen and (min-width: 1440px) {
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #dddddd;
-  }
+
 `;
 export const FooterTextInfo = styled.p`
+margin:0;
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 500;
@@ -66,30 +54,14 @@ export const FooterTextInfo = styled.p`
   text-align: right;
   color: #dddddd;
   @media screen and (min-width: 768px) {
-    font-family: Montserrat;
     font-size: 15px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0px;
-    text-align: right;
-    color: #dddddd;
-  }
-  @media screen and (min-width: 1440px) {
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0px;
-    text-align: right;
-    color: #dddddd;
   }
 `;
 
 export const LogoFooter = styled.img`
-  width: 74px;
-  height: 61px;
-  margin: 0;
+display:none;
   @media screen and (min-width: 768px) {
+    display:block;
     width: 114px;
     height: 81px;
     margin: 0 auto;
@@ -101,9 +73,16 @@ export const LogoFooter = styled.img`
   }
 `;
 
+export const FooterLogoBg = styled.img`
+position:absolute;
+@media screen and (min-width: 768px) {
+display:none;
+
+}
+`;
+
 export const Container = styled.div`
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,26 +112,7 @@ export const FooterLink = styled.a`
   outline: none;
   text-decoration: none;
   @media screen and (min-width: 768px) {
-    font-family: Montserrat;
     font-size: 15px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #797276;
-    outline: none;
-    text-decoration: none;
-  }
-  @media screen and (min-width: 1440px) {
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #797276;
-    outline: none;
-    text-decoration: none;
   }
   &:hover {
     color: #fff;
@@ -161,6 +121,7 @@ export const FooterLink = styled.a`
 
 export const InfoList = styled.ul`
   text-align: right;
+  height:85px;
   padding: 0;
   list-style: none;
 `;
@@ -172,28 +133,9 @@ export const InfoLinks = styled.p`
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0px;
-
   color: #797276;
-
   @media screen and (min-width: 768px) {
-    margin: 0;
-    font-family: Montserrat;
     font-size: 15px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0px;
-
-    color: #797276;
-  }
-  @media screen and (min-width: 1440px) {
-    margin: 0;
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0px;
-
-    color: #797276;
   }
   &:hover {
     color: #fff;
@@ -205,41 +147,61 @@ export const SvgContainer = styled.div`
   margin-top: 10px;
 `;
 
-export const SvgContainerMobile = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px auto;
-`;
+
 
 export const SvgMail = styled(HiOutlineMailOpen)`
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   padding: 5px;
   border-radius: 25px;
-  color: black;
-  background-color: #f8821e;
+  color: #202020;
+  background-color: #797276;
   text-decoration: none;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    width: 25px;
+    height: 25px;
+  }
+
+  &:hover {
+    color: #f8821e;
+    background-color: #fff;
+  }
 `;
 
 export const SvgInst = styled(AiOutlineInstagram)`
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   padding: 5px;
   border-radius: 25px;
-  fill: black;
-  background-color: #f8821e;
+  fill: #202020;
+  background-color: #797276;
   margin: 0 10px;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    width: 25px;
+    height: 25px;
+  }
+  &:hover {
+    fill: #f8821e;
+    background-color: #fff;
+  }
 `;
 
 export const SvgFacebook = styled(FaFacebookSquare)`
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   padding: 5px;
   border-radius: 25px;
-  fill: black;
-  background-color: #f8821e;
+  fill: #202020;
+  background-color: #797276;
   cursor: pointer;
-`
+  @media screen and (min-width: 768px) {
+    width: 25px;
+    height: 25px;
+  }
+  &:hover {
+    fill: #f8821e;
+    background-color: #fff;
+  }
+`;

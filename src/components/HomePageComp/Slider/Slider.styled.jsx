@@ -22,11 +22,10 @@ export const ButtonSlider = styled.button`
   line-height: 18px;
   cursor: pointer;
   border: none;
-  left: 35px;
+  left: 20px;
   top: 340px;
   font-family: 'DM Sans';
   font-size: 23px;
-
   text-align: center;
   letter-spacing: 3px;
   font-weight: 500;
@@ -42,66 +41,16 @@ export const ButtonSlider = styled.button`
   }
 
   @media screen and (min-width: 768px) {
-    position: absolute;
-    text-decoration: none;
-    display: inline-block;
-    width: 228px;
-    height: 83px;
-    line-height: 18px;
-    cursor: pointer;
-    border: none;
     left: 245px;
     top: 360px;
-    font-family: 'DM Sans';
-    font-size: 23px;
 
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 500;
-    color: #ff8c00;
-    background: white;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    &:hover {
-      background: #ff8c00;
-      box-shadow: 0 15px 20px rgba(32, 32, 32, 0.4);
-      color: white;
-      transform: translateY(-7px);
-    }
   }
-  @media screen and (min-width: 1440px) {
-    position: absolute;
-    text-decoration: none;
-    display: inline-block;
-    width: 228px;
-    height: 83px;
-    line-height: 18px;
-    cursor: pointer;
-    border: none;
-    left: 245px;
-    top: 360px;
-    font-family: 'DM Sans';
-    font-size: 23px;
 
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 500;
-    color: #ff8c00;
-    background: white;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    &:hover {
-      background: #ff8c00;
-      box-shadow: 0 15px 20px rgba(32, 32, 32, 0.4);
-      color: white;
-      transform: translateY(-7px);
-    }
-  }
 `;
 
 export const TopText = styled.h2`
   position: absolute;
-  left: 35px;
+  left: 20px;
   top: 80px;
   font-family: Montserrat;
   font-size: 55px;
@@ -112,32 +61,16 @@ export const TopText = styled.h2`
   height: 212px;
   color: #ffffff;
   @media screen and (min-width: 768px) {
-    position: absolute;
     left: 245px;
     top: 0px;
-    font-family: Montserrat;
     font-size: 65px;
-    font-weight: 800;
-    line-height: 61px;
-    letter-spacing: 0px;
-    text-align: left;
     width: 500px;
-    height: 212px;
-    color: #ffffff;
   }
   @media screen and (min-width: 1440px) {
-    position: absolute;
-    left: 245px;
+
     top: 10px;
-    font-family: Montserrat;
-    font-size: 65px;
-    font-weight: 800;
-    line-height: 61px;
-    letter-spacing: 0px;
-    text-align: left;
     width: 786px;
-    height: 212px;
-    color: #ffffff;
+
   }
 `;
 
@@ -158,19 +91,5 @@ export const TextSlider = styled.p`
     height: 140px;
     top: 150px;
   }
-  @media screen and (min-width: 1440px) {
-    display: block;
-    color: #ffffff;
-    position: absolute;
-    left: 245px;
-    font-family: Montserrat;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0px;
-    text-align: left;
-    width: 395px;
-    height: 140px;
-    top: 150px;
-  }
+
 `;

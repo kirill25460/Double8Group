@@ -1,4 +1,4 @@
-import { useMediaQuery } from '@mui/material';
+
 import {
   FooterCon,
   FooterWrap,
@@ -12,18 +12,18 @@ import {
   InfoList,
   InfoLinks,
   FooterTextInfo,
+  FooterLogoBg,
   SvgContainer,
   SvgMail,
   SvgInst,
   SvgFacebook,
-  SvgContainerMobile,
+
 } from './Footer.styled';
 
 import logo from 'images/LogoFooter.png';
+import MobLog from 'images/MobFooterLogo.png';
 
 export const Footer = () => {
-  const smallDesc = useMediaQuery('(max-width: 767px)');
-
   return (
     <FooterCon>
       <Container>
@@ -31,23 +31,17 @@ export const Footer = () => {
           <FooterText>CONTACTS</FooterText>
           <ContactsList>
             <ContactsItem>
-              <FooterLink href="tel:+48 517-974-8830">
-                Phone: +48 517-974-8830
+              <FooterLink href="tel:+1 517-974-8830">
+                Phone: +1 517-974-8830
               </FooterLink>
             </ContactsItem>
             <ContactsItem>
-              <FooterLink href="tel:+48 908-463-5087">
-                Phone: +48 908-463-5087
+              <FooterLink href="tel:+1 908-463-5087">
+                Phone: +1 908-463-5087
               </FooterLink>
             </ContactsItem>
-            {/* <ContactsItem>
-              <FooterLink href="mailto:email@example.com">
-                {' '}
-                email@example.com{' '}
-              </FooterLink>
-            </ContactsItem> */}
-            {smallDesc === false ? (
-              <SvgContainer>
+           <ContactsItem>
+           <SvgContainer>
                 <a href="mailto:d8gllc@gmail.com">
                   <SvgMail />
                 </a>
@@ -58,12 +52,10 @@ export const Footer = () => {
                   <SvgFacebook />
                 </a>
               </SvgContainer>
-            ) : (
-              <></>
-            )}
+           </ContactsItem>
           </ContactsList>
         </Wrap>
-
+<FooterLogoBg src={MobLog} alt='MobLog'/>
         <LogoFooter src={logo} alt="Logo" />
         <FooterWrap>
           <FooterTextInfo>RULES&TERMS</FooterTextInfo>
@@ -83,15 +75,7 @@ export const Footer = () => {
           </InfoList>
         </FooterWrap>
       </Container>
-      {smallDesc === true ? (
-        <SvgContainerMobile>
-          <SvgMail />
-          <SvgInst />
-          <SvgFacebook />
-        </SvgContainerMobile>
-      ) : (
-        <></>
-      )}
+      
     </FooterCon>
   );
 };

@@ -87,6 +87,7 @@ const SelectType = styled.select`
 const InputReview = styled.textarea`
   width: 327px;
   height: 32px;
+  resize: none;
   padding-bottom: 320px;
   border: 2px solid #f8821e;
   color: #c5c5c5;

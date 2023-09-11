@@ -15,8 +15,7 @@ export const App = () => {
           <Route index element={<HomePage />} />
           <Route path="reviews" />
           <Route path="reviews/:id"/>
-          <Route path="book_us" />
-          <Route path="contacts" />
+          <Route path="contact_us" />
           <Route path="air_duct" />
           <Route path="chimney_cleaning"/>
           <Route path="bathroom_fan_cleaning"/>

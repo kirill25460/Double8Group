@@ -5,11 +5,12 @@ import {
   BookUsBtn,
   PicToolsL,
   PicToolsR,
+  StyledLink,
   ButPicContainer,
 } from './BookUsHomeP.styled';
 import Left from 'images/HammerL.png';
 import Right from 'images/HammerR.png';
-import { NavLink } from 'react-router-dom';
+
 
 export const BookUsHomeP = () => {
   return (
@@ -22,9 +23,9 @@ export const BookUsHomeP = () => {
         </BookUsPar>
         <ButPicContainer>
           <PicToolsL src={Left} alt="Logo" />
-          <NavLink to="/book_us">
+          <StyledLink to="/book_us">
             <BookUsBtn>Book Us</BookUsBtn>
-          </NavLink>
+          </StyledLink>
           <PicToolsR src={Right} alt="Logo" />
         </ButPicContainer>
       </Container>

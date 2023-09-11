@@ -100,6 +100,7 @@ const SelectType = styled.select`
 const InputReview = styled.textarea`
   width: 327px;
   height: 32px;
+  resize: none;
   padding-bottom: 320px;
   border-radius: 2px solid #f8821e;
   border: 2px solid #f8821e;
