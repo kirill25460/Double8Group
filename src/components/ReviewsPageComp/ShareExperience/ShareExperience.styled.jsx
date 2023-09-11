@@ -6,13 +6,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: normal;
+  align-items: center;
   flex-wrap: wrap;
-
   margin: 0 auto;
-
   @media screen and (min-width: 768px) {
-    padding-top:84px;
+
   }
   @media screen and (min-width: 1440px) {
   }
@@ -69,8 +67,10 @@ const WrapFor3Inputs = styled.form`
 const InputName = styled.input`
   width: 140px;
   height: 29px;
+  outline: none;
+  border-width: 0 0 2px;
   border-radius: 2px;
-  border: 2px solid #f8821e;
+  border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
   margin-bottom: 20px;
   margin-right: 15px;
@@ -87,7 +87,9 @@ const SelectType = styled.select`
   width: 170px;
   height: 35px;
   border-radius: 2px;
-  border: 2px solid #f8821e;
+  outline: none;
+  border-width: 0 0 2px;
+  border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
   @media screen and (min-width: 768px) {
     width: 196px;
@@ -99,15 +101,16 @@ const SelectType = styled.select`
 
 const InputReview = styled.textarea`
   width: 327px;
-  height: 32px;
+  height: 24px;
+  margin-bottom:50px;
   resize: none;
-  padding-bottom: 320px;
-  border-radius: 2px solid #f8821e;
-  border: 2px solid #f8821e;
+  outline: none;
+  border-width: 0 0 2px;
+  border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
   @media screen and (min-width: 768px) {
-    width: 497px;
-    height: 32px;
+    width: 495px;
+   
   }
   @media screen and (min-width: 1440px) {
   }
@@ -118,16 +121,19 @@ const SharePic = styled.img`
   height: 470px;
   margin-top:-150px;
   @media screen and (min-width: 768px) {
-    height: 749px;
+    height: 650px;
     width: 550px;
     margin-top:0;
+
   }
   @media screen and (min-width: 1440px) {
   }
 `;
 
 const MainInput = styled.div`
-  position: relative;
+display:flex;   
+ align-items: center;
+
 `;
 
 const InputFileReview = styled.input`
@@ -170,21 +176,30 @@ const SvgClip = styled(TfiClip)`
   padding: 7px;
   fill: #f8821e;
   background-color: white;
-  margin: 0 13px 13px 0;
-  border: 2px solid #f8821e;
-  border-radius: 2px;
+  margin: 0 13px 0 90px;
+  border: none;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  &:hover {
+    box-shadow: 0 15px 20px rgba(32, 32, 32, 0.4);
+    color: white;
+    transform: translateY(-7px);
+  }
 `;
 const SvgTg = styled(PiTelegramLogo)`
   width: 22px;
   height: 22px;
   padding: 7px;
-  fill: white;
-  background-color: #f8821e;
-  margin: 0 13px 13px 0;
-  border: 2px solid #f8821e;
-  border-radius: 2px;
+  fill: #f8821e;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  &:hover {
+    box-shadow: 0 15px 20px rgba(32, 32, 32, 0.4);
+    color: white;
+    transform: translateY(-7px);
+  }
 `;
 
 const OtherText = styled.h2`
@@ -206,13 +221,16 @@ const OtherText = styled.h2`
     display: none;
   }
 `;
-
+const LabelCheckbox = styled.label`
+padding-left:5px;
+`;
 const OtherSpan = styled.span`
 color:#F8821E;
 `;
 
 export {
   WrapInput,
+  LabelCheckbox,
   WrapFor3Inputs,
   Wrap,
   TxtExp,
