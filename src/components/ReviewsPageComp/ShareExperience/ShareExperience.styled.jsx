@@ -164,10 +164,14 @@ const InputContainer = styled.div`
 `;
 
 const SubBtn = styled.button`
+margin-left:0;
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
+  @media screen and (min-width: 768px) {
+    margin-left:128px;
+  }
 `;
 
 const SvgClip = styled(TfiClip)`
