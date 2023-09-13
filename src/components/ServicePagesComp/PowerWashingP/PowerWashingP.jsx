@@ -11,7 +11,6 @@ import {
   AnotherMobButton,
   MobButtonServices,
   ButtonServices,
-  AnotherButtonServ,
   WrapService,
   WrapImages,
   ImgText,
@@ -60,16 +59,10 @@ export const PowerWashingP = () => {
         <WrapService>
           <NameService>POWER WASHING </NameService>
           <TextService>
-            Usually people don`t care about dryer cleaning, but it is very
-            important thing. If your dryer has a problem with air flow , full of
-            lint , moldy smell , birdnest inside or clothes taking longer to dry
-            – we can help you If your dryer clean – you stay safe , cause dryer
-            vent cleaning can prevent the fire of your pipe. Wich services
-            include? Vent cleaning , clean the dryer inside ,fan cleaning ,
-            filter and back panel cleaning.
+          Power wash takes off residue like salt, destructive mold, mildew, algae from outdoor patios, driveways, decks and more.  All these build-ups can destroy the paint and eat away at the exterior of home or business.
           </TextService>
-          <ButtonServices>BOOK THIS SERVICE</ButtonServices>
-          <AnotherButtonServ>ANOTHER BUTTON</AnotherButtonServ>
+          <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
+          
         </WrapService>
 
         <WrapSlider>

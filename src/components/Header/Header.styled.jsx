@@ -319,11 +319,7 @@ export const PhoneSvg = styled(FaPhoneAlt)`
   cursor: pointer;
 
   &:hover{
-    margin-right:3px;
-  }
-
-  &:hover + ${Phone}{
-    display:block;
+    
   }
 `
 
@@ -340,12 +336,10 @@ border-radius: 12.5px;
   cursor: pointer;
 
   &:hover{
-    margin-right:3px;
+   
   }
 
-  &:hover + ${Email}{
-    display:block;
-  }
+  
 `;
 
 export const SvgInst = styled(AiOutlineInstagram)`

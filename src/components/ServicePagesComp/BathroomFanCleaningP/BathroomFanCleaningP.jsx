@@ -11,7 +11,7 @@ import {
   MobButtonServices,
   WrapSlider,
   ButtonServices,
-  AnotherButtonServ,
+
   WrapService,
   WrapImages,
   ImgText,
@@ -60,16 +60,11 @@ export const BathroomFanCleaningP = () => {
         <WrapService>
           <NameService>BATHROOM FAN CLEANING</NameService>
           <TextService>
-            Usually people don`t care about dryer cleaning, but it is very
-            important thing. If your dryer has a problem with air flow , full of
-            lint , moldy smell , birdnest inside or clothes taking longer to dry
-            – we can help you If your dryer clean – you stay safe , cause dryer
-            vent cleaning can prevent the fire of your pipe. Wich services
-            include? Vent cleaning , clean the dryer inside ,fan cleaning ,
-            filter and back panel cleaning.
+          Bathroom is the most humid place in the house and exhaust pipe can be 
+full with mold, germs and bacteria. Cleaning it will prevent you from allergies and breathing problems.
           </TextService>
-          <ButtonServices>BOOK THIS SERVICE</ButtonServices>
-          <AnotherButtonServ>ANOTHER BUTTON</AnotherButtonServ>
+          <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
+      
         </WrapService>
 
         <WrapSlider>

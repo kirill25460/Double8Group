@@ -9,7 +9,6 @@ import {
   TextService,
   WrapSlider,
   ButtonServices,
-  AnotherButtonServ,
   WrapService,
   WrapImages,
   MobButtonServices,
@@ -61,16 +60,10 @@ export const DrVentCl = () => {
         <WrapService>
           <NameService>DRYER VENT CLEANING</NameService>
           <TextService>
-            Usually people don`t care about dryer cleaning, but it is very
-            important thing. If your dryer has a problem with air flow , full of
-            lint , moldy smell , birdnest inside or clothes taking longer to dry
-            – we can help you If your dryer clean – you stay safe , cause dryer
-            vent cleaning can prevent the fire of your pipe. Wich services
-            include? Vent cleaning , clean the dryer inside ,fan cleaning ,
-            filter and back panel cleaning.
+          If your dryer has a problem with air flow, full of lint, moldy smell, clothes takes longer to dry then is time to clean it. Why? Because clogged dryer vent can also be a fire hazard.
           </TextService>
-          <ButtonServices>BOOK THIS SERVICE</ButtonServices>
-          <AnotherButtonServ>ANOTHER BUTTON</AnotherButtonServ>
+          <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
+         
         </WrapService>
 
         <WrapSlider>

@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import './Slider.css';
-import { ButtonSlider, TopText, TextSlider, Container } from './Slider.styled';
+import { ButtonSlider, TopText, Container } from './Slider.styled';
 import Slide1 from 'images/Group1.png';
 
 // import required modules
@@ -35,11 +35,7 @@ export default function MySlider() {
         <Container>
           <SwiperSlide>
             <img src={Slide1} alt="Slide1" />
-            <TopText>AIR DUCT CLEANING</TopText>
-            <TextSlider>
-              Optional text about itOptional text about itOptional text about
-              itOptional text about itOptional text about itOptional text about{' '}
-            </TextSlider>
+            <TopText>RESIDENTIAL AND COMMERCIAL AIR DUCT CLEANING</TopText>
             <NavLink to="air_duct">
               <ButtonSlider>Details</ButtonSlider>
             </NavLink>
@@ -47,10 +43,6 @@ export default function MySlider() {
           <SwiperSlide>
             <img src={Slide1} alt="Slide2" />
             <TopText>DRYER VENT CLEANING</TopText>
-            <TextSlider>
-              Optional text about itOptional text about itOptional text about
-              itOptional text about itOptional text about itOptional text about{' '}
-            </TextSlider>
             <NavLink to="dry_vent">
               <ButtonSlider>Details</ButtonSlider>
             </NavLink>
@@ -58,10 +50,6 @@ export default function MySlider() {
           <SwiperSlide>
             <img src={Slide1} alt="Slide3" />
             <TopText>CHIMNEY CLEANING</TopText>
-            <TextSlider>
-              Optional text about itOptional text about itOptional text about
-              itOptional text about itOptional text about itOptional text about{' '}
-            </TextSlider>
             <NavLink to="chimney_cleaning">
               <ButtonSlider>Details</ButtonSlider>
             </NavLink>
@@ -69,10 +57,6 @@ export default function MySlider() {
           <SwiperSlide>
             <img src={Slide1} alt="Slide4" />
             <TopText>BATHROOM FAN CLEANING</TopText>
-            <TextSlider>
-              Optional text about itOptional text about itOptional text about
-              itOptional text about itOptional text about itOptional text about{' '}
-            </TextSlider>
             <NavLink to="bathroom_fan_cleaning">
               <ButtonSlider>Details</ButtonSlider>
             </NavLink>
@@ -80,10 +64,6 @@ export default function MySlider() {
           <SwiperSlide>
             <img src={Slide1} alt="Slide5" />
             <TopText>POWER WASHING</TopText>
-            <TextSlider>
-              Optional text about itOptional text about itOptional text about
-              itOptional text about itOptional text about itOptional text about{' '}
-            </TextSlider>
             <NavLink to="power_washing">
               <ButtonSlider>Details</ButtonSlider>
             </NavLink>

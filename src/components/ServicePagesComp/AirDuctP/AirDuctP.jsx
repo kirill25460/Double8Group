@@ -11,7 +11,7 @@ import {
   TextService,
   WrapSlider,
   ButtonServices,
-  AnotherButtonServ,
+
   WrapService,
   WrapImages,
   MobButtonServices,
@@ -63,10 +63,9 @@ export const AirDuctP = () => {
         <WrapService>
           <NameService>AIR DUCT CLEANING</NameService>
           <TextService>
-            Air duct wanted to be in clean condition .Why you have to clean your air duct? Because environment is very polluted – dust ,dirt , bacteries in a ducts can trigger allergies and problems with health , usually people forget about ventilation system for a long time and it can have a mold inside and lots of dirt . If you want breathe easy just call us , we will come , expect your system and do very properly cleaning . Also we can deodorize to kill all mold and bacterial.
+          Regular cleaning of the air duct is necessary for the normal functioning of the ventilation system. Since, it passes large volumes of air through itself, along with dust and dirt.
           </TextService>
-          <ButtonServices>BOOK THIS SERVICE</ButtonServices>
-          <AnotherButtonServ>ANOTHER BUTTON</AnotherButtonServ>
+          <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
         </WrapService>
 
         <WrapSlider>

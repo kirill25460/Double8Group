@@ -25,10 +25,8 @@ import {
   SvgMail,
   SvgInst,
   SvgFacebook,
-  Phone,
-  LinkWrap,
   Link,
-  Email
+
 } from './Header.styled';
 import { useState } from 'react';
 
@@ -69,6 +67,13 @@ export const Header = () => {
             {' '}
             <LogoHeader src={HeaderLogo} alt="Logo" />{' '}
           </NavLink>
+          <Link href="tel:+1 517-974-8830">
+                  <PhoneSvg />
+              </Link>
+
+              <Link href="mailto:d8gllc@gmail.com">
+                  <SvgMail />
+              </Link>
         </LogoWrap>
         <Wrap>
           <NavList>
@@ -80,18 +85,7 @@ export const Header = () => {
               </NavItem>
             ))}
             <ContactWrap>
-              <Link href="tel:+1 517-974-8830">
-                <LinkWrap>
-                  <PhoneSvg />
-                  <Phone>+1 517-974-8830</Phone>
-                </LinkWrap>
-              </Link>
-              <Link href="mailto:d8gllc@gmail.com">
-                <LinkWrap>
-                  <SvgMail />
-                  <Email>d8gllc@gmail.com</Email>
-                </LinkWrap>
-              </Link>
+             
               <Link href="https://instagram.com/double8group?igshid=MzRlODBiNWFlZA==">
                 <SvgInst />
               </Link>

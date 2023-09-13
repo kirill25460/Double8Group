@@ -16,15 +16,15 @@ export const BookUsHomeP = () => {
   return (
     <>
       <Container>
-        <BookUsTxt>Let’s Start Your New Project!</BookUsTxt>
+        <BookUsTxt>Trust us your air duct cleaning</BookUsTxt>
         <BookUsPar>
           THE MANAGER WILL CONTACT YOU TO CLARIFY YOUR ORDER IN NO MORE THAN 5
           MINUTES!
         </BookUsPar>
         <ButPicContainer>
           <PicToolsL src={Left} alt="Logo" />
-          <StyledLink to="/book_us">
-            <BookUsBtn>Book Us</BookUsBtn>
+          <StyledLink to="/contact_us">
+            <BookUsBtn>Work with us</BookUsBtn>
           </StyledLink>
           <PicToolsR src={Right} alt="Logo" />
         </ButPicContainer>
