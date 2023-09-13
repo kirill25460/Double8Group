@@ -7,11 +7,10 @@ import {
   Container,
   NameService,
   TextService,
-  AnotherMobButton,
   MobButtonServices,
   WrapSlider,
   ButtonServices,
-
+  DescriptionService,
   WrapService,
   WrapImages,
   ImgText,
@@ -63,6 +62,8 @@ export const BathroomFanCleaningP = () => {
           Bathroom is the most humid place in the house and exhaust pipe can be 
 full with mold, germs and bacteria. Cleaning it will prevent you from allergies and breathing problems.
           </TextService>
+          <DescriptionService>*Price is an accurate estimate
+based on standard scope of work</DescriptionService>
           <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
       
         </WrapService>
@@ -92,7 +93,7 @@ full with mold, germs and bacteria. Cleaning it will prevent you from allergies 
           <NavLink to="book_us">
             <MobButtonServices>BOOK THIS SERVICE</MobButtonServices>
           </NavLink>
-          <AnotherMobButton>ANOTHER BUTTON</AnotherMobButton>
+  
         </div>
       </Container>
     </>

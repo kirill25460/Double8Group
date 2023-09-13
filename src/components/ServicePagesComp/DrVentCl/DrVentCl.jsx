@@ -12,7 +12,7 @@ import {
   WrapService,
   WrapImages,
   MobButtonServices,
-  AnotherMobButton,
+  DescriptionService,
   ImgText,
   SeerviceImages,
   DivPhoto
@@ -62,6 +62,8 @@ export const DrVentCl = () => {
           <TextService>
           If your dryer has a problem with air flow, full of lint, moldy smell, clothes takes longer to dry then is time to clean it. Why? Because clogged dryer vent can also be a fire hazard.
           </TextService>
+          <DescriptionService>*Price is an accurate estimate
+based on standard scope of work</DescriptionService>
           <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
          
         </WrapService>
@@ -91,8 +93,6 @@ export const DrVentCl = () => {
           <NavLink to="book_us">
             <MobButtonServices>BOOK THIS SERVICE</MobButtonServices>
           </NavLink>
-
-          <AnotherMobButton>ANOTHER BUTTON</AnotherMobButton>
         </div>
       </Container>
     </>

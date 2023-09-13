@@ -62,6 +62,16 @@ color:#2C2C2C;
 
 `;
 
+export const DescriptionService = styled.p`
+color:#2C2C2C;
+font-family: DM Sans;
+font-size: 15px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+text-align: left;
+`;
+
 export const WrapSlider = styled.div`
 max-width: 345px; 
 margin-bottom:20px;
@@ -131,36 +141,7 @@ transition: .3s;
     transform: translateY(-7px);}
 `;
 
-export const AnotherButtonServ = styled.button`
-display:none;
 
-width: 158px;
-height: 45px;
-color: #2C2C2C;
-border:2px solid #F8821F;
-background-color:#FFF;
-font-family: 'DM Sans';
-font-size: 12px;
-text-align: center;
-letter-spacing: 0px;
-font-weight: 500;
-box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
-transition: .3s;
-&:hover{
-   
-    box-shadow: 0 15px 20px rgba(32, 32, 32, .4);
-    
-    transform: translateY(-7px);}
-@media screen and (min-width: 768px) {
-  display: inline-block;
-  margin-top:70px;
-margin-left:20px;
-}
-@media screen and (min-width: 1440px) {
-
-}
-
-`;
 
 export const SeerviceImages = styled.img`
 @media screen and (min-width: 768px) {

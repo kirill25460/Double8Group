@@ -106,7 +106,7 @@ export const ShareExperience = ({ onInput, inputs }) => {
               name="review"
               id="review"
               required
-              placeholder="Write your review here..."
+              placeholder="We’d love to hear from you"
             ></InputReview>
             <MainInput>
             <input

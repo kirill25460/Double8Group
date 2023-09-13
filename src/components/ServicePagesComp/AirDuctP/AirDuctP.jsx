@@ -11,11 +11,11 @@ import {
   TextService,
   WrapSlider,
   ButtonServices,
-
+  DescriptionService,
   WrapService,
   WrapImages,
   MobButtonServices,
-  AnotherMobButton,
+
   ImgText,
   SeerviceImages,
   DivPhoto
@@ -65,6 +65,7 @@ export const AirDuctP = () => {
           <TextService>
           Regular cleaning of the air duct is necessary for the normal functioning of the ventilation system. Since, it passes large volumes of air through itself, along with dust and dirt.
           </TextService>
+          <DescriptionService>We also provide the air duct cleaning service for businesses from $800</DescriptionService>
           <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
         </WrapService>
 
@@ -90,11 +91,11 @@ export const AirDuctP = () => {
           </DivPhoto>
         </WrapImages>
         <div>
-          <NavLink to="book_us">
+          <NavLink to="contact_us">
             <MobButtonServices>BOOK THIS SERVICE</MobButtonServices>
           </NavLink>
 
-          <AnotherMobButton>ANOTHER BUTTON</AnotherMobButton>
+        
         </div>
       </Container>
     </>

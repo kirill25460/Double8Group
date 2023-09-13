@@ -62,6 +62,16 @@ color:#2C2C2C;
 
 `;
 
+export const DescriptionService = styled.p`
+color:#2C2C2C;
+font-family: DM Sans;
+font-size: 15px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+text-align: left;
+`;
+
 export const WrapSlider = styled.div`
 max-width: 345px; 
 margin-bottom:20px;

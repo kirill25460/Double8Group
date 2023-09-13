@@ -8,7 +8,7 @@ import {
   NameService,
   TextService,
   WrapSlider,
-  AnotherMobButton,
+  DescriptionService,
   MobButtonServices,
   ButtonServices,
   WrapService,
@@ -61,6 +61,8 @@ export const PowerWashingP = () => {
           <TextService>
           Power wash takes off residue like salt, destructive mold, mildew, algae from outdoor patios, driveways, decks and more.  All these build-ups can destroy the paint and eat away at the exterior of home or business.
           </TextService>
+          <DescriptionService>*Price is an accurate estimate
+based on standard scope of work</DescriptionService>
           <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
           
         </WrapService>
@@ -90,7 +92,6 @@ export const PowerWashingP = () => {
           <NavLink to="book_us">
             <MobButtonServices>BOOK THIS SERVICE</MobButtonServices>
           </NavLink>
-          <AnotherMobButton>ANOTHER BUTTON</AnotherMobButton>
         </div>
       </Container>
     </>

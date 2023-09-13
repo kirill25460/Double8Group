@@ -9,9 +9,6 @@ import {
   ContactsList,
   ContactsItem,
   FooterLink,
-  InfoList,
-  InfoLinks,
-  FooterTextInfo,
   FooterLogoBg,
   SvgContainer,
   SvgMail,
@@ -41,7 +38,14 @@ export const Footer = () => {
               </FooterLink>
             </ContactsItem>
            <ContactsItem>
-           <SvgContainer>
+          
+           </ContactsItem>
+          </ContactsList>
+        </Wrap>
+<FooterLogoBg src={MobLog} alt='MobLog'/>
+        <LogoFooter src={logo} alt="Logo" />
+        <FooterWrap>
+        <SvgContainer>
                 <a href="mailto:d8gllc@gmail.com">
                   <SvgMail />
                 </a>
@@ -52,27 +56,6 @@ export const Footer = () => {
                   <SvgFacebook />
                 </a>
               </SvgContainer>
-           </ContactsItem>
-          </ContactsList>
-        </Wrap>
-<FooterLogoBg src={MobLog} alt='MobLog'/>
-        <LogoFooter src={logo} alt="Logo" />
-        <FooterWrap>
-          <FooterTextInfo>RULES&TERMS</FooterTextInfo>
-          <InfoList>
-            <li>
-              <InfoLinks>Return policy</InfoLinks>
-            </li>
-            <li>
-              <InfoLinks>Fair payment & job</InfoLinks>
-            </li>
-            <li>
-              <InfoLinks>something other</InfoLinks>
-            </li>
-            <li>
-              <InfoLinks>something other</InfoLinks>
-            </li>
-          </InfoList>
         </FooterWrap>
       </Container>
       
