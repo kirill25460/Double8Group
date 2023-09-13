@@ -17,8 +17,13 @@ text-decoration: none;
 export const LogoHeader = styled.img`
   width: 89px;
   height: 67px;
+  margin-right: 0;
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
   @media screen and (min-width: 1440px) {
     text-align: center;
+    margin-right: 20px;
   }
 `;
 
@@ -257,7 +262,7 @@ export const SideItems = styled.div`
 `
 
 export const ContactWrap = styled.div`
-width:130px;  
+width:60px;  
 display: flex;
 justify-content: space-between;
 `
@@ -298,7 +303,7 @@ export const Phone = styled.span`
   display:none;
   width:120px;
   font-size:12px;
-  color:#F8821E;
+  color:black;
 `
 
 
@@ -306,7 +311,7 @@ export const Email = styled.span`
   display:none;
   width:120px;
   font-size:12px;
-  color:#F8821E;
+  color:black;
 `
 
 export const PhoneSvg = styled(FaPhoneAlt)`
@@ -315,7 +320,7 @@ export const PhoneSvg = styled(FaPhoneAlt)`
   padding: 5px;
   border-radius: 12.5px;
   fill: white;
-  background-color: #f8821e;
+  background-color: black;
   cursor: pointer;
 
   &:hover{
@@ -331,7 +336,7 @@ height: 15px;
 padding: 5px;
 border-radius: 12.5px;
   color: white;
-  background-color: #f8821e;
+  background-color: black;
   text-decoration: none;
   cursor: pointer;
 
@@ -348,7 +353,7 @@ height: 15px;
 padding: 5px;
 border-radius: 12.5px;
   fill: white;
-  background-color: #f8821e;
+  background-color: black;
   cursor: pointer;
 `;
 
@@ -358,6 +363,6 @@ height: 15px;
 padding: 5px;
 border-radius: 12.5px;
   fill: white;
-  background-color: #f8821e;
+  background-color: black;
   cursor: pointer;
 `
