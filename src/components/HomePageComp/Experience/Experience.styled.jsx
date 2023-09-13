@@ -6,10 +6,10 @@ export const Container = styled.div`
   align-items: center;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
-    width: 768px;
+   
   }
   @media screen and (min-width: 1440px) {
-    padding: 0 100px;
+ 
   }
 `;
 
@@ -19,6 +19,7 @@ export const ExpPic = styled.img`
 `;
 
 export const ExpTtl = styled.h2`
+margin: 80px 0 0 0;
   font-family: Montserrat;
   font-size: 40px;
   font-weight: 600;
@@ -28,25 +29,41 @@ export const ExpTtl = styled.h2`
   color: #f8821e;
 
   @media screen and (min-width: 768px) {
-    font-family: Montserrat;
-    font-size: 72px;
-    font-weight: 600;
-    line-height: 67px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: #f8821e;
-    width: 605px;
+    font-size: 50px;
+    line-height: 40px;
+    width: 645px;
   }
-  @media screen and (min-width: 1440px) {
-    font-family: Montserrat;
-    font-size: 72px;
-    font-weight: 600;
-    line-height: 67px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: #f8821e;
-    width: 605px;
+ 
+`;
+export const ExpTtl2 = styled.h3`
+margin:0;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #f8821e;
+
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+
+    width: 512px;
   }
+ 
+`;
+export const ExpTtl3 = styled.h4`
+margin:0 0 30px 0;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+ 
 `;
 
 export const ExpList = styled.ul`
@@ -99,14 +116,8 @@ export const ExpItText1 = styled.p`
   line-height: 16px;
   letter-spacing: 0px;
   text-align: left;
-
   height: 106px;
 
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1440px) {
-    text-align: left;
-  }
 `;
 export const ExpItTtl2 = styled.h3`
   padding-left: 25px;
@@ -131,7 +142,6 @@ export const ExpItText2 = styled.p`
   line-height: 16px;
   letter-spacing: 0px;
   text-align: center;
-
   height: 106px;
 `;
 

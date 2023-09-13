@@ -148,4 +148,5 @@ export const BookUsItem = styled.li`
 `;
 
 export const ItemText = styled.p`
+color: #f8821f;
 `;
