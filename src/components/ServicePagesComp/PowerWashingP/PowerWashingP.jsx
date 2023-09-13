@@ -18,7 +18,7 @@ import {
   DivPhoto
 } from './PowerWashing.styled';
 
-import after from 'images/powerwashingAfter.jpg';
+import after from 'images/powerwashingAfter.png';
 import before from 'images/powerWashingBefore.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';

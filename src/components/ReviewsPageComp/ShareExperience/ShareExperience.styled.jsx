@@ -100,7 +100,7 @@ const SelectType = styled.select`
 `;
 
 const InputReview = styled.textarea`
-  width: 327px;
+  width: 325px;
   height: 24px;
   margin-bottom:50px;
   resize: none;
@@ -133,7 +133,7 @@ const SharePic = styled.img`
 const MainInput = styled.div`
 display:flex;   
  align-items: center;
-
+ justify-content: center;
 `;
 
 const InputFileReview = styled.input`

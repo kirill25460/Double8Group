@@ -1,7 +1,7 @@
 
 import {
   FooterCon,
-  FooterWrap,
+
   FooterText,
   LogoFooter,
   Container,
@@ -44,7 +44,7 @@ export const Footer = () => {
         </Wrap>
 <FooterLogoBg src={MobLog} alt='MobLog'/>
         <LogoFooter src={logo} alt="Logo" />
-        <FooterWrap>
+        
         <SvgContainer>
                 <a href="mailto:d8gllc@gmail.com">
                   <SvgMail />
@@ -56,7 +56,7 @@ export const Footer = () => {
                   <SvgFacebook />
                 </a>
               </SvgContainer>
-        </FooterWrap>
+       
       </Container>
       
     </FooterCon>

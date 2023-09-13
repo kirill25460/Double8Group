@@ -144,7 +144,11 @@ export const InfoLinks = styled.p`
 
 export const SvgContainer = styled.div`
   display: flex;
-  margin-top: 10px;
+  z-index: 3;
+  width: 100px;
+  @media screen and (min-width: 768px) {
+    width: 280px;
+  }
 `;
 
 

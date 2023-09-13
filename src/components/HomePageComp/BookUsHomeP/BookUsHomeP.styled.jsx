@@ -32,7 +32,7 @@ export const BookUsTxt = styled.h2`
   color: #f8821f;
   margin-bottom: 55px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     margin-top:50px;
     font-size: 46px;
   }
@@ -130,4 +130,22 @@ export const ButPicContainer = styled.div`
 export const StyledLink = styled(NavLink)`
 
 margin:0;
+`;
+
+export const BookUsList = styled.ul`
+display:none;
+@media screen and (min-width: 768px) {
+margin:0 0 45px;
+display:block;
+padding:0;
+list-style:none;
+display:flex;
+gap:30px;}
+`;
+
+export const BookUsItem = styled.li`
+
+`;
+
+export const ItemText = styled.p`
 `;
