@@ -11,8 +11,8 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { FaFacebookSquare } from 'react-icons/fa';
 
 export const Link = styled.a`
-text-decoration: none;
-`
+  text-decoration: none;
+`;
 
 export const LogoHeader = styled.img`
   width: 89px;
@@ -28,7 +28,6 @@ export const LogoHeader = styled.img`
 `;
 
 export const AppBar = styled.header`
-
   width: 100%;
 `;
 
@@ -53,21 +52,21 @@ export const Container = styled.div`
 `;
 
 export const LogoWrap = styled.div`
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
     margin: 0;
   }
   @media screen and (min-width: 1440px) {
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
     margin: 0;
   }
 `;
@@ -78,7 +77,6 @@ export const Nav = styled.div`
   padding-bottom: 5px;
 `;
 export const NavList = styled.ul`
-  
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -190,7 +188,6 @@ export const MobileCloseHeader = styled.div`
   justify-content: space-between;
   align-items: center;
 
-
   @media screen and (min-width: 1440px) {
     display: none;
   }
@@ -209,7 +206,6 @@ export const CrossButton = styled.button`
   outline: none;
 
   cursor: pointer;
-
 `;
 
 export const BurgerMenu = styled.div`
@@ -217,9 +213,8 @@ export const BurgerMenu = styled.div`
   display: none; /* Начинаем с скрытого бургер-меню */
 
   @media (max-width: 768px) {
-
     margin-right: 200px;
-    display: block; 
+    display: block;
   }
   @media screen and (min-width: 1440px) {
     display: none;
@@ -229,7 +224,7 @@ export const BurgerMenu = styled.div`
 export const BurgerIcon = styled(RxHamburgerMenu)`
   width: 30px;
   height: 30px;
-  color: #F8821E;
+  color: #f8821e;
 `;
 
 export const SideMenu = styled.div`
@@ -242,35 +237,35 @@ export const SideMenu = styled.div`
   background-color: #ffffff;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   transition: left 0.3s ease-in-out;
-  z-index: 9999; /* Отображать поверх всех элементов *//* Добавить скролл, если контент больше экрана */
+  z-index: 9999; /* Отображать поверх всех элементов */ /* Добавить скролл, если контент больше экрана */
 
   &.open {
     left: 0; /* Показывает меню */
   }
 
   @media (min-width: 768px) {
-    display: none ;
+    display: none;
   }
 `;
 
 export const SideItems = styled.div`
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto 35px;
-`
+`;
 
 export const ContactWrap = styled.div`
-width:60px;  
-display: flex;
-justify-content: space-between;
-`
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+`;
 
 export const LinkWrap = styled.div`
   display: flex;
-  align-items:center;
-`
+  align-items: center;
+`;
 
 export const CloseBtn = styled(BiArrowBack)`
   width: 20px;
@@ -278,41 +273,47 @@ export const CloseBtn = styled(BiArrowBack)`
   margin-top: 25px;
   margin-left: 45px;
   margin-bottom: 60px;
-  fill:#F8821E;
+  fill: #f8821e;
   cursor: pointer;
-`
+`;
 
 export const HomeSvg = styled(AiOutlineHome)`
   width: 29px;
   height: 22px;
-  fill: #F8821E;
-`
+  fill: #f8821e;
+`;
 export const PersonSvg = styled(IoPersonSharp)`
   width: 22px;
   height: 24px;
-  fill: #F8821E;
-`
+  fill: #f8821e;
+`;
 
 export const BookSvg = styled(MdMenuBook)`
   width: 23px;
   height: 22px;
-  fill: #F8821E;
-`
+  fill: #f8821e;
+`;
 
 export const Phone = styled.span`
-  display:none;
-  width:120px;
-  font-size:12px;
-  color:black;
-`
+  display: none;
+  width: 120px;
+  font-size: 12px;
+  color: black;
 
+  &:hover {
+    color: #f8821e;
+  }
+`;
 
 export const Email = styled.span`
-  display:none;
-  width:120px;
-  font-size:12px;
-  color:black;
-`
+  display: none;
+  width: 120px;
+  font-size: 12px;
+  color: black;
+  &:hover {
+    color: #f8821e;
+  }
+`;
 
 export const PhoneSvg = styled(FaPhoneAlt)`
   width: 15px;
@@ -323,46 +324,50 @@ export const PhoneSvg = styled(FaPhoneAlt)`
   background-color: black;
   cursor: pointer;
 
-  &:hover{
-    
+  &:hover {
+    background-color: #f8821e;
   }
-`
-
-
+`;
 
 export const SvgMail = styled(HiOutlineMailOpen)`
-width: 15px;
-height: 15px;
-padding: 5px;
-border-radius: 12.5px;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 12.5px;
   color: white;
   background-color: black;
   text-decoration: none;
   cursor: pointer;
 
-  &:hover{
-   
+  &:hover {
+    background-color: #f8821e;
   }
-
-  
 `;
 
 export const SvgInst = styled(AiOutlineInstagram)`
-width: 15px;
-height: 15px;
-padding: 5px;
-border-radius: 12.5px;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 12.5px;
   fill: white;
   background-color: black;
   cursor: pointer;
+
+  &:hover {
+    background-color: #f8821e;
+  }
 `;
 
 export const SvgFacebook = styled(FaFacebookSquare)`
-width: 15px;
-height: 15px;
-padding: 5px;
-border-radius: 12.5px;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 12.5px;
   fill: white;
   background-color: black;
   cursor: pointer;
-`
+
+  &:hover {
+    background-color: #f8821e;
+  }
+`;
