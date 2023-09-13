@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/double8group/static/css/main.4c8aee66.css",
-    "main.js": "/double8group/static/js/main.24bba588.js",
+    "main.js": "/double8group/static/js/main.9c6222e6.js",
+    "static/media/powerwashingAfter.png": "/double8group/static/media/powerwashingAfter.014712ac5dc50c400542.png",
     "static/media/Group1.png": "/double8group/static/media/Group1.caa39035fd752421a9b0.png",
     "static/media/worker.png": "/double8group/static/media/worker.960b65b72ca53a1bc05c.png",
     "static/media/BookUsMan.png": "/double8group/static/media/BookUsMan.812204d653f8c5393f9b.png",
@@ -41,17 +42,16 @@
     "static/media/6.jpeg": "/double8group/static/media/6.574d792a0158d6936cf7.jpeg",
     "static/media/ChimneyBefore.jpg": "/double8group/static/media/ChimneyBefore.cd0b15d723ba9befaeb9.jpg",
     "static/media/powerWashingBefore.jpg": "/double8group/static/media/powerWashingBefore.6ae6a7e6b82f40dfb10c.jpg",
-    "static/media/powerwashingAfter.jpg": "/double8group/static/media/powerwashingAfter.4b2451f30bf39ef7ab17.jpg",
     "static/media/14.jpg": "/double8group/static/media/14.10a46e40c8989f718875.jpg",
     "static/media/11.jpg": "/double8group/static/media/11.de5e40cbde306cf58557.jpg",
     "static/media/HammerL.png": "/double8group/static/media/HammerL.7482776ce48ac6e215e6.png",
     "static/media/HammerR.png": "/double8group/static/media/HammerR.367cec0c464c210ab213.png",
     "index.html": "/double8group/index.html",
     "main.4c8aee66.css.map": "/double8group/static/css/main.4c8aee66.css.map",
-    "main.24bba588.js.map": "/double8group/static/js/main.24bba588.js.map"
+    "main.9c6222e6.js.map": "/double8group/static/js/main.9c6222e6.js.map"
   },
   "entrypoints": [
     "static/css/main.4c8aee66.css",
-    "static/js/main.24bba588.js"
+    "static/js/main.9c6222e6.js"
   ]
 }
