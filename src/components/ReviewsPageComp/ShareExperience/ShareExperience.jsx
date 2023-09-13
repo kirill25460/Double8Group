@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {
   Container,
   WrapInput,
@@ -9,11 +9,11 @@ import {
   SelectType,
   InputReview,
   SharePic,
-  InputFileReview,
+  // InputFileReview,
   LabelCheckbox,
   MainInput,
   // InputContainer,
-  SvgClip,
+  // SvgClip,
   SvgTg,
   SubBtn,
   OtherText,
@@ -31,20 +31,20 @@ export const ShareExperience = ({ onInput, inputs }) => {
     { id: 4, type: 'Power washing' },
   ];
 
-  const inputRef = useRef(null);
+  // const inputRef = useRef(null);
 
-  const handleArrowClick = () => {
-    inputRef.current.click();
-  };
+  // const handleArrowClick = () => {
+  //   inputRef.current.click();
+  // };
 
-  const handleFileChange = (event) => {
-    const selectedFile = event.target.files[0];
-    if (selectedFile) {
-      Notiflix.Notify.success('Photos added');
-    } else {
-      Notiflix.Notify.failure('Photos didn`t added');
-    }
-  };
+  // const handleFileChange = (event) => {
+  //   const selectedFile = event.target.files[0];
+  //   if (selectedFile) {
+  //     Notiflix.Notify.success('Photos added');
+  //   } else {
+  //     Notiflix.Notify.failure('Photos didn`t added');
+  //   }
+  // };
 
   // const sendData = ({title, type, review, photo}) => {
 
@@ -119,7 +119,7 @@ export const ShareExperience = ({ onInput, inputs }) => {
               This review is based on my own experience
             </LabelCheckbox>
             
-              <InputFileReview
+              {/* <InputFileReview
                 ref={inputRef}
                 type="file"
                 name="photo"
@@ -127,7 +127,7 @@ export const ShareExperience = ({ onInput, inputs }) => {
                 placeholder="Write your review here..."
                 onChange={handleFileChange}
               />
-              <SvgClip onClick={handleArrowClick} />
+              <SvgClip onClick={handleArrowClick} /> */}
               <SubBtn type="submit">
                 <SvgTg />
               </SubBtn>
