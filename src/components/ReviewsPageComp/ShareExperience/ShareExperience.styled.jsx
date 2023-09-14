@@ -102,15 +102,15 @@ const SelectType = styled.select`
 const InputReview = styled.textarea`
   width: 325px;
   height: 24px;
-  margin-bottom:50px;
+  margin-bottom:20px;
   resize: none;
   outline: none;
   border-width: 0 0 2px;
   border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
   @media screen and (min-width: 768px) {
-    width: 495px;
-   
+    width: 493px;
+    margin-bottom:50px;
   }
   @media screen and (min-width: 1440px) {
   }
@@ -133,7 +133,7 @@ const SharePic = styled.img`
 const MainInput = styled.div`
 display:flex;   
  align-items: center;
- justify-content: center;
+
 `;
 
 const InputFileReview = styled.input`
@@ -170,7 +170,7 @@ margin-left:0;
   cursor: pointer;
   padding: 0;
   @media screen and (min-width: 768px) {
-    margin-left:128px;
+    margin-left:130px;
   }
 `;
 
@@ -226,7 +226,11 @@ const OtherText = styled.h2`
   }
 `;
 const LabelCheckbox = styled.label`
+width: 273px;
 padding-left:5px;
+@media screen and (min-width: 768px) {
+  width: 310px;
+}
 `;
 const OtherSpan = styled.span`
 color:#F8821E;

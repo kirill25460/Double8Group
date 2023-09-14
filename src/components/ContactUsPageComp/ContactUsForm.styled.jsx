@@ -183,6 +183,9 @@ const SvgTg = styled(PiTelegramLogo)`
   border: 2px solid #f8821e;
   border-radius: 2px;
   cursor: pointer;
+  &:hover {
+    box-shadow: 0 15px 20px rgba(32, 32, 32, 0.4);
+    transform: translateY(-7px);
 `;
 
 const InputPhone = styled.input`
