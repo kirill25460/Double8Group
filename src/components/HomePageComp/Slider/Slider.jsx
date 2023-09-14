@@ -10,7 +10,8 @@ import 'swiper/css/navigation';
 
 import './Slider.css';
 import { ButtonSlider, TopText, Container } from './Slider.styled';
-import Slide1 from 'images/Group1.png';
+// import Slide1 from 'images/Group1.png';
+import Slide2 from 'images/main-slider.jpg'
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -34,35 +35,35 @@ export default function MySlider() {
       >
         <Container>
           <SwiperSlide>
-            <img src={Slide1} alt="Slide1" />
+            <img src={Slide2} alt="Slide1" />
             <TopText>RESIDENTIAL AND COMMERCIAL AIR DUCT CLEANING</TopText>
             <NavLink to="air_duct">
               <ButtonSlider>Details</ButtonSlider>
             </NavLink>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slide1} alt="Slide2" />
+            <img src={Slide2} alt="Slide2" />
             <TopText>DRYER VENT CLEANING</TopText>
             <NavLink to="dry_vent">
               <ButtonSlider>Details</ButtonSlider>
             </NavLink>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slide1} alt="Slide3" />
+            <img src={Slide2} alt="Slide3" />
             <TopText>CHIMNEY CLEANING</TopText>
             <NavLink to="chimney_cleaning">
               <ButtonSlider>Details</ButtonSlider>
             </NavLink>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slide1} alt="Slide4" />
+            <img src={Slide2} alt="Slide4" />
             <TopText>BATHROOM FAN CLEANING</TopText>
             <NavLink to="bathroom_fan_cleaning">
               <ButtonSlider>Details</ButtonSlider>
             </NavLink>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slide1} alt="Slide5" />
+            <img src={Slide2} alt="Slide5" />
             <TopText>POWER WASHING</TopText>
             <NavLink to="power_washing">
               <ButtonSlider>Details</ButtonSlider>
