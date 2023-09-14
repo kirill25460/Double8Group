@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {
   Container,
   WrapInput,
@@ -10,10 +10,10 @@ import {
   InputReview,
   SharePic,
   InputEmail,
-  InputFileReview,
+  // InputFileReview,
   MainInput,
   InputContainer,
-  SvgClip,
+  // SvgClip,
   SvgTg,
   SubBtn,
   InputPhone,
@@ -23,35 +23,35 @@ import man from 'images/BookUsMan.png';
 import Notiflix from 'notiflix';
 
 export const ContactUsForm = ({ onInput, inputs }) => {
-  const inputRef = useRef(null);
+  // const inputRef = useRef(null);
 
-  const handleArrowClick = () => {
-    inputRef.current.click();
-  };
+  // const handleArrowClick = () => {
+  //   inputRef.current.click();
+  // };
 
-  const handleFileChange = event => {
-    const selectedFile = event.target.files[0];
-    if (selectedFile) {
-      Notiflix.Notify.success('Photos added');
-    } else {
-      Notiflix.Notify.failure('Photos didn`t added');
-    }
-  };
+  // const handleFileChange = event => {
+  //   const selectedFile = event.target.files[0];
+  //   if (selectedFile) {
+  //     Notiflix.Notify.success('Photos added');
+  //   } else {
+  //     Notiflix.Notify.failure('Photos didn`t added');
+  //   }
+  // };
 
   const handleSubmit = evt => {
     evt.preventDefault();
     const form = evt.currentTarget;
     const title = form.elements.title.value;
+    const email = form.elements.email.value;
     const number = form.elements.number.value;
     const bookus = form.elements.bookus.value;
-    const photo = form.elements.photo.value;
-    if (title !== '' && number !== '' && bookus !== '' && photo !== '') {
+    if (title !== '' && number !== '' && bookus !== '' && email !== '') {
       Notiflix.Notify.success('Rewiew send');
     } else {
       Notiflix.Notify.failure('Rewiew didn`t send');
     }
 
-    console.log(title, number, bookus, photo);
+    console.log(title, email, number, bookus);
     form.reset();
   };
 
