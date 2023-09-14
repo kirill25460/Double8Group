@@ -7,6 +7,7 @@ import {
   WrapForMobPhoto,
   TxtExp,
   InputName,
+  // NumberWrap,
   InputReview,
   SharePic,
   InputEmail,
@@ -64,7 +65,7 @@ export const ContactUsForm = ({ onInput, inputs }) => {
             <SharePic src={man} alt="man" />
           </WrapForMobPhoto>
           <WrapFor3Inputs onSubmit={handleSubmit}>
-            <WrapInput>
+            
               <InputName
                 type="text"
                 name="title"
@@ -72,6 +73,7 @@ export const ContactUsForm = ({ onInput, inputs }) => {
                 // value={inputs.title}
                 placeholder="Name"
               ></InputName>
+              <WrapInput>
               <InputEmail
                 type="email"
                 name="email"
@@ -86,8 +88,9 @@ export const ContactUsForm = ({ onInput, inputs }) => {
                 // value={inputs.title}
                 placeholder="Phone number"
               />
-            </WrapInput>
-
+              </WrapInput>
+             
+          
             <InputReview
               rows="15"
               type="text"

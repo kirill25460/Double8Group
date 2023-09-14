@@ -46,12 +46,17 @@ margin:0;
 const Wrap = styled.div``;
 
 const WrapInput = styled.div`
-display: flex;`;
+display: flex;
+justify-content: space-between;
+margin-bottom:20px;
+`;
 
 const WrapFor3Inputs = styled.form`
+
   margin-bottom: 65px;
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
+    width: 485px;
   }
   @media screen and (min-width: 1440px) {
     margin-bottom: 0;
@@ -69,13 +74,10 @@ const InputName = styled.input`
   margin-bottom: 20px;
   margin-right: 15px;
   @media screen and (min-width: 768px) {
-    width: 266px;
-   
-    margin-right: 27px;
-  }
-  @media screen and (min-width: 1440px) {
+    width: 250px;
 
   }
+
 `;
 
 const SelectType = styled.select`
@@ -87,15 +89,15 @@ const SelectType = styled.select`
 `;
 
 const InputReview = styled.textarea`
-  width: 327px;
-  height: 32px;
+  width: 265px;
+  height: 50px;
   resize: none;
   outline: none;
   border-width: 0 0 2px;
   border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
   @media screen and (min-width: 768px) {
-    width: 497px;
+    width: 425px;
     height: 32px;
   }
   @media screen and (min-width: 1440px) {
@@ -147,15 +149,10 @@ const InputContainer = styled.div`
   position: absolute;
   display: inline-flex;
   flex-direction: column;
-  right: 5px;
-  bottom: 5px;
+  right: -13px;
+  bottom: -13px;
   align-items: center;
-  @media screen and (min-width: 768px) {
-    right: 130px;
-  }
-  @media screen and (min-width: 1440px) {
-    right: 5px;
-  }
+ 
 `;
 
 const SubBtn = styled.button`
@@ -189,8 +186,9 @@ const SvgTg = styled(PiTelegramLogo)`
 `;
 
 const InputPhone = styled.input`
-  width: 160px;
+
   height: 33px;
+  width: 140px;
   outline: none;
   border-width: 0 0 2px;
   border-radius: 2px;
@@ -205,8 +203,9 @@ const InputPhone = styled.input`
 `;
 
 const InputEmail = styled.input`
-  width: 160px;
+  width: 140px;
   height: 33px;
+
   outline: none;
   border-width: 0 0 2px;
   border-radius: 2px;
@@ -220,6 +219,10 @@ const InputEmail = styled.input`
   }
 `;
 
+const NumberWrap = styled.div`
+display:flex;
+`;
+
 const WrapForMobPhoto = styled.div`
 @media screen and (min-width: 768px) {
   display:flex;
@@ -229,6 +232,7 @@ export {WrapForMobPhoto,
   WrapInput,
   WrapFor3Inputs,
   Wrap,
+  NumberWrap,
   TxtExp,
   InputName,
   SelectType,
