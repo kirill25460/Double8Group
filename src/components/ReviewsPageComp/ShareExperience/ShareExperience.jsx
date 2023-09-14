@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Container,
   WrapInput,
@@ -23,6 +23,9 @@ import woman from 'images/ShareWoman.png';
 import Notiflix from 'notiflix';
 
 export const ShareExperience = ({ onInput, inputs }) => {
+
+  const [isChecked, setIsChecked] = useState(false);
+
   const types = [
     { id: 0, type: 'Air duct cleaning' },
     { id: 1, type: 'Dryer vent cleaning' },
@@ -50,6 +53,8 @@ export const ShareExperience = ({ onInput, inputs }) => {
 
   // }
 
+
+
   const handleSubmit = evt => {
     evt.preventDefault();
 
@@ -57,14 +62,14 @@ export const ShareExperience = ({ onInput, inputs }) => {
     const title = form.elements.title.value;
     const type = form.elements.type.value;
     const review = form.elements.review.value;
-    const photo = form.elements.photo.value;
 
-    if (title !== '' && type !== '' && review !== '' && photo !== '') {
+    console.log(isChecked)
+    if (title !== '' && type !== '' && review !== '' && isChecked === true) {
       Notiflix.Notify.success('Rewiew send');
     } else {
       Notiflix.Notify.failure('Rewiew didn`t send');
     }
-    console.log(title, type, review, photo);
+    console.log(title, type, review);
 
     form.reset();
   };
@@ -111,9 +116,10 @@ export const ShareExperience = ({ onInput, inputs }) => {
             <MainInput>
             <input
               type="checkbox"
-              id="subscribeReview"
+              id="subscribe"
               name="subscribe"
-              required
+              checked={isChecked}
+              onChange={()=>setIsChecked(!isChecked)}
             />
             <LabelCheckbox for="subscribeReview">
               This review is based on my own experience
