@@ -61,14 +61,16 @@ const WrapFor3Inputs = styled.form`
 const InputName = styled.input`
   width: 140px;
   height: 33px;
+  outline: none;
+  border-width: 0 0 2px;
   border-radius: 2px;
-  border: 2px solid #f8821e;
+  border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
   margin-bottom: 20px;
   margin-right: 15px;
   @media screen and (min-width: 768px) {
     width: 266px;
-    height: 29px;
+   
     margin-right: 27px;
   }
   @media screen and (min-width: 1440px) {
@@ -88,8 +90,9 @@ const InputReview = styled.textarea`
   width: 327px;
   height: 32px;
   resize: none;
-  padding-bottom: 320px;
-  border: 2px solid #f8821e;
+  outline: none;
+  border-width: 0 0 2px;
+  border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
   @media screen and (min-width: 768px) {
     width: 497px;
@@ -188,8 +191,26 @@ const SvgTg = styled(PiTelegramLogo)`
 const InputPhone = styled.input`
   width: 160px;
   height: 33px;
+  outline: none;
+  border-width: 0 0 2px;
   border-radius: 2px;
-  border: 2px solid #f8821e;
+  border-bottom: 2px solid #f8821e;
+  color: #c5c5c5;
+  @media screen and (min-width: 768px) {
+    width: 196px;
+    height: 29px;
+  }
+  @media screen and (min-width: 1440px) {
+  }
+`;
+
+const InputEmail = styled.input`
+  width: 160px;
+  height: 33px;
+  outline: none;
+  border-width: 0 0 2px;
+  border-radius: 2px;
+  border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
   @media screen and (min-width: 768px) {
     width: 196px;
@@ -212,6 +233,7 @@ export {WrapForMobPhoto,
   InputName,
   SelectType,
   InputReview,
+  InputEmail,
   SharePic,
   InputFileReview,
   MainInput,

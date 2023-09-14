@@ -9,6 +9,7 @@ import {
   InputName,
   InputReview,
   SharePic,
+  InputEmail,
   InputFileReview,
   MainInput,
   InputContainer,
@@ -16,10 +17,10 @@ import {
   SvgTg,
   SubBtn,
   InputPhone,
-  SharePicDesc
+  SharePicDesc,
 } from './ContactUsForm.styled';
 import man from 'images/BookUsMan.png';
-import Notiflix from 'notiflix'
+import Notiflix from 'notiflix';
 
 export const ContactUsForm = ({ onInput, inputs }) => {
   const inputRef = useRef(null);
@@ -28,11 +29,11 @@ export const ContactUsForm = ({ onInput, inputs }) => {
     inputRef.current.click();
   };
 
-  const handleFileChange = (event) => {
+  const handleFileChange = event => {
     const selectedFile = event.target.files[0];
     if (selectedFile) {
       Notiflix.Notify.success('Photos added');
-    }else{
+    } else {
       Notiflix.Notify.failure('Photos didn`t added');
     }
   };
@@ -44,9 +45,9 @@ export const ContactUsForm = ({ onInput, inputs }) => {
     const number = form.elements.number.value;
     const bookus = form.elements.bookus.value;
     const photo = form.elements.photo.value;
-    if(title !== "" && number !== "" && bookus !== "" && photo !== ""){
+    if (title !== '' && number !== '' && bookus !== '' && photo !== '') {
       Notiflix.Notify.success('Rewiew send');
-    }else{
+    } else {
       Notiflix.Notify.failure('Rewiew didn`t send');
     }
 
@@ -59,8 +60,8 @@ export const ContactUsForm = ({ onInput, inputs }) => {
       <Container>
         <Wrap>
           <WrapForMobPhoto>
-          <TxtExp>LEAVE YOUR TASK AND WE WILL CALL YOU</TxtExp>
-          <SharePic src={man} alt="man" />
+            <TxtExp>LEAVE YOUR TASK AND WE WILL CALL YOU</TxtExp>
+            <SharePic src={man} alt="man" />
           </WrapForMobPhoto>
           <WrapFor3Inputs onSubmit={handleSubmit}>
             <WrapInput>
@@ -71,6 +72,12 @@ export const ContactUsForm = ({ onInput, inputs }) => {
                 // value={inputs.title}
                 placeholder="Name"
               ></InputName>
+              <InputEmail
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+              ></InputEmail>
               <InputPhone
                 type="tel"
                 name="number"
@@ -87,11 +94,11 @@ export const ContactUsForm = ({ onInput, inputs }) => {
               name="bookus"
               id="bookus"
               // value={inputs.review}
-              placeholder="Write your task here..."
+              placeholder="Let us know which day/time is convenient for you and we will give a call to confirm all details"
             ></InputReview>
             <MainInput>
               <InputContainer>
-                <InputFileReview
+                {/* <InputFileReview
                   ref={inputRef}
                   type="file"
                   name="photo"
@@ -99,7 +106,7 @@ export const ContactUsForm = ({ onInput, inputs }) => {
                   onChange={handleFileChange}
                   // value={inputs.review}
                 />
-                <SvgClip onClick={handleArrowClick} />
+                <SvgClip onClick={handleArrowClick} /> */}
                 <SubBtn type="submit">
                   <SvgTg />
                 </SubBtn>
@@ -107,7 +114,7 @@ export const ContactUsForm = ({ onInput, inputs }) => {
             </MainInput>
           </WrapFor3Inputs>
         </Wrap>
-        
+
         <SharePicDesc src={man} alt="desc" />
       </Container>
     </>
