@@ -28,7 +28,6 @@ import {
   Link,
 } from './Header.styled';
 import { useState } from 'react';
-import { useMediaQuery } from '@mui/material';
 
 export const Header = () => {
   const navItems = [
@@ -50,8 +49,6 @@ export const Header = () => {
     console.log(isOpen);
   };
 
-  const smallDest = useMediaQuery('(max-width: 767px)');
-
   return (
     <AppBar>
       <Container>
@@ -65,17 +62,6 @@ export const Header = () => {
             {' '}
             <LogoHeader src={HeaderLogo} alt="Logo" />{' '}
           </NavLink>
-          {!smallDest && (
-            <ContactWrap>
-              <Link href="tel:+1 517-974-8830">
-                <PhoneSvg />
-              </Link>
-
-              <Link href="mailto:d8gllc@gmail.com">
-                <SvgMail />
-              </Link>
-            </ContactWrap>
-          )}
         </LogoWrap>
         <Wrap>
           <NavList>
@@ -87,6 +73,12 @@ export const Header = () => {
               </NavItem>
             ))}
             <ContactWrap>
+              <Link href="tel:+1 517-974-8830">
+                <PhoneSvg />
+              </Link>
+              <Link href="mailto:d8gllc@gmail.com">
+                <SvgMail />
+              </Link>
               <Link href="https://instagram.com/double8group?igshid=MzRlODBiNWFlZA==">
                 <SvgInst />
               </Link>

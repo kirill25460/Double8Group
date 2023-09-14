@@ -19,6 +19,7 @@ import {
   SubBtn,
   InputPhone,
   SharePicDesc,
+  BlackSpan
 } from './ContactUsForm.styled';
 import man from 'images/BookUsMan.png';
 import Notiflix from 'notiflix';
@@ -61,7 +62,7 @@ export const ContactUsForm = ({ onInput, inputs }) => {
       <Container>
         <Wrap>
           <WrapForMobPhoto>
-            <TxtExp>LEAVE YOUR TASK AND WE WILL CALL YOU</TxtExp>
+            <TxtExp>LEAVE YOUR TASK <BlackSpan>AND WE WILL CALL YOU</BlackSpan></TxtExp>
             <SharePic src={man} alt="man" />
           </WrapForMobPhoto>
           <WrapFor3Inputs onSubmit={handleSubmit}>

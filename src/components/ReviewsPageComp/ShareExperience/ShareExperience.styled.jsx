@@ -25,7 +25,7 @@ const TxtExp = styled.h2`
   font-weight: 800;
   letter-spacing: 0px;
   line-height: 43px;
-  color: #f8821e;
+  color: black;
   @media screen and (min-width: 768px) {
     font-size: 46px;
     line-height: 43px;
@@ -38,6 +38,10 @@ const TxtExp = styled.h2`
     text-align: left;
   }
 `;
+
+const BlackSpan = styled.span`
+  color:#f8821e;
+`
 
 const Wrap = styled.div`
   width: 370px;
@@ -253,5 +257,6 @@ export {
   SvgTg,
   SubBtn,
   OtherText,
-  OtherSpan
+  OtherSpan,
+  BlackSpan
 };

@@ -96,10 +96,9 @@ export const StyledLink = styled(NavLink)`
   display: flex;
   align-items: center;
 
-  color: #f8821e;
-
   text-decoration: none;
   span {
+    color: black;
   }
 
   &.active {
@@ -257,7 +256,7 @@ export const SideItems = styled.div`
 `;
 
 export const ContactWrap = styled.div`
-  width: 60px;
+  width: 120px;
   display: flex;
   justify-content: space-between;
 `;

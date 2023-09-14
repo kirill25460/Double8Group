@@ -19,6 +19,10 @@ padding-top:84px;
   }
 `;
 
+const BlackSpan = styled.span`
+  color: black;
+`
+
 const TxtExp = styled.h2`
 margin:0;
   width: 300px;
@@ -250,4 +254,5 @@ export {WrapForMobPhoto,
   SubBtn,
   InputPhone,
   SharePicDesc,
+  BlackSpan
 };

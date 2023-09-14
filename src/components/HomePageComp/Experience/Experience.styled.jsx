@@ -43,7 +43,7 @@ margin:0;
   line-height: 30px;
   letter-spacing: 0px;
   text-align: center;
-  color: #f8821e;
+  color: black;
 
   @media screen and (min-width: 768px) {
     font-size: 25px;

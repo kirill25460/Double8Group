@@ -85,7 +85,7 @@ export const BookUsBtn = styled.button`
     height: 75px;
     margin: 0 44px;
   }
-  }
+  
 `;
 
 export const PicToolsL = styled.img`
@@ -148,5 +148,6 @@ export const BookUsItem = styled.li`
 `;
 
 export const ItemText = styled.p`
-color: #f8821f;
+color: black;
+-webkit-text-stroke: 0.3px #f8821f;
 `;

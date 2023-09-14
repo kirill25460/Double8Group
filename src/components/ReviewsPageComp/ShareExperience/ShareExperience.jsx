@@ -18,6 +18,7 @@ import {
   SubBtn,
   OtherText,
   OtherSpan,
+  BlackSpan
 } from './ShareExperience.styled';
 import woman from 'images/ShareWoman.png';
 import Notiflix from 'notiflix';
@@ -78,7 +79,7 @@ export const ShareExperience = ({ onInput, inputs }) => {
     <>
       <Container>
         <Wrap>
-          <TxtExp>SHARE YOUR EXPERIENCE WITH OTHERS!</TxtExp>
+          <TxtExp>SHARE YOUR <BlackSpan>EXPERIENCE</BlackSpan> WITH OTHERS!</TxtExp>
           <WrapFor3Inputs onSubmit={handleSubmit}>
             <WrapInput>
               <InputName
