@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 import './Slider.css';
 import { ButtonSlider, TopText, Container } from './Slider.styled';
 // import Slide1 from 'images/Group1.png';
-import Slide2 from 'images/main-slider.jpg'
+import Slide2 from 'images/main-slider.png'
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
