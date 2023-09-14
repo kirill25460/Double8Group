@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/double8group/static/css/main.4c8aee66.css",
-    "main.js": "/double8group/static/js/main.b31772c0.js",
+    "main.js": "/double8group/static/js/main.4593c09d.js",
     "static/media/powerwashingAfter.png": "/double8group/static/media/powerwashingAfter.014712ac5dc50c400542.png",
     "static/media/worker.png": "/double8group/static/media/worker.960b65b72ca53a1bc05c.png",
     "static/media/BookUsMan.png": "/double8group/static/media/BookUsMan.812204d653f8c5393f9b.png",
     "static/media/ShareWoman.png": "/double8group/static/media/ShareWoman.0794215d592972c48fe1.png",
+    "static/media/main-slider.png": "/double8group/static/media/main-slider.43a517ec9de5451bbad7.png",
     "static/media/8.jpg": "/double8group/static/media/8.773a27ab116e5bf4bd36.jpg",
     "static/media/1.jpg": "/double8group/static/media/1.cd0b15d723ba9befaeb9.jpg",
     "static/media/2.jpg": "/double8group/static/media/2.00dd3c2b2f5ce4fea64d.jpg",
@@ -42,16 +43,15 @@
     "static/media/ChimneyBefore.jpg": "/double8group/static/media/ChimneyBefore.cd0b15d723ba9befaeb9.jpg",
     "static/media/powerWashingBefore.jpg": "/double8group/static/media/powerWashingBefore.6ae6a7e6b82f40dfb10c.jpg",
     "static/media/14.jpg": "/double8group/static/media/14.10a46e40c8989f718875.jpg",
-    "static/media/main-slider.jpg": "/double8group/static/media/main-slider.e65573d404aeb1ca4d42.jpg",
     "static/media/11.jpg": "/double8group/static/media/11.de5e40cbde306cf58557.jpg",
     "static/media/HammerL.png": "/double8group/static/media/HammerL.7482776ce48ac6e215e6.png",
     "static/media/HammerR.png": "/double8group/static/media/HammerR.367cec0c464c210ab213.png",
     "index.html": "/double8group/index.html",
     "main.4c8aee66.css.map": "/double8group/static/css/main.4c8aee66.css.map",
-    "main.b31772c0.js.map": "/double8group/static/js/main.b31772c0.js.map"
+    "main.4593c09d.js.map": "/double8group/static/js/main.4593c09d.js.map"
   },
   "entrypoints": [
     "static/css/main.4c8aee66.css",
-    "static/js/main.b31772c0.js"
+    "static/js/main.4593c09d.js"
   ]
 }
