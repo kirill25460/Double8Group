@@ -78,7 +78,14 @@ const InputName = styled.input`
   margin-bottom: 20px;
   margin-right: 15px;
   @media screen and (min-width: 768px) {
-    width: 219px;
+    width: 220px;
+    height: 29px;
+
+  }
+  @media screen and (min-width: 1440px) {
+    width: 254px;
+    height: 33px;
+
   }
 
 `;
@@ -213,7 +220,6 @@ const InputPhone = styled.input`
 const InputEmail = styled.input`
   width: 150px;
   height: 33px;
-
   outline: none;
   border-width: 0 0 2px;
   border-radius: 2px;

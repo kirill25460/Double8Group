@@ -14,6 +14,7 @@ align-items: center;
     display:flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 60px;
     padding-bottom: 63px;
     justify-content: center;
   }
@@ -70,6 +71,13 @@ font-weight: 500;
 line-height: 17px;
 letter-spacing: 0px;
 text-align: left;
+@media screen and (min-width: 768px) {
+  position:absolute;
+  top:80px;
+}
+@media screen and (min-width: 1440px) {
+  top:115px;
+}
 `;
 
 export const WrapSlider = styled.div`
@@ -77,7 +85,7 @@ max-width: 345px;
 margin-bottom:20px;
 @media screen and (min-width: 768px) {
   
-  height: 458px;
+
 }
 @media screen and (min-width: 1440px) {
 
@@ -88,10 +96,10 @@ margin-bottom:20px;
 export const WrapService = styled.div`
 
 @media screen and (min-width: 768px) {
-  padding-right:105px;
+ 
 }
 @media screen and (min-width: 1440px) {
-  
+  padding-right:105px;
 }
 
 `;
@@ -100,14 +108,13 @@ export const WrapImages = styled.div`
 display:flex;
 gap: 15px;
 @media screen and (min-width: 768px) {
- 
-align-items: center;
-flex-direction: column;
-justify-content: center;
-  padding-left:105px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
 }
 @media screen and (min-width: 1440px) {
-
+    padding-left:105px;
 }
 
 

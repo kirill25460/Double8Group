@@ -62,13 +62,14 @@ export const ChimneyCleaningP = () => {
           <TextService>
           Soot regularly accumulates on chimney’s walls. It is necessary to clean it in order to prevent the occurrence of a fire in the house and the carbon monoxide poisoning.
           </TextService>
-          <DescriptionService>*Price is an accurate estimate
-based on standard scope of work</DescriptionService>
+          
           <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
          
         </WrapService>
 
         <WrapSlider>
+        <DescriptionService>*Price is an accurate estimate
+based on standard scope of work</DescriptionService>
           <ReactBeforeSliderComponent
             firstImage={SECOND_IMAGE}
             secondImage={FIRST_IMAGE}

@@ -13,6 +13,7 @@ import {
   ButtonServices,
   DescriptionService,
   WrapService,
+  AdditionallText,
   WrapImages,
   MobButtonServices,
   OtherDescription,
@@ -65,12 +66,15 @@ export const AirDuctP = () => {
           <TextService>
           Regular cleaning of the air duct is necessary for the normal functioning of the ventilation system. Since, it passes large volumes of air through itself, along with dust and dirt.
           </TextService>
-          <DescriptionService>We also provide the air duct cleaning service for your business. </DescriptionService>
+          <AdditionallText>We also provide the air duct cleaning service for your business. </AdditionallText>
           <OtherDescription>For business from $800.</OtherDescription>
           <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
         </WrapService>
 
         <WrapSlider>
+        <DescriptionService>
+            *Price is an accurate estimate based on standard scope of work
+          </DescriptionService>
           <ReactBeforeSliderComponent
             firstImage={SECOND_IMAGE}
             secondImage={FIRST_IMAGE}

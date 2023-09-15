@@ -60,15 +60,20 @@ export const DrVentCl = () => {
         <WrapService>
           <NameService>DRYER VENT CLEANING</NameService>
           <TextService>
-          If your dryer has a problem with air flow, full of lint, moldy smell, clothes takes longer to dry then is time to clean it. Why? Because clogged dryer vent can also be a fire hazard.
+            If your dryer has a problem with air flow, full of lint, moldy
+            smell, clothes takes longer to dry then is time to clean it. Why?
+            Because clogged dryer vent can also be a fire hazard.
           </TextService>
-          <DescriptionService>*Price is an accurate estimate
-based on standard scope of work</DescriptionService>
-          <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
          
+          <NavLink to="contact_us">
+            <ButtonServices>BOOK THIS SERVICE</ButtonServices>
+          </NavLink>
         </WrapService>
 
         <WrapSlider>
+        <DescriptionService>
+            *Price is an accurate estimate based on standard scope of work
+          </DescriptionService>
           <ReactBeforeSliderComponent
             firstImage={SECOND_IMAGE}
             secondImage={FIRST_IMAGE}
@@ -85,8 +90,8 @@ based on standard scope of work</DescriptionService>
             {isSliderOpen && (
               <SliderServices images={photo} onClose={closeSlider} />
             )} */}
-            <SeerviceImages src={Photo} alt="Logo" />
-            <ImgText>FULL PHOTO REPORT</ImgText>
+          <SeerviceImages src={Photo} alt="Logo" />
+          <ImgText>FULL PHOTO REPORT</ImgText>
           {/* </DivPhoto> */}
         </WrapImages>
         <div>

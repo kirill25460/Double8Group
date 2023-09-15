@@ -62,13 +62,14 @@ export const BathroomFanCleaningP = () => {
           Bathroom is the most humid place in the house and exhaust pipe can be 
 full with mold, germs and bacteria. Cleaning it will prevent you from allergies and breathing problems.
           </TextService>
-          <DescriptionService>*Price is an accurate estimate
-based on standard scope of work</DescriptionService>
+         
           <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
       
         </WrapService>
 
         <WrapSlider>
+        <DescriptionService>*Price is an accurate estimate
+based on standard scope of work</DescriptionService>
           <ReactBeforeSliderComponent
             firstImage={SECOND_IMAGE}
             secondImage={FIRST_IMAGE}
