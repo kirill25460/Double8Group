@@ -31,7 +31,6 @@ margin: 80px 0 0 0;
   @media screen and (min-width: 768px) {
     font-size: 50px;
     line-height: 40px;
-    width: 645px;
   }
  
 `;
@@ -45,11 +44,9 @@ margin:0;
   text-align: center;
   color: black;
   -webkit-text-stroke: 0.3px #f8821f;
-
+padding-top:10px;
   @media screen and (min-width: 768px) {
     font-size: 25px;
-
-    width: 512px;
   }
  
 `;
