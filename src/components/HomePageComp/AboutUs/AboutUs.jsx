@@ -5,6 +5,7 @@ import {
   HomeText,
   HomePar,
   AboutUsPic,
+  AbUs,
   Wrap,
 } from './AboutUs.styled';
 import man from 'images/worker.png';
@@ -27,6 +28,7 @@ export const AboutUs = () => {
             service that leaves your home with fresher, cleaner air. Choose us
             to breathe easier and enjoy a healthier living environment.
           </HomePar>
+          <AbUs>We offer service in NJ and NYC.</AbUs>
         </Wrap>
 
         <AboutUsPic src={man} alt="Man" />

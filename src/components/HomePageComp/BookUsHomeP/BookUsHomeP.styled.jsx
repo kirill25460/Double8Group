@@ -21,13 +21,12 @@ export const Container = styled.div`
 `;
 
 export const BookUsTxt = styled.h2`
-
-  margin: 0;
-  font-family: Montserrat;
-  font-size: 42px;
-  font-weight: 500;
-  line-height: 39.5px;
+font-family: Montserrat;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 61px;
   letter-spacing: 0px;
+  margin: 0;
   text-align: center;
   color: #f8821f;
   margin-bottom: 55px;
@@ -37,9 +36,7 @@ export const BookUsTxt = styled.h2`
     font-size: 46px;
   }
   @media screen and (min-width: 1440px) {
-    width: 777px;
-
-    font-size: 54px;
+    font-size: 65px;
   }
 `;
 
@@ -149,5 +146,5 @@ export const BookUsItem = styled.li`
 
 export const ItemText = styled.p`
 color: black;
--webkit-text-stroke: 0.3px #f8821f;
+
 `;

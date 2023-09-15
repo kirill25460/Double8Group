@@ -99,18 +99,19 @@ export const StyledLink = styled(NavLink)`
   text-decoration: none;
   span {
     color: black;
+    &:hover{color: #f8821e;}
   }
 
   &.active {
-    // border-bottom:3px solid #FF8C00;
+ 
   }
 
   &:hover:not(.active),
   &:focus-visible:not(.active) {
-    color: #222021;
+    color: #f8821e;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    // border-bottom:3px solid #FF8C00;
+
   }
 `;
 // margin: left 100px;

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
 
-import { SliderServices } from 'helper/SliderServices';
+// import { SliderServices } from 'helper/SliderServices';
 
 import {
   Container,
@@ -15,10 +15,10 @@ import {
   WrapService,
   WrapImages,
   MobButtonServices,
-
+  OtherDescription,
   ImgText,
   SeerviceImages,
-  DivPhoto
+  // DivPhoto
 } from './AirDuctP.styled';
 
 import before from 'images/AirDuct3.jpg';
@@ -26,9 +26,9 @@ import after from 'images/AirDuct4.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
 import Photo from 'images/icon_camera.png';
-import arr from "images/services/PhotoObject";
+// import arr from "images/services/PhotoObject";
 
-const photo = arr.airDuct;
+// const photo = arr.airDuct;
 
 const FIRST_IMAGE = {
   imageUrl: before,
@@ -47,15 +47,15 @@ const delimiterIconStyles = {
 
 
 export const AirDuctP = () => {
-  const [isSliderOpen, setIsSliderOpen] = useState(false);
+  // const [isSliderOpen, setIsSliderOpen] = useState(false);
 
-  const openSlider = () => {
-    setIsSliderOpen(true);
-  };
+  // const openSlider = () => {
+  //   setIsSliderOpen(true);
+  // };
 
-  const closeSlider = () => {
-    setIsSliderOpen(false);
-  };
+  // const closeSlider = () => {
+  //   setIsSliderOpen(false);
+  // };
 
   return (
     <>
@@ -65,7 +65,8 @@ export const AirDuctP = () => {
           <TextService>
           Regular cleaning of the air duct is necessary for the normal functioning of the ventilation system. Since, it passes large volumes of air through itself, along with dust and dirt.
           </TextService>
-          <DescriptionService>We also provide the air duct cleaning service for businesses from $800</DescriptionService>
+          <DescriptionService>We also provide the air duct cleaning service for your business. </DescriptionService>
+          <OtherDescription>For business from $800.</OtherDescription>
           <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
         </WrapService>
 
@@ -82,13 +83,13 @@ export const AirDuctP = () => {
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
-          <DivPhoto onClick={openSlider}>
+          {/* <DivPhoto onClick={openSlider}>
             {isSliderOpen && (
               <SliderServices images={photo} onClose={closeSlider} />
-            )}
+            )} */}
             <SeerviceImages src={Photo} alt="Logo" />
             <ImgText>FULL PHOTO REPORT</ImgText>
-          </DivPhoto>
+          {/* </DivPhoto> */}
         </WrapImages>
         <div>
           <NavLink to="contact_us">

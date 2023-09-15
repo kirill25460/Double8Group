@@ -63,6 +63,20 @@ color:#2C2C2C;
 `;
 
 export const DescriptionService = styled.p`
+margin:0;
+padding-top:30px;
+padding-bottom:10px;
+color:#2C2C2C;
+font-family: DM Sans;
+font-size: 15px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+text-align: left;
+`;
+
+export const OtherDescription = styled.p`
+margin:0;
 color:#2C2C2C;
 font-family: DM Sans;
 font-size: 15px;
