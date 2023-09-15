@@ -107,6 +107,7 @@ const InputReview = styled.textarea`
   width: 325px;
   height: 24px;
   margin-bottom:20px;
+  margin-top: 30px;
   resize: none;
   outline: none;
   border-width: 0 0 2px;
@@ -168,7 +169,7 @@ const InputContainer = styled.div`
 `;
 
 const SubBtn = styled.button`
-margin-left:0;
+  margin-left:0;
   background: none;
   border: none;
   cursor: pointer;

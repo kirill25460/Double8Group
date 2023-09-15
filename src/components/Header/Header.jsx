@@ -92,7 +92,7 @@ export const Header = () => {
             {navSideItems.map(({ href, text, svg }) => {
               return (
                 <StyledLink to={href}>
-                  <SideItems>
+                  <SideItems onClick={toggleMenu}>
                     {svg}
                     {text}
                   </SideItems>

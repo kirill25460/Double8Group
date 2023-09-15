@@ -51,8 +51,7 @@ const Wrap = styled.div``;
 
 const WrapInput = styled.div`
 display: flex;
-justify-content: space-between;
-margin-bottom:20px;
+margin-bottom:40px;
 `;
 
 const WrapFor3Inputs = styled.form`
@@ -64,11 +63,12 @@ const WrapFor3Inputs = styled.form`
   }
   @media screen and (min-width: 1440px) {
     margin-bottom: 0;
+    width: 100%;
   }
 `;
 
 const InputName = styled.input`
-  width: 140px;
+  width: 150px;
   height: 33px;
   outline: none;
   border-width: 0 0 2px;
@@ -78,8 +78,7 @@ const InputName = styled.input`
   margin-bottom: 20px;
   margin-right: 15px;
   @media screen and (min-width: 768px) {
-    width: 250px;
-
+    width: 219px;
   }
 
 `;
@@ -101,10 +100,12 @@ const InputReview = styled.textarea`
   border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
   @media screen and (min-width: 768px) {
-    width: 425px;
+    width: 415px;
     height: 32px;
   }
   @media screen and (min-width: 1440px) {
+    width: 480px;
+    height: 32px;
   }
 `;
 
@@ -150,12 +151,8 @@ const InputFileReview = styled.input`
 `;
 
 const InputContainer = styled.div`
-  position: absolute;
-  display: inline-flex;
-  flex-direction: column;
-  right: -13px;
-  bottom: -13px;
-  align-items: center;
+  display: flex;
+
  
 `;
 
@@ -164,6 +161,7 @@ const SubBtn = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
+  margin-left: 30px;
 `;
 
 const SvgClip = styled(TfiClip)`
@@ -181,36 +179,39 @@ const SvgTg = styled(PiTelegramLogo)`
   width: 22px;
   height: 22px;
   padding: 7px;
-  fill: white;
-  background-color: #f8821e;
-  margin: 0 13px 13px 0;
-  border: 2px solid #f8821e;
-  border-radius: 2px;
+  fill: #f8821e;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   &:hover {
     box-shadow: 0 15px 20px rgba(32, 32, 32, 0.4);
+    color: white;
     transform: translateY(-7px);
+  }
 `;
 
 const InputPhone = styled.input`
 
   height: 33px;
-  width: 140px;
+  width: 150px;
   outline: none;
   border-width: 0 0 2px;
   border-radius: 2px;
   border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
   @media screen and (min-width: 768px) {
-    width: 196px;
+    width: 220px;
     height: 29px;
   }
   @media screen and (min-width: 1440px) {
+    height: 33px;
+    width: 254px;
   }
 `;
 
 const InputEmail = styled.input`
-  width: 140px;
+  width: 150px;
   height: 33px;
 
   outline: none;
@@ -218,11 +219,16 @@ const InputEmail = styled.input`
   border-radius: 2px;
   border-bottom: 2px solid #f8821e;
   color: #c5c5c5;
+  margin-right: 30px;
   @media screen and (min-width: 768px) {
-    width: 196px;
+    width: 220px;
     height: 29px;
+    margin-right: 40px;
   }
   @media screen and (min-width: 1440px) {
+    width: 254px;
+    height: 33px;
+    margin-right: 32px;
   }
 `;
 

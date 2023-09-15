@@ -254,6 +254,7 @@ export const SideItems = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 auto 35px;
+  color: black;
 `;
 
 export const ContactWrap = styled.div`

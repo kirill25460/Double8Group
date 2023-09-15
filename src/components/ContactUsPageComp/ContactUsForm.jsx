@@ -12,14 +12,14 @@ import {
   SharePic,
   InputEmail,
   // InputFileReview,
-  MainInput,
-  InputContainer,
+  // MainInput,
+  // InputContainer,
   // SvgClip,
   SvgTg,
   SubBtn,
   InputPhone,
   SharePicDesc,
-  BlackSpan
+  BlackSpan,
 } from './ContactUsForm.styled';
 import man from 'images/BookUsMan.png';
 import Notiflix from 'notiflix';
@@ -62,19 +62,20 @@ export const ContactUsForm = ({ onInput, inputs }) => {
       <Container>
         <Wrap>
           <WrapForMobPhoto>
-            <TxtExp>LEAVE YOUR TASK <BlackSpan>AND WE WILL CALL YOU</BlackSpan></TxtExp>
+            <TxtExp>
+              LEAVE YOUR TASK <BlackSpan>AND WE WILL CALL YOU</BlackSpan>
+            </TxtExp>
             <SharePic src={man} alt="man" />
           </WrapForMobPhoto>
           <WrapFor3Inputs onSubmit={handleSubmit}>
-            
-              <InputName
-                type="text"
-                name="title"
-                id="title"
-                // value={inputs.title}
-                placeholder="Name"
-              ></InputName>
-              <WrapInput>
+            <InputName
+              type="text"
+              name="title"
+              id="title"
+              // value={inputs.title}
+              placeholder="Name"
+            ></InputName>
+            <WrapInput>
               <InputEmail
                 type="email"
                 name="email"
@@ -89,9 +90,8 @@ export const ContactUsForm = ({ onInput, inputs }) => {
                 // value={inputs.title}
                 placeholder="Phone number"
               />
-              </WrapInput>
-             
-          
+            </WrapInput>
+
             <InputReview
               rows="15"
               type="text"
@@ -100,9 +100,12 @@ export const ContactUsForm = ({ onInput, inputs }) => {
               // value={inputs.review}
               placeholder="Let us know which day/time is convenient for you and we will give a call to confirm all details"
             ></InputReview>
-            <MainInput>
+            <SubBtn type="submit">
+              <SvgTg />
+            </SubBtn>
+            {/* <MainInput>
               <InputContainer>
-                {/* <InputFileReview
+                <InputFileReview
                   ref={inputRef}
                   type="file"
                   name="photo"
@@ -110,12 +113,9 @@ export const ContactUsForm = ({ onInput, inputs }) => {
                   onChange={handleFileChange}
                   // value={inputs.review}
                 />
-                <SvgClip onClick={handleArrowClick} /> */}
-                <SubBtn type="submit">
-                  <SvgTg />
-                </SubBtn>
+                <SvgClip onClick={handleArrowClick} />
               </InputContainer>
-            </MainInput>
+            </MainInput> */}
           </WrapFor3Inputs>
         </Wrap>
 

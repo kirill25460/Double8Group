@@ -148,6 +148,7 @@ export const SvgContainer = styled.div`
   width: 100px;
   @media screen and (min-width: 768px) {
     width: 280px;
+    justify-content: end;
   }
 `;
 

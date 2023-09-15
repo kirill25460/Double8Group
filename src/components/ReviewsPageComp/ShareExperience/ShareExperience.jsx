@@ -18,13 +18,12 @@ import {
   SubBtn,
   OtherText,
   OtherSpan,
-  BlackSpan
+  BlackSpan,
 } from './ShareExperience.styled';
 import woman from 'images/ShareWoman.png';
 import Notiflix from 'notiflix';
 
 export const ShareExperience = ({ onInput, inputs }) => {
-
   const [isChecked, setIsChecked] = useState(false);
 
   const types = [
@@ -54,23 +53,28 @@ export const ShareExperience = ({ onInput, inputs }) => {
 
   // }
 
-
-
   const handleSubmit = evt => {
     evt.preventDefault();
 
     const form = evt.currentTarget;
     const title = form.elements.title.value;
+    const email = form.elements.email.value;
     const type = form.elements.type.value;
     const review = form.elements.review.value;
 
-    console.log(isChecked)
-    if (title !== '' && type !== '' && review !== '' && isChecked === true) {
+    console.log(isChecked);
+    if (
+      title !== '' &&
+      type !== '' &&
+      review !== '' &&
+      email !== '' &&
+      isChecked === true
+    ) {
       Notiflix.Notify.success('Rewiew send');
     } else {
       Notiflix.Notify.failure('Rewiew didn`t send');
     }
-    console.log(title, type, review);
+    console.log(title, email, type, review);
 
     form.reset();
   };
@@ -79,7 +83,9 @@ export const ShareExperience = ({ onInput, inputs }) => {
     <>
       <Container>
         <Wrap>
-          <TxtExp>SHARE YOUR <BlackSpan>EXPERIENCE</BlackSpan> WITH OTHERS!</TxtExp>
+          <TxtExp>
+            SHARE YOUR <BlackSpan>EXPERIENCE</BlackSpan> WITH OTHERS!
+          </TxtExp>
           <WrapFor3Inputs onSubmit={handleSubmit}>
             <WrapInput>
               <InputName
@@ -89,22 +95,30 @@ export const ShareExperience = ({ onInput, inputs }) => {
                 placeholder="Full Name"
                 required
               ></InputName>
-              <SelectType
-                name="type"
-                id="type"
-                // value={inputs.email}
-                defaultValue="Type of Service"
-              >
-                <option value="Type of Service">Type of Service</option>
-                {types.map(({ id, type }) => {
-                  return (
-                    <option key={id} value={type}>
-                      {type}
-                    </option>
-                  );
-                })}
-              </SelectType>
             </WrapInput>
+            <InputName
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            ></InputName>
+
+            <SelectType
+              name="type"
+              id="type"
+              // value={inputs.email}
+              defaultValue="Type of Service"
+            >
+              <option value="Type of Service">Type of Service</option>
+              {types.map(({ id, type }) => {
+                return (
+                  <option key={id} value={type}>
+                    {type}
+                  </option>
+                );
+              })}
+            </SelectType>
 
             <InputReview
               rows="15"
@@ -115,17 +129,17 @@ export const ShareExperience = ({ onInput, inputs }) => {
               placeholder="We’d love to hear from you"
             ></InputReview>
             <MainInput>
-            <input
-              type="checkbox"
-              id="subscribe"
-              name="subscribe"
-              checked={isChecked}
-              onChange={()=>setIsChecked(!isChecked)}
-            />
-            <LabelCheckbox for="subscribeReview">
-              This review is based on my own experience
-            </LabelCheckbox>
-            
+              <input
+                type="checkbox"
+                id="subscribe"
+                name="subscribe"
+                checked={isChecked}
+                onChange={() => setIsChecked(!isChecked)}
+              />
+              <LabelCheckbox for="subscribeReview">
+                This review is based on my own experience
+              </LabelCheckbox>
+
               {/* <InputFileReview
                 ref={inputRef}
                 type="file"
