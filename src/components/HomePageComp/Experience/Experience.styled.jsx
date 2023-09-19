@@ -43,8 +43,7 @@ margin:0;
   line-height: 30px;
   letter-spacing: 0px;
   text-align: center;
-  color: black;
-  -webkit-text-stroke: 0.3px #f8821f;
+  color: #f8821e;
 padding-top:10px;
   @media screen and (min-width: 768px) {
     font-size: 25px;
