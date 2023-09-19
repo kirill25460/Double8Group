@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/double8group/static/css/main.14390554.css",
-    "main.js": "/double8group/static/js/main.f8840d67.js",
+    "main.css": "/double8group/static/css/main.f0e8577a.css",
+    "main.js": "/double8group/static/js/main.ee706481.js",
     "static/media/powerwashingAfter.png": "/double8group/static/media/powerwashingAfter.014712ac5dc50c400542.png",
     "static/media/worker.png": "/double8group/static/media/worker.960b65b72ca53a1bc05c.png",
     "static/media/BookUsMan.png": "/double8group/static/media/BookUsMan.812204d653f8c5393f9b.png",
@@ -20,14 +20,12 @@
     "static/media/bathFanAfter.jpg": "/double8group/static/media/bathFanAfter.edec235deedfbda17297.jpg",
     "static/media/ChimneyBefore.jpg": "/double8group/static/media/ChimneyBefore.cd0b15d723ba9befaeb9.jpg",
     "static/media/powerWashingBefore.jpg": "/double8group/static/media/powerWashingBefore.6ae6a7e6b82f40dfb10c.jpg",
-    "static/media/HammerL.png": "/double8group/static/media/HammerL.7482776ce48ac6e215e6.png",
-    "static/media/HammerR.png": "/double8group/static/media/HammerR.367cec0c464c210ab213.png",
     "index.html": "/double8group/index.html",
-    "main.14390554.css.map": "/double8group/static/css/main.14390554.css.map",
-    "main.f8840d67.js.map": "/double8group/static/js/main.f8840d67.js.map"
+    "main.f0e8577a.css.map": "/double8group/static/css/main.f0e8577a.css.map",
+    "main.ee706481.js.map": "/double8group/static/js/main.ee706481.js.map"
   },
   "entrypoints": [
-    "static/css/main.14390554.css",
-    "static/js/main.f8840d67.js"
+    "static/css/main.f0e8577a.css",
+    "static/js/main.ee706481.js"
   ]
 }
