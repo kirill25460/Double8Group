@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/double8group/static/css/main.0014c2ef.css",
+    "main.css": "/double8group/static/css/main.836b9c36.css",
     "main.js": "/double8group/static/js/main.7c05c2d4.js",
     "static/media/powerwashingAfter.png": "/double8group/static/media/powerwashingAfter.014712ac5dc50c400542.png",
     "static/media/worker.png": "/double8group/static/media/worker.960b65b72ca53a1bc05c.png",
@@ -21,11 +21,11 @@
     "static/media/ChimneyBefore.jpg": "/double8group/static/media/ChimneyBefore.cd0b15d723ba9befaeb9.jpg",
     "static/media/powerWashingBefore.jpg": "/double8group/static/media/powerWashingBefore.6ae6a7e6b82f40dfb10c.jpg",
     "index.html": "/double8group/index.html",
-    "main.0014c2ef.css.map": "/double8group/static/css/main.0014c2ef.css.map",
+    "main.836b9c36.css.map": "/double8group/static/css/main.836b9c36.css.map",
     "main.7c05c2d4.js.map": "/double8group/static/js/main.7c05c2d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.0014c2ef.css",
+    "static/css/main.836b9c36.css",
     "static/js/main.7c05c2d4.js"
   ]
 }
