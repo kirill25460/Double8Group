@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
@@ -73,7 +74,7 @@ export const ExpList = styled.ul`
   flex-direction: column;
   align-items: center;
   list-style: none;
-  padding-bottom: 58px;
+  padding-bottom: 30px;
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1440px) {
@@ -183,4 +184,77 @@ export const UnderLane = styled.div`
   border: none;
   border-bottom: 2px solid #f8821e;
   width: 243px;
+`;
+
+
+export const PhoneBtn = styled.button`
+cursor: pointer;
+width: 188px;
+height: 67px;
+color: #202020;
+border: none;
+background-color: #f8821f;
+font-family: 'DM Sans';
+font-size: 17px;
+text-align: center;
+letter-spacing: 0px;
+font-weight: 500;
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+transition: 0.3s;
+margin: 0 20px;
+&:hover {
+  box-shadow: 0 15px 20px rgba(32, 32, 32, 0.4);
+  transform: translateY(-7px);
+}
+@media screen and (min-width: 768px) {
+  width: 210px;
+  height: 75px;
+  font-size: 19px;
+  margin: 0 44px;
+}
+
+`;
+
+export const ContactBtn = styled.button`
+cursor: pointer;
+width: 188px;
+height: 67px;
+color: #202020;
+border: none;
+background-color: #f8821f;
+font-family: 'DM Sans';
+font-size: 23px;
+text-align: center;
+letter-spacing: 3px;
+font-weight: 500;
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+transition: 0.3s;
+margin:20px 20px;
+&:hover {
+  box-shadow: 0 15px 20px rgba(32, 32, 32, 0.4);
+  transform: translateY(-7px);
+}
+@media screen and (min-width: 768px) {
+  width: 210px;
+  height: 75px;
+  margin: 0 44px;
+}
+
+`;
+
+export const WrapBtn = styled.div`
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding-bottom:30px;
+`;
+
+
+export const StyledLink = styled(NavLink)`
+margin:0;
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
 `;

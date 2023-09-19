@@ -15,19 +15,15 @@ import {
   WrapImages,
   ImgText,
   SeerviceImages,
-  // DivPhoto
+  PriceSvg,
+
 } from './PowerWashing.styled';
 
 import after from 'images/powerwashingAfter.png';
 import before from 'images/powerWashingBefore.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
-import Photo from 'images/icon_camera.png';
 
-// import arr from "images/services/PhotoObject";
-// import { SliderServices } from 'helper/SliderServices';
-
-// const photo = arr.powerWashing;
 
 const FIRST_IMAGE = {
   imageUrl: before,
@@ -44,15 +40,7 @@ const delimiterIconStyles = {
   backgroundImage: `url(${BeforeAfterText})`,
 };
 export const PowerWashingP = () => {
-  // const [isSliderOpen, setIsSliderOpen] = useState(false);
 
-  // const openSlider = () => {
-  //   setIsSliderOpen(true);
-  // };
-
-  // const closeSlider = () => {
-  //   setIsSliderOpen(false);
-  // };
   return (
     <>
       <Container>
@@ -67,8 +55,7 @@ export const PowerWashingP = () => {
         </WrapService>
 
         <WrapSlider>
-          <DescriptionService>*Price is an accurate estimate
-based on standard scope of work</DescriptionService>
+       
           <ReactBeforeSliderComponent
             firstImage={SECOND_IMAGE}
             secondImage={FIRST_IMAGE}
@@ -78,16 +65,14 @@ based on standard scope of work</DescriptionService>
             height={500}
           />
         </WrapSlider>
+        <DescriptionService>*Price is an accurate estimate
+based on standard scope of work</DescriptionService>
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
-          {/* <DivPhoto onClick={openSlider}>
-            {isSliderOpen && (
-              <SliderServices images={photo} onClose={closeSlider} />
-            )} */}
-            <SeerviceImages src={Photo} alt="Logo" />
-            <ImgText>FULL PHOTO REPORT</ImgText>
-          {/* </DivPhoto> */}
+     
+          <PriceSvg />
+          <ImgText>FROM 250$</ImgText>
         </WrapImages>
         <div>
           <NavLink to="book_us">

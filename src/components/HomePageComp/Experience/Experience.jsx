@@ -12,6 +12,11 @@ import {
   ExpItText2,
   ExpItTtl3,
   ExpItText3,
+  PhoneBtn,
+  ContactBtn,
+  WrapBtn,
+  StyledLink,
+  Link,
   UnderLane,
 } from './Experience.styled';
 import Exp1 from 'images/Experience1.png';
@@ -23,7 +28,9 @@ export const Experience = () => {
     <>
       <Container>
         <ExpTtl>Improve your homes air quality</ExpTtl>
-        <ExpTtl2>Call us to schedule service or request a free estimate</ExpTtl2>
+        <ExpTtl2>
+          Call us to schedule service or request a free estimate
+        </ExpTtl2>
         <ExpTtl3>We speak English, Russian, Ukrainian and Romanian</ExpTtl3>
         <ExpList>
           <ExpItem>
@@ -55,6 +62,15 @@ export const Experience = () => {
             </ExpItText3>
           </ExpItem>
         </ExpList>
+        <WrapBtn>
+          <Link href="tel:+1 517-974-8830">
+            <PhoneBtn>Call +1 517-974-8830</PhoneBtn>
+          </Link>
+
+          <StyledLink to="/contact_us">
+            <ContactBtn>Contact us</ContactBtn>
+          </StyledLink>
+        </WrapBtn>
 
         <UnderLane> </UnderLane>
       </Container>

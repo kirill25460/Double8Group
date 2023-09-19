@@ -7,16 +7,16 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding-top: 46px;
-  padding-bottom: 63px;
+  padding-top: 45px;
+  padding-bottom: 40px;
   @media screen and (min-width: 768px) {
 
     padding: 0 auto;
-    padding-bottom: 63px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: 1440px) {
     padding: 0 100px;
-    padding-bottom: 63px;
+    padding-bottom: 60px;
   }
 `;
 
@@ -62,7 +62,7 @@ export const BookUsBtn = styled.button`
   cursor: pointer;
   width: 188px;
   height: 67px;
-  color: #fff;
+  color: #202020;
   border: none;
   background-color: #f8821f;
   font-family: 'DM Sans';
@@ -125,7 +125,6 @@ export const ButPicContainer = styled.div`
 
 
 export const StyledLink = styled(NavLink)`
-
 margin:0;
 `;
 

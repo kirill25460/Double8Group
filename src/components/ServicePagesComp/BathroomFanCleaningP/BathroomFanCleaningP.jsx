@@ -15,14 +15,14 @@ import {
   WrapImages,
   ImgText,
   SeerviceImages,
-  // DivPhoto
+  PriceSvg,
 } from './BathroomFanCleaningP.styled';
 
 import after from 'images/bathFanAfter.jpg';
 import before from 'images/bathFanBefore.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
-import Photo from 'images/icon_camera.png';
+// import Photo from 'images/icon_camera.png';
 
 // import arr from "images/services/PhotoObject";
 // import { SliderServices } from 'helper/SliderServices';
@@ -68,8 +68,7 @@ full with mold, germs and bacteria. Cleaning it will prevent you from allergies 
         </WrapService>
 
         <WrapSlider>
-        <DescriptionService>*Price is an accurate estimate
-based on standard scope of work</DescriptionService>
+        
           <ReactBeforeSliderComponent
             firstImage={SECOND_IMAGE}
             secondImage={FIRST_IMAGE}
@@ -79,6 +78,8 @@ based on standard scope of work</DescriptionService>
             height={500}
           />
         </WrapSlider>
+        <DescriptionService>*Price is an accurate estimate
+based on standard scope of work</DescriptionService>
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
@@ -86,8 +87,8 @@ based on standard scope of work</DescriptionService>
             {isSliderOpen && (
               <SliderServices images={photo} onClose={closeSlider} />
             )} */}
-            <SeerviceImages src={Photo} alt="Logo" />
-            <ImgText>FULL PHOTO REPORT</ImgText>
+           <PriceSvg />
+          <ImgText>FROM 180$</ImgText>
           {/* </DivPhoto> */}
         </WrapImages>
         <div>

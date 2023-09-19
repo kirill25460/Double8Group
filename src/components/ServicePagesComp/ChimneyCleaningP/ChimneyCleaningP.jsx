@@ -9,26 +9,19 @@ import {
   TextService,
   WrapSlider,
   ButtonServices,
-
   WrapService,
   WrapImages,
   MobButtonServices,
   ImgText,
   DescriptionService,
   SeerviceImages,
-  // DivPhoto,
+  PriceSvg,
 } from './ChimneyCleaning.styled';
 
 import after from 'images/ChimneyAfter.jpg';
 import before from 'images/ChimneyBefore.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
-import Photo from 'images/icon_camera.png';
-
-// import arr from "images/services/PhotoObject";
-// import { SliderServices } from 'helper/SliderServices';
-
-// const photo = arr.chimneyCleaning;
 
 const FIRST_IMAGE = {
   imageUrl: before,
@@ -45,31 +38,23 @@ const delimiterIconStyles = {
   backgroundImage: `url(${BeforeAfterText})`,
 };
 export const ChimneyCleaningP = () => {
-  // const [isSliderOpen, setIsSliderOpen] = useState(false);
-
-  // const openSlider = () => {
-  //   setIsSliderOpen(true);
-  // };
-
-  // const closeSlider = () => {
-  //   setIsSliderOpen(false);
-  // };
   return (
     <>
       <Container>
         <WrapService>
           <NameService>CHIMNEY CLEANING</NameService>
           <TextService>
-          Soot regularly accumulates on chimney’s walls. It is necessary to clean it in order to prevent the occurrence of a fire in the house and the carbon monoxide poisoning.
+            Soot regularly accumulates on chimney’s walls. It is necessary to
+            clean it in order to prevent the occurrence of a fire in the house
+            and the carbon monoxide poisoning.
           </TextService>
-          
-          <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
-         
+
+          <NavLink to="contact_us">
+            <ButtonServices>BOOK THIS SERVICE</ButtonServices>
+          </NavLink>
         </WrapService>
 
         <WrapSlider>
-        <DescriptionService>*Price is an accurate estimate
-based on standard scope of work</DescriptionService>
           <ReactBeforeSliderComponent
             firstImage={SECOND_IMAGE}
             secondImage={FIRST_IMAGE}
@@ -79,22 +64,19 @@ based on standard scope of work</DescriptionService>
             height={500}
           />
         </WrapSlider>
+        <DescriptionService>
+          *Price is an accurate estimate based on standard scope of work
+        </DescriptionService>
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
-          {/* <DivPhoto onClick={openSlider}>
-            {isSliderOpen && (
-              <SliderServices images={photo} onClose={closeSlider} />
-            )} */}
-            <SeerviceImages src={Photo} alt="Logo" />
-            <ImgText>FULL PHOTO REPORT</ImgText>
-          {/* </DivPhoto> */}
+          <PriceSvg />
+          <ImgText>FROM 180$</ImgText>
         </WrapImages>
         <div>
           <NavLink to="book_us">
             <MobButtonServices>BOOK THIS SERVICE</MobButtonServices>
           </NavLink>
-
         </div>
       </Container>
     </>

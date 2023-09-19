@@ -19,16 +19,16 @@ import {
   OtherDescription,
   ImgText,
   SeerviceImages,
-  // DivPhoto
+  PriceSvg,
 } from './AirDuctP.styled';
 
 import before from 'images/AirDuct3.jpg';
 import after from 'images/AirDuct4.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
-import Photo from 'images/icon_camera.png';
+// import Photo from 'images/icon_camera.png';
 // import arr from "images/services/PhotoObject";
-
+//
 // const photo = arr.airDuct;
 
 const FIRST_IMAGE = {
@@ -45,7 +45,6 @@ const delimiterIconStyles = {
   borderRadius: 'none',
   backgroundImage: `url(${BeforeAfterText})`,
 };
-
 
 export const AirDuctP = () => {
   // const [isSliderOpen, setIsSliderOpen] = useState(false);
@@ -64,17 +63,20 @@ export const AirDuctP = () => {
         <WrapService>
           <NameService>AIR DUCT CLEANING</NameService>
           <TextService>
-          Regular cleaning of the air duct is necessary for the normal functioning of the ventilation system. Since, it passes large volumes of air through itself, along with dust and dirt.
+            Regular cleaning of the air duct is necessary for the normal
+            functioning of the ventilation system. Since, it passes large
+            volumes of air through itself, along with dust and dirt.
           </TextService>
-          <AdditionallText>We also provide the air duct cleaning service for your business. </AdditionallText>
+          <AdditionallText>
+            We also provide the air duct cleaning service for your business.{' '}
+          </AdditionallText>
           <OtherDescription>For business from $800.</OtherDescription>
-          <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
+          <NavLink to="contact_us">
+            <ButtonServices>BOOK THIS SERVICE</ButtonServices>
+          </NavLink>
         </WrapService>
 
         <WrapSlider>
-        <DescriptionService>
-            *Price is an accurate estimate based on standard scope of work
-          </DescriptionService>
           <ReactBeforeSliderComponent
             firstImage={SECOND_IMAGE}
             secondImage={FIRST_IMAGE}
@@ -84,6 +86,9 @@ export const AirDuctP = () => {
             height={500}
           />
         </WrapSlider>
+        <DescriptionService>
+          *Price is an accurate estimate based on standard scope of work
+        </DescriptionService>
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
@@ -91,16 +96,14 @@ export const AirDuctP = () => {
             {isSliderOpen && (
               <SliderServices images={photo} onClose={closeSlider} />
             )} */}
-            <SeerviceImages src={Photo} alt="Logo" />
-            <ImgText>FULL PHOTO REPORT</ImgText>
+          <PriceSvg />
+          <ImgText>FROM 650$</ImgText>
           {/* </DivPhoto> */}
         </WrapImages>
         <div>
           <NavLink to="contact_us">
             <MobButtonServices>BOOK THIS SERVICE</MobButtonServices>
           </NavLink>
-
-        
         </div>
       </Container>
     </>

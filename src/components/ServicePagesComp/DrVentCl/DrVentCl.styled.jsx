@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MdPriceCheck } from "react-icons/md";
 
 
 export const Container = styled.div`
@@ -73,10 +74,12 @@ letter-spacing: 0px;
 text-align: left;
 @media screen and (min-width: 768px) {
   position:absolute;
+right:20px;
   top:80px;
 }
 @media screen and (min-width: 1440px) {
   top:115px;
+  right:190px;
 }
 `;
 
@@ -256,3 +259,9 @@ cursor:pointer;
     align-items:center;
   }
 `
+
+export const PriceSvg = styled(MdPriceCheck)`
+width:65px;
+height:70px;
+color: #F8821F;
+`;
