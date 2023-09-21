@@ -23,7 +23,7 @@ export const ExpTtl = styled.h2`
 margin: 80px 0 0 0;
   font-family: Montserrat;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 40px;
   letter-spacing: 0px;
   text-align: center;
@@ -39,14 +39,14 @@ export const ExpTtl2 = styled.h3`
 margin:0;
   font-family: Montserrat;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 30px;
   letter-spacing: 0px;
   text-align: center;
   color: #f8821e;
 padding-top:10px;
   @media screen and (min-width: 768px) {
-    font-size: 25px;
+    font-size: 36px;
   }
  
 `;
@@ -92,7 +92,7 @@ export const ExpItTtl1 = styled.h3`
   padding-bottom: 11px;
   font-family: DM Sans;
   font-size: 23px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 18px;
   letter-spacing: 0px;
   text-align: center;
@@ -110,7 +110,7 @@ export const ExpItText1 = styled.p`
   margin: 0;
   font-family: Montserrat;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 16px;
   letter-spacing: 0px;
   text-align: left;
@@ -125,7 +125,7 @@ export const ExpItTtl2 = styled.h3`
   padding-top: 16px;
   font-family: DM Sans;
   font-size: 23px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 18px;
   letter-spacing: 0px;
   text-align: center;
@@ -136,7 +136,7 @@ export const ExpItText2 = styled.p`
   margin: 0;
   font-family: Montserrat;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 16px;
   letter-spacing: 0px;
   text-align: center;
@@ -149,7 +149,7 @@ export const ExpItTtl3 = styled.h3`
   margin: 0;
   font-family: DM Sans;
   font-size: 23px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 18px;
   letter-spacing: 0px;
   text-align: center;
@@ -166,7 +166,7 @@ export const ExpItText3 = styled.p`
   margin: 0;
   font-family: Montserrat;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 16px;
   letter-spacing: 0px;
   text-align: center;
