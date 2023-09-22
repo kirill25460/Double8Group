@@ -15,13 +15,13 @@ import {
   WrapImages,
   ImgText,
   SeerviceImages,
-  PriceSvg,
 } from './BathroomFanCleaningP.styled';
 
 import after from 'images/bathFanAfter.jpg';
 import before from 'images/bathFanBefore.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
+import Money from 'images/money.svg'
 // import Photo from 'images/icon_camera.png';
 
 // import arr from "images/services/PhotoObject";
@@ -87,7 +87,7 @@ based on standard scope of work</DescriptionService>
             {isSliderOpen && (
               <SliderServices images={photo} onClose={closeSlider} />
             )} */}
-           <PriceSvg />
+           <img src={Money} width="61" height="61" alt='Money'/>
           <ImgText>FROM 180$</ImgText>
           {/* </DivPhoto> */}
         </WrapImages>

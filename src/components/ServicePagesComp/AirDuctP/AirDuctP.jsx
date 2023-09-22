@@ -19,13 +19,13 @@ import {
   OtherDescription,
   ImgText,
   SeerviceImages,
-  PriceSvg,
 } from './AirDuctP.styled';
 
 import before from 'images/AirDuct3.jpg';
 import after from 'images/AirDuct4.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
+import Money from 'images/money.svg'
 // import Photo from 'images/icon_camera.png';
 // import arr from "images/services/PhotoObject";
 //
@@ -96,7 +96,7 @@ export const AirDuctP = () => {
             {isSliderOpen && (
               <SliderServices images={photo} onClose={closeSlider} />
             )} */}
-          <PriceSvg />
+          <img src={Money} width="61" height="61" alt='Money'/>
           <ImgText>FROM 650$</ImgText>
           {/* </DivPhoto> */}
         </WrapImages>

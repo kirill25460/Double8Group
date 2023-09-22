@@ -15,13 +15,13 @@ import {
   ImgText,
   DescriptionService,
   SeerviceImages,
-  PriceSvg,
 } from './ChimneyCleaning.styled';
 
 import after from 'images/ChimneyAfter.jpg';
 import before from 'images/ChimneyBefore.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
+import Money from 'images/money.svg'
 
 const FIRST_IMAGE = {
   imageUrl: before,
@@ -70,7 +70,7 @@ export const ChimneyCleaningP = () => {
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
-          <PriceSvg />
+          <img src={Money} width="61" height="61" alt='Money'/>
           <ImgText>FROM 180$</ImgText>
         </WrapImages>
         <div>

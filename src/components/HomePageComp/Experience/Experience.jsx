@@ -27,9 +27,9 @@ export const Experience = () => {
   return (
     <>
       <Container>
-        <ExpTtl>Improve your homes air quality</ExpTtl>
+        <ExpTtl>Improve <>your homes</> air quality</ExpTtl>
         <ExpTtl2>
-          Call us to schedule service or request a free estimate
+          Call us to schedule service or request a <span style={{color:"#F8821E"}}>free estimate</span>
         </ExpTtl2>
         <ExpTtl3>We speak English, Russian, Ukrainian and Romanian</ExpTtl3>
         <ExpList>

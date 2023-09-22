@@ -15,13 +15,13 @@ import {
   DescriptionService,
   ImgText,
   SeerviceImages,
-  PriceSvg,
-} from './DrVentCl.styled';
+  } from './DrVentCl.styled';
 
 import before from 'images/AirDuct1.jpg';
 import after from 'images/AirDuct2.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
+import Money from 'images/money.svg'
 
 
 
@@ -76,7 +76,7 @@ export const DrVentCl = () => {
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
-          <PriceSvg />
+          <img src={Money} width="61" height="61" alt='Money'/>
           <ImgText>FROM 180$</ImgText>
 
         </WrapImages>

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { MdPriceCheck } from "react-icons/md";
+// import { MdPriceCheck } from "react-icons/md";
+// import money from '../../../images/money.svg'
 
 
 export const Container = styled.div`
@@ -260,8 +261,8 @@ cursor:pointer;
   }
 `
 
-export const PriceSvg = styled(MdPriceCheck)`
-width:65px;
-height:70px;
-color: #F8821F;
-`;
+// export const PriceSvg = styled(MdPriceCheck)`
+// width:65px;
+// height:70px;
+// color: #F8821F;
+// `;

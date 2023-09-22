@@ -35,6 +35,10 @@ margin: 80px 0 0 0;
   }
  
 `;
+
+// export const ExpTtlSpan = styled.h2`
+// color: ;
+// `
 export const ExpTtl2 = styled.h3`
 margin:0;
   font-family: Montserrat;
@@ -43,7 +47,7 @@ margin:0;
   line-height: 30px;
   letter-spacing: 0px;
   text-align: center;
-  color: #f8821e;
+  color: #222021;
 padding-top:10px;
   @media screen and (min-width: 768px) {
     font-size: 36px;
@@ -51,13 +55,15 @@ padding-top:10px;
  
 `;
 export const ExpTtl3 = styled.h4`
-margin:0 0 30px 0;
+  margin:0 0 30px 0;
+  color: #9795B5;
   font-family: Montserrat;
   font-size: 10px;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: center;
+
   @media screen and (min-width: 768px) {
     font-size: 12px;
   }

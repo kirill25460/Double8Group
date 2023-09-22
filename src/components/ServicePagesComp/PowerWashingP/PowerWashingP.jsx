@@ -15,7 +15,6 @@ import {
   WrapImages,
   ImgText,
   SeerviceImages,
-  PriceSvg,
 
 } from './PowerWashing.styled';
 
@@ -23,6 +22,7 @@ import after from 'images/powerwashingAfter.png';
 import before from 'images/powerWashingBefore.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
+import Money from 'images/money.svg'
 
 
 const FIRST_IMAGE = {
@@ -71,7 +71,7 @@ based on standard scope of work</DescriptionService>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
      
-          <PriceSvg />
+          <img src={Money} width="61" height="61" alt='Money'/>
           <ImgText>FROM 250$</ImgText>
         </WrapImages>
         <div>
