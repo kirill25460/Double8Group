@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/double8group/static/css/main.836b9c36.css",
-    "main.js": "/double8group/static/js/main.cbbfc402.js",
+    "main.js": "/double8group/static/js/main.dca85408.js",
     "static/media/powerwashingAfter.png": "/double8group/static/media/powerwashingAfter.014712ac5dc50c400542.png",
     "static/media/worker.png": "/double8group/static/media/worker.960b65b72ca53a1bc05c.png",
     "static/media/BookUsMan.png": "/double8group/static/media/BookUsMan.812204d653f8c5393f9b.png",
@@ -21,11 +21,12 @@
     "static/media/ChimneyBefore.jpg": "/double8group/static/media/ChimneyBefore.cd0b15d723ba9befaeb9.jpg",
     "static/media/powerWashingBefore.jpg": "/double8group/static/media/powerWashingBefore.6ae6a7e6b82f40dfb10c.jpg",
     "index.html": "/double8group/index.html",
+    "static/media/money.svg": "/double8group/static/media/money.0c75fa2547191849a22757d8077230c6.svg",
     "main.836b9c36.css.map": "/double8group/static/css/main.836b9c36.css.map",
-    "main.cbbfc402.js.map": "/double8group/static/js/main.cbbfc402.js.map"
+    "main.dca85408.js.map": "/double8group/static/js/main.dca85408.js.map"
   },
   "entrypoints": [
     "static/css/main.836b9c36.css",
-    "static/js/main.cbbfc402.js"
+    "static/js/main.dca85408.js"
   ]
 }
