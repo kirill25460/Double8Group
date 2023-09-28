@@ -17,8 +17,8 @@ import {
   SeerviceImages,
   } from './DrVentCl.styled';
 
-import before from 'images/AirDuct1.jpg';
-import after from 'images/AirDuct2.jpg';
+import before from 'images/dryervbefor.jpg';
+import after from 'images/dryervafter.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
 import Money from 'images/money.svg'

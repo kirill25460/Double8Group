@@ -58,14 +58,14 @@ export const ExpTtl3 = styled.h4`
   margin:0 0 30px 0;
   color: #9795B5;
   font-family: Montserrat;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
   line-height: 20px;
   letter-spacing: 0px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    font-size: 12px;
+    font-size: 18px;
   }
  
 `;
