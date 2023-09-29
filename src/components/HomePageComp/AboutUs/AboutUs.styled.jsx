@@ -100,7 +100,7 @@ export const HomePar = styled.p`
 `;
 export const AboutUsPic = styled.img`
     width: 330px;
-    height: 312px;
+    height: 318px;
     align-items: center;
   @media screen and (min-width: 768px) {
     margin-top: 76px;
