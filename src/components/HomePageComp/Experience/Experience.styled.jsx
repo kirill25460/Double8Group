@@ -27,7 +27,7 @@ margin: 80px 0 0 0;
   line-height: 40px;
   letter-spacing: 0px;
   text-align: center;
-  color: #f8821e;
+  color: #222021;
 
   @media screen and (min-width: 768px) {
     font-size: 50px;
@@ -48,7 +48,8 @@ margin:0;
   letter-spacing: 0px;
   text-align: center;
   color: #222021;
-padding-top:10px;
+padding-top:25px;
+padding-bottom:50px;
   @media screen and (min-width: 768px) {
     font-size: 36px;
   }
