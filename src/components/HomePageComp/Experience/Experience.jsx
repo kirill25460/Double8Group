@@ -19,9 +19,9 @@ import {
   Link,
   UnderLane,
 } from './Experience.styled';
-import Exp1 from 'images/Experience1.png';
-import Exp2 from 'images/Experience2.png';
-import Exp3 from 'images/Experience3.png';
+import Exp1 from 'images/Experience1.jpg';
+import Exp2 from 'images/Experience2.jpg';
+import Exp3 from 'images/Experience3.jpeg';
 
 export const Experience = () => {
   return (
