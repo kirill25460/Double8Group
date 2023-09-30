@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/double8group/static/css/main.836b9c36.css",
-    "main.js": "/double8group/static/js/main.546f3e5c.js",
+    "main.js": "/double8group/static/js/main.3b68d2b2.js",
     "static/media/main-slider-dryer.png": "/double8group/static/media/main-slider-dryer.dd10d165520a5870b186.png",
     "static/media/powerwashingAfter.png": "/double8group/static/media/powerwashingAfter.014712ac5dc50c400542.png",
     "static/media/main-slider-chimney.png": "/double8group/static/media/main-slider-chimney.bc49dfe92dafb284c53c.png",
@@ -11,26 +11,26 @@
     "static/media/BookUsMan.png": "/double8group/static/media/BookUsMan.812204d653f8c5393f9b.png",
     "static/media/ShareWoman.png": "/double8group/static/media/ShareWoman.0794215d592972c48fe1.png",
     "static/media/main-slider-residential.png": "/double8group/static/media/main-slider-residential.43a517ec9de5451bbad7.png",
-    "static/media/Experience3.png": "/double8group/static/media/Experience3.8882e9906147c4fb10d3.png",
     "static/media/firstLogo.png": "/double8group/static/media/firstLogo.d63749f2a0477a1cb831.png",
-    "static/media/Experience1.png": "/double8group/static/media/Experience1.46c27b9e761467da4665.png",
     "static/media/AirDuct1.jpg": "/double8group/static/media/AirDuct1.532eef883bf5a6d3f375.jpg",
     "static/media/bathFanBefore.jpg": "/double8group/static/media/bathFanBefore.09c4dc86a1014711d6c8.jpg",
-    "static/media/Experience2.png": "/double8group/static/media/Experience2.000a1439fb2f16fc3194.png",
+    "static/media/Experience2.jpg": "/double8group/static/media/Experience2.0f1b6e85c5a7ccbb5a6b.jpg",
     "static/media/AirDuct2.jpg": "/double8group/static/media/AirDuct2.448b428776978f659077.jpg",
     "static/media/ChimneyAfter.jpg": "/double8group/static/media/ChimneyAfter.6bc1b2c00a83a7e9145e.jpg",
     "static/media/bathFanAfter.jpg": "/double8group/static/media/bathFanAfter.edec235deedfbda17297.jpg",
     "static/media/ChimneyBefore.jpg": "/double8group/static/media/ChimneyBefore.cd0b15d723ba9befaeb9.jpg",
     "static/media/powerWashingBefore.jpg": "/double8group/static/media/powerWashingBefore.6ae6a7e6b82f40dfb10c.jpg",
     "static/media/dryervbefor.jpg": "/double8group/static/media/dryervbefor.10a46e40c8989f718875.jpg",
+    "static/media/Experience1.jpg": "/double8group/static/media/Experience1.be6db0b2f6be45d79662.jpg",
     "static/media/dryervafter.jpg": "/double8group/static/media/dryervafter.de5e40cbde306cf58557.jpg",
+    "static/media/Experience3.jpeg": "/double8group/static/media/Experience3.1712b1c3da4c7d7d2232.jpeg",
     "index.html": "/double8group/index.html",
     "static/media/money.svg": "/double8group/static/media/money.0c75fa2547191849a22757d8077230c6.svg",
     "main.836b9c36.css.map": "/double8group/static/css/main.836b9c36.css.map",
-    "main.546f3e5c.js.map": "/double8group/static/js/main.546f3e5c.js.map"
+    "main.3b68d2b2.js.map": "/double8group/static/js/main.3b68d2b2.js.map"
   },
   "entrypoints": [
     "static/css/main.836b9c36.css",
-    "static/js/main.546f3e5c.js"
+    "static/js/main.3b68d2b2.js"
   ]
 }
