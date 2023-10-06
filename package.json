@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://kirill25460.github.io/double8group/",
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@material/card": "^14.0.0",

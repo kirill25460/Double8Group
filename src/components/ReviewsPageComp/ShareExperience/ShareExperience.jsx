@@ -21,7 +21,8 @@ import {
   BlackSpan,
 } from './ShareExperience.styled';
 import woman from 'images/ShareWoman.png';
-import Notiflix from 'notiflix';
+//import Notiflix from 'notiflix';
+import emailjs from '@emailjs/browser'
 
 export const ShareExperience = ({ onInput, inputs }) => {
   const [isChecked, setIsChecked] = useState(false);
@@ -53,31 +54,37 @@ export const ShareExperience = ({ onInput, inputs }) => {
 
   // }
 
-  const handleSubmit = evt => {
-    evt.preventDefault();
+  const sendEmail = (e) =>{
+    e.preventDefault();
 
-    const form = evt.currentTarget;
-    const title = form.elements.title.value;
-    const email = form.elements.email.value;
-    const type = form.elements.type.value;
-    const review = form.elements.review.value;
+    emailjs.sendForm('service_mf4k7nn', 'template_oe3gk3k', e.target, 'HLHc19tUepuWDDLMG')
+  }
 
-    console.log(isChecked);
-    if (
-      title !== '' &&
-      type !== '' &&
-      review !== '' &&
-      email !== '' &&
-      isChecked === true
-    ) {
-      Notiflix.Notify.success('Rewiew send');
-    } else {
-      Notiflix.Notify.failure('Rewiew didn`t send');
-    }
-    console.log(title, email, type, review);
+  // const handleSubmit = evt => {
+  //   evt.preventDefault();
 
-    form.reset();
-  };
+  //   const form = evt.currentTarget;
+  //   const title = form.elements.title.value;
+  //   const email = form.elements.email.value;
+  //   const type = form.elements.type.value;
+  //   const review = form.elements.review.value;
+
+  //   console.log(isChecked);
+  //   if (
+  //     title !== '' &&
+  //     type !== '' &&
+  //     review !== '' &&
+  //     email !== '' &&
+  //     isChecked === true
+  //   ) {
+  //     Notiflix.Notify.success('Rewiew send');
+  //   } else {
+  //     Notiflix.Notify.failure('Rewiew didn`t send');
+  //   }
+  //   console.log(title, email, type, review);
+
+  //   form.reset();
+  // };
 
   return (
     <>
@@ -86,7 +93,7 @@ export const ShareExperience = ({ onInput, inputs }) => {
           <TxtExp>
             SHARE YOUR <BlackSpan>EXPERIENCE</BlackSpan> WITH OTHERS!
           </TxtExp>
-          <WrapFor3Inputs onSubmit={handleSubmit}>
+          <WrapFor3Inputs onSubmit={sendEmail}>
             <WrapInput>
               <InputName
                 type="text"
