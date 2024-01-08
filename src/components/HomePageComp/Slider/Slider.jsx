@@ -24,6 +24,7 @@ export default function MySlider() {
   return (
     <>
       <Swiper
+      id="home"
         spaceBetween={40}
         centeredSlides={true}
         autoplay={{

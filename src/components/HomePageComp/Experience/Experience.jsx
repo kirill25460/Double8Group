@@ -3,7 +3,6 @@ import {
   ExpPic,
   ExpTtl,
   ExpTtl2,
-  ExpTtl3,
   ExpList,
   ExpItem,
   ExpItTtl1,
@@ -12,11 +11,6 @@ import {
   ExpItText2,
   ExpItTtl3,
   ExpItText3,
-  PhoneBtn,
-  ContactBtn,
-  WrapBtn,
-  StyledLink,
-  Link,
   UnderLane,
 } from './Experience.styled';
 import Exp1 from 'images/Experience1.jpg';
@@ -26,12 +20,12 @@ import Exp3 from 'images/Experience3.jpeg';
 export const Experience = () => {
   return (
     <>
-      <Container>
+      <Container id="advantages">
         <ExpTtl>Improve <span style={{color:"#F8821E"}}>your homes</span> air quality</ExpTtl>
         <ExpTtl2>
         <span style={{color:"#F8821E"}}>Call us </span> to schedule service or request a <span style={{color:"#F8821E"}}>free estimate</span>
         </ExpTtl2>
-        <ExpTtl3>We speak English, Russian, Ukrainian and Romanian</ExpTtl3>
+      
         <ExpList>
           <ExpItem>
             <ExpPic src={Exp1} alt="Exp1" />
@@ -62,16 +56,6 @@ export const Experience = () => {
             </ExpItText3>
           </ExpItem>
         </ExpList>
-        <WrapBtn>
-          <Link href="tel:+1 517-974-8830">
-            <PhoneBtn>Call +1 517-974-8830</PhoneBtn>
-          </Link>
-
-          <StyledLink to="/contact_us">
-            <ContactBtn>Contact us</ContactBtn>
-          </StyledLink>
-        </WrapBtn>
-
         <UnderLane> </UnderLane>
       </Container>
     </>

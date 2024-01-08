@@ -1,20 +1,15 @@
 import React from 'react';
 import {
-  Container,
+  ContactWrap,
   WrapInput,
   WrapFor3Inputs,
   Wrap,
   WrapForMobPhoto,
   TxtExp,
   InputName,
-  // NumberWrap,
   InputReview,
   SharePic,
   InputEmail,
-  // InputFileReview,
-  // MainInput,
-  // InputContainer,
-  // SvgClip,
   SvgTg,
   SubBtn,
   InputPhone,
@@ -59,7 +54,7 @@ export const ContactUsForm = ({ onInput, inputs }) => {
 
   return (
     <>
-      <Container>
+      <ContactWrap>
         <Wrap>
           <WrapForMobPhoto>
             <TxtExp>
@@ -103,24 +98,12 @@ export const ContactUsForm = ({ onInput, inputs }) => {
             <SubBtn type="submit">
               <SvgTg />
             </SubBtn>
-            {/* <MainInput>
-              <InputContainer>
-                <InputFileReview
-                  ref={inputRef}
-                  type="file"
-                  name="photo"
-                  id="photo"
-                  onChange={handleFileChange}
-                  // value={inputs.review}
-                />
-                <SvgClip onClick={handleArrowClick} />
-              </InputContainer>
-            </MainInput> */}
+         
           </WrapFor3Inputs>
         </Wrap>
 
         <SharePicDesc src={man} alt="desc" />
-      </Container>
+      </ContactWrap>
     </>
   );
 };

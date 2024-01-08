@@ -12,10 +12,7 @@ export const App = () => {
     <>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="reviews" />
-          <Route path="reviews/:id"/>
-          <Route path="contact_us" />
+          <Route path="*" element={<HomePage />} />
           <Route path="air_duct" />
           <Route path="chimney_cleaning"/>
           <Route path="bathroom_fan_cleaning"/>

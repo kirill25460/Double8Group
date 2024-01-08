@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { TfiClip } from 'react-icons/tfi';
 import { PiTelegramLogo } from 'react-icons/pi';
 
-export const Container = styled.div`
+export const ContactWrap = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;

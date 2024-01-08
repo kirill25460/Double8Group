@@ -29,9 +29,11 @@ export const LogoHeader = styled.img`
 
 export const AppBar = styled.header`
   width: 100%;
+  
 `;
 
 export const Container = styled.div`
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,6 +122,7 @@ export const HeaderWrap = styled.div`
 `;
 export const Wrap = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const MobileOpenHeader = styled.div`

@@ -17,8 +17,8 @@ import {
   SeerviceImages,
 } from './BathroomFanCleaningP.styled';
 
-import after from 'images/bathFanAfter.jpg';
-import before from 'images/bathFanBefore.jpg';
+import after from 'images/BathFanAfter.jpeg';
+import before from 'images/BathFanBefore.jpeg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
 import Money from 'images/money.svg'

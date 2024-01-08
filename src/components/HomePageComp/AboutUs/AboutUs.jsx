@@ -12,7 +12,7 @@ import man from 'images/worker.png';
 
 export const AboutUs = () => {
   return (
-    <HomeWrap>
+    <HomeWrap id="about_us">
       <Container>
         <Wrap>
           <HomeText>ABOUT US</HomeText>
