@@ -27,28 +27,30 @@ export const LogoHeader = styled.img`
   }
 `;
 
-export const AppBar = styled.header`
-  width: 100%;
-  
-`;
 
-export const Container = styled.div`
 
+export const HeaderContainer = styled.div`
+top: 0;
+  left: 0;
+  right: 0;
+
+z-index:999;
+position: fixed;
+background-color:#fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   height: 70px;
   box-shadow: 0px 4px 21px 0px #00000008;
   margin: 0 auto;
   padding: 0;
   @media screen and (min-width: 768px) {
     display: flex;
-    width: 700px;
+   
     padding: 0 32px;
   }
   @media screen and (min-width: 1440px) {
-    min-width: 1200px;
+    
     padding: 0 100px;
   }
 `;

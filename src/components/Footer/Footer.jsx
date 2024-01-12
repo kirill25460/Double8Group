@@ -8,7 +8,7 @@ import {
   ContactsList,
   ContactsItem,
   FooterLink,
-  FooterLogoBg,
+
   SvgContainer,
   SvgMail,
   SvgInst,
@@ -17,7 +17,7 @@ import {
 } from './Footer.styled';
 
 import logo from 'images/D8Logo.jpeg';
-import MobLog from 'images/MobFooterLogo.png';
+
 
 export const Footer = () => {
   return (
@@ -36,9 +36,7 @@ export const Footer = () => {
            </ContactsItem>
           </ContactsList>
         </Wrap>
-<FooterLogoBg src={MobLog} alt='MobLog'/>
         <LogoFooter src={logo} alt="Logo" />
-        
         <SvgContainer>
                 <a href="mailto:Cleanairduck@gmail.com">
                   <SvgMail />

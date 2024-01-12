@@ -156,12 +156,12 @@ color: black;
 
 export const ContactWrap = styled.div`
   display: flex;
-  flex-direction: row;
+
   justify-content: center;
   align-items: normal;
   margin: 0 auto;
 padding-top:30px;
- 
+flex-direction: column;
   
 `;
 
@@ -394,13 +394,17 @@ const WrapForMobPhoto = styled.div`
 }`;
 
 export const DiscountTxt = styled.h3`
-margin:0;
+margin:0 auto;
+width:300px;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
   line-height: 43px;
   letter-spacing: 0px;
   color:red;
+  @media screen and (min-width: 768px) {
+    width:600px;
+  }
 `;
 
 export {WrapForMobPhoto,

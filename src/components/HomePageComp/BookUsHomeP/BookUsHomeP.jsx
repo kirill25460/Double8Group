@@ -97,11 +97,12 @@ export const BookUsHomeP = () => {
             </SubBtn>
          
           </WrapFor3Inputs>
+          
         </Wrap>
-
         <SharePicDesc src={man} alt="desc" />
+        <DiscountTxt>*Order two services at once and receive a 15% discount</DiscountTxt>
       </ContactWrap>
-<DiscountTxt>*Order two services at once and receive a 15% discount</DiscountTxt>
+   
       </Container>
     </>
   );

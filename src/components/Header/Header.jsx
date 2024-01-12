@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 import HeaderLogo from 'images/D8Logo.jpeg';
 import {
   LogoHeader,
-  Container,
-  AppBar,
+  HeaderContainer,
+
   LogoWrap,
   ContactWrap,
   Wrap,
@@ -25,23 +25,26 @@ import {
   SvgFacebook,
   Link,
 } from './Header.styled';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export const Header = () => {
-  // const navItems = [
-  //   { href: `home`, text: 'Home' },
-  //   { href: 'about_us', text: 'About us' },
-  //   { href: 'advantages', text: 'Advantages' },
-  //   { href: 'contact_us', text: 'Contact us' },
-  // ];
-
-  const navSideItems = [
-    { href: `/`, text: 'Home', svg: <HomeSvg /> },
-
-    // { href: '/contact_us', text: 'Contact us', svg: <BookSvg /> },
-  ];
 
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  const handleClickOutside = event => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
   const scrollToSection = sectionId => {
     const section = document.getElementById(sectionId);
 
@@ -52,14 +55,14 @@ export const Header = () => {
       setIsOpen(false);
     }
   };
-  const toggleMenu = () => {
+ const toggleMenu = event => {
+    event.stopPropagation();
     setIsOpen(!isOpen);
-    console.log(isOpen);
   };
 
   return (
-    <AppBar>
-      <Container>
+   
+      <HeaderContainer>
         <LogoWrap>
           <BurgerMenu>
             <div onClick={toggleMenu}>
@@ -75,7 +78,7 @@ export const Header = () => {
           <NavList>
             
               <NavItem>
-                <StyledLink  onClick={() =>
+                <StyledLink to="/"  onClick={() =>
                 setTimeout(() => {
                   scrollToSection('home');
                 }, 5)
@@ -84,7 +87,7 @@ export const Header = () => {
                 </StyledLink>
               </NavItem>
               <NavItem>
-                <StyledLink  onClick={() =>
+                <StyledLink to="/"  onClick={() =>
                 setTimeout(() => {
                   scrollToSection('about_us');
                 }, 5)
@@ -93,7 +96,7 @@ export const Header = () => {
                 </StyledLink>
               </NavItem>
               <NavItem>
-                <StyledLink  onClick={() =>
+                <StyledLink to="/" onClick={() =>
                 setTimeout(() => {
                   scrollToSection('advantages');
                 }, 5)
@@ -102,7 +105,7 @@ export const Header = () => {
                 </StyledLink>
               </NavItem>
               <NavItem>
-                <StyledLink  onClick={() =>
+                <StyledLink to="/"  onClick={() =>
                 setTimeout(() => {
                   scrollToSection('contact_us');
                 }, 5)
@@ -111,18 +114,18 @@ export const Header = () => {
                 </StyledLink>
               </NavItem>
               </NavList>
-          <SideMenu className={isOpen ? 'open' : ''}>
+          <SideMenu  ref={menuRef} className={isOpen ? 'open' : ''}>
             <CloseBtn onClick={toggleMenu} />
-            {navSideItems.map(({ href, text, svg }) => {
-              return (
-                <StyledLink to={href}>
+          
+             
+                <StyledLink to="/">
                   <SideItems onClick={toggleMenu}>
-                    {svg}
-                    {text}
+                    <HomeSvg/>
+                    <span>Home</span>
                   </SideItems>
                 </StyledLink>
-              );
-            })}
+             
+         
           </SideMenu>
         </Wrap>
         <ContactWrap>
@@ -139,7 +142,7 @@ export const Header = () => {
                 <SvgFacebook />
               </Link>
             </ContactWrap>
-      </Container>
-    </AppBar>
+      </HeaderContainer>
+
   );
 };
