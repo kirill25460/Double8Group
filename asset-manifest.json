@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/double8group/static/css/main.836b9c36.css",
-    "main.js": "/double8group/static/js/main.30ea83fa.js",
+    "main.css": "/double8group/static/css/main.bd94b244.css",
+    "main.js": "/double8group/static/js/main.69f4b480.js",
     "static/media/main-slider-dryer.png": "/double8group/static/media/main-slider-dryer.dd10d165520a5870b186.png",
     "static/media/powerwashingAfter.png": "/double8group/static/media/powerwashingAfter.014712ac5dc50c400542.png",
     "static/media/main-slider-chimney.png": "/double8group/static/media/main-slider-chimney.bc49dfe92dafb284c53c.png",
@@ -26,11 +26,11 @@
     "static/media/Experience3.jpeg": "/double8group/static/media/Experience3.1712b1c3da4c7d7d2232.jpeg",
     "index.html": "/double8group/index.html",
     "static/media/money.svg": "/double8group/static/media/money.0c75fa2547191849a22757d8077230c6.svg",
-    "main.836b9c36.css.map": "/double8group/static/css/main.836b9c36.css.map",
-    "main.30ea83fa.js.map": "/double8group/static/js/main.30ea83fa.js.map"
+    "main.bd94b244.css.map": "/double8group/static/css/main.bd94b244.css.map",
+    "main.69f4b480.js.map": "/double8group/static/js/main.69f4b480.js.map"
   },
   "entrypoints": [
-    "static/css/main.836b9c36.css",
-    "static/js/main.30ea83fa.js"
+    "static/css/main.bd94b244.css",
+    "static/js/main.69f4b480.js"
   ]
 }
