@@ -136,22 +136,15 @@ export const MobileMenu = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-
   transform: translateY(-100%);
-
   z-index: 3;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   width: 100%;
   height: 100%;
-
   padding: 18px 16px;
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   @media screen and (max-width: 767px) {
     background-image: url();
     background-repeat: no-repeat;
@@ -263,9 +256,14 @@ export const SideItems = styled.div`
 `;
 
 export const ContactWrap = styled.div`
-  width: 120px;
-  display: flex;
-  justify-content: space-between;
+display: none;
+ 
+  @media (min-width: 770px) {
+    display: block;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 export const LinkWrap = styled.div`

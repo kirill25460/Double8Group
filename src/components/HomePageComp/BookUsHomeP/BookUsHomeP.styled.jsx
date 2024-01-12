@@ -161,7 +161,7 @@ export const ContactWrap = styled.div`
   align-items: normal;
   margin: 0 auto;
 padding-top:30px;
-flex-direction: column;
+flex-direction: row;
   
 `;
 

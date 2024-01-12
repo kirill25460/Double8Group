@@ -75,6 +75,54 @@ export const Header = () => {
           </NavLink>
         </LogoWrap>
         <Wrap>
+        <SideMenu  ref={menuRef} className={isOpen ? 'open' : ''}>
+            <CloseBtn onClick={toggleMenu} />
+          
+             
+            <StyledLink to="/"  onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('home');
+                }, 5)
+              }>
+                  <SideItems onClick={toggleMenu}>
+                    <HomeSvg/>
+                    <span>Home</span>
+                  </SideItems>
+                </StyledLink>
+                <StyledLink to="/"  onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('about_us');
+                }, 5)
+              }>
+                  <SideItems onClick={toggleMenu}>
+                    <HomeSvg/>
+                    <span>About Us</span>
+                  </SideItems>
+                </StyledLink>
+                <StyledLink to="/"  onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('advantages');
+                }, 5)
+              }>
+                  <SideItems onClick={toggleMenu}>
+                    <HomeSvg/>
+                    <span>Advantages</span>
+                  </SideItems>
+                </StyledLink>
+                <StyledLink to="/"  onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('contact_us');
+                }, 5)
+              }>
+                  <SideItems onClick={toggleMenu}>
+                    <HomeSvg/>
+                    <span>Contact us</span>
+                  </SideItems>
+                </StyledLink>
+          </SideMenu>
+
+
+
           <NavList>
             
               <NavItem>
@@ -114,19 +162,7 @@ export const Header = () => {
                 </StyledLink>
               </NavItem>
               </NavList>
-          <SideMenu  ref={menuRef} className={isOpen ? 'open' : ''}>
-            <CloseBtn onClick={toggleMenu} />
-          
-             
-                <StyledLink to="/">
-                  <SideItems onClick={toggleMenu}>
-                    <HomeSvg/>
-                    <span>Home</span>
-                  </SideItems>
-                </StyledLink>
-             
-         
-          </SideMenu>
+      
         </Wrap>
         <ContactWrap>
               <Link href="tel:+1 908-463-5087">
