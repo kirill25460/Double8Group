@@ -9,6 +9,8 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { HiOutlineMailOpen } from 'react-icons/hi';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { FaFacebookSquare } from 'react-icons/fa';
+import { FaTh } from 'react-icons/fa';
+
 
 export const Link = styled.a`
   text-decoration: none;
@@ -297,7 +299,11 @@ export const BookSvg = styled(MdMenuBook)`
   height: 22px;
   fill: #f8821e;
 `;
-
+export const AdvantagesSvg = styled(FaTh)`
+width: 23px;
+height: 22px;
+fill: #f8821e;
+`;
 export const Phone = styled.span`
   display: none;
   width: 120px;
