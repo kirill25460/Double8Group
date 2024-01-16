@@ -1,10 +1,7 @@
-// import { useState, useEffect } from 'react';
-// import { HiMenuAlt2 } from 'react-icons/hi';
-// import { IoClose } from 'react-icons/io5';
 import { useNavigate } from 'react-router-dom';
-
+import { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import HeaderLogo from 'images/D8Logo.jpeg';
+import HeaderLogo from 'images/LogoD8.png';
 import {
   LogoHeader,
   HeaderContainer,
@@ -29,7 +26,7 @@ import {
   SvgFacebook,
   Link,
 } from './Header.styled';
-import { useEffect, useRef, useState } from 'react';
+
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,8 +56,9 @@ export const Header = () => {
     }
   };
   const toggleMenu = event => {
-    event.stopPropagation();
+   
     setIsOpen(!isOpen);
+    event.stopPropagation();
   };
 
   return (

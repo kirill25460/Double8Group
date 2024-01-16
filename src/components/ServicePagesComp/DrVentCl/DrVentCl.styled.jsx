@@ -16,15 +16,15 @@ align-items: center;
     display:flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 60px;
-    padding-bottom: 63px;
+    padding-top: 120px;
+    padding-bottom: 65px;
     justify-content: center;
   }
   @media screen and (min-width: 1440px) {
 
     justify-content: center;
-    padding-top: 90px;
-    padding-bottom: 135px;
+    padding-top: 170px;
+    padding-bottom: 145px;
   }
 `;
 

@@ -212,7 +212,7 @@ export const BurgerMenu = styled.div`
   /* Стили для бургер-меню на планшете и телефоне */
   display: none; /* Начинаем с скрытого бургер-меню */
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-right: 200px;
     display: block;
   }

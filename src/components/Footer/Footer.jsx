@@ -16,7 +16,7 @@ import {
 
 } from './Footer.styled';
 
-import logo from 'images/D8Logo.jpeg';
+import logo from 'images/LogoD8.png';
 
 
 export const Footer = () => {
