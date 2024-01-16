@@ -7,7 +7,7 @@ display:flex;
 align-items: center;
   margin: 0 auto;
   flex-direction: column;
- padding-top:25px;
+ padding-top:65px;
  padding-bottom:30px;
 
   @media screen and (min-width: 768px) {
