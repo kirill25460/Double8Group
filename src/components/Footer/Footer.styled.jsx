@@ -7,11 +7,11 @@ export const FooterCon = styled.div`
   background-color: #202020;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-top: auto;
 `;
 
 export const FooterWrap = styled.div`
   width: 100px;
-
   z-index: 3;
   @media screen and (min-width: 768px) {
     width: 280px;
