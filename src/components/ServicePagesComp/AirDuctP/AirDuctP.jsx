@@ -1,9 +1,9 @@
-// import React, { useState } from 'react';
+
 import { NavLink } from 'react-router-dom';
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
 
-// import { SliderServices } from 'helper/SliderServices';
+
 
 import {
   Container,
@@ -26,10 +26,7 @@ import after from 'images/AirDuct2.jpg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
 import Money from 'images/money.svg'
-// import Photo from 'images/icon_camera.png';
-// import arr from "images/services/PhotoObject";
-//
-// const photo = arr.airDuct;
+
 
 const FIRST_IMAGE = {
   imageUrl: before,
@@ -46,17 +43,19 @@ const delimiterIconStyles = {
   backgroundImage: `url(${BeforeAfterText})`,
 };
 
+
+
 export const AirDuctP = () => {
-  // const [isSliderOpen, setIsSliderOpen] = useState(false);
+  const scrollToSection = sectionId => {
+    const section = document.getElementById(sectionId);
 
-  // const openSlider = () => {
-  //   setIsSliderOpen(true);
-  // };
-
-  // const closeSlider = () => {
-  //   setIsSliderOpen(false);
-  // };
-
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+      });
+   
+    }
+  };
   return (
     <>
       <Container>
@@ -71,7 +70,12 @@ export const AirDuctP = () => {
             We also provide the air duct cleaning service for your business.{' '}
           </AdditionallText>
           <OtherDescription>For business from $800.</OtherDescription>
-          <NavLink to="contact_us">
+          <NavLink to="/"
+              onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('contact_us');
+                }, 5)
+              }>
             <ButtonServices>BOOK THIS SERVICE</ButtonServices>
           </NavLink>
         </WrapService>
@@ -92,16 +96,18 @@ export const AirDuctP = () => {
         <WrapImages>
           <SeerviceImages src={Clock} alt="Logo" />
           <ImgText>3 HOURS FOR FULL PROCESS</ImgText>
-          {/* <DivPhoto onClick={openSlider}>
-            {isSliderOpen && (
-              <SliderServices images={photo} onClose={closeSlider} />
-            )} */}
+       
           <img src={Money} width="61" height="61" alt='Money'/>
           <ImgText>FROM 650$</ImgText>
-          {/* </DivPhoto> */}
+   
         </WrapImages>
         <div>
-          <NavLink to="contact_us">
+          <NavLink to="/"
+              onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('contact_us');
+                }, 5)
+              } >
             <MobButtonServices>BOOK THIS SERVICE</MobButtonServices>
           </NavLink>
         </div>

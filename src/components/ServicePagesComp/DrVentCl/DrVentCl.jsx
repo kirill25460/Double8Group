@@ -1,4 +1,4 @@
-// import React, { useState } from 'react';
+
 import { NavLink } from 'react-router-dom';
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
@@ -41,7 +41,16 @@ const delimiterIconStyles = {
   backgroundImage: `url(${BeforeAfterText})`,
 };
 export const DrVentCl = () => {
+  const scrollToSection = sectionId => {
+    const section = document.getElementById(sectionId);
 
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+      });
+   
+    }
+  };
 
   return (
     <>
@@ -54,7 +63,12 @@ export const DrVentCl = () => {
             Because clogged dryer vent can also be a fire hazard.
           </TextService>
          
-          <NavLink to="contact_us">
+          <NavLink to="/"
+              onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('contact_us');
+                }, 5)
+              } >
             <ButtonServices>BOOK THIS SERVICE</ButtonServices>
           </NavLink>
         </WrapService>
@@ -81,7 +95,12 @@ export const DrVentCl = () => {
 
         </WrapImages>
         <div>
-          <NavLink to="book_us">
+          <NavLink to="/"
+              onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('contact_us');
+                }, 5)
+              } >
             <MobButtonServices>BOOK THIS SERVICE</MobButtonServices>
           </NavLink>
         </div>

@@ -40,7 +40,16 @@ const delimiterIconStyles = {
   backgroundImage: `url(${BeforeAfterText})`,
 };
 export const PowerWashingP = () => {
+  const scrollToSection = sectionId => {
+    const section = document.getElementById(sectionId);
 
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+      });
+   
+    }
+  };
   return (
     <>
       <Container>
@@ -50,7 +59,12 @@ export const PowerWashingP = () => {
           Power wash takes off residue like salt, destructive mold, mildew, algae from outdoor patios, driveways, decks and more.  All these build-ups can destroy the paint and eat away at the exterior of home or business.
           </TextService>
           
-          <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
+          <NavLink to="/"
+              onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('contact_us');
+                }, 5)
+              }><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
           
         </WrapService>
 
@@ -75,7 +89,12 @@ based on standard scope of work</DescriptionService>
           <ImgText>FROM 250$</ImgText>
         </WrapImages>
         <div>
-          <NavLink to="book_us">
+          <NavLink to="/"
+              onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('contact_us');
+                }, 5)
+              }>
             <MobButtonServices>BOOK THIS SERVICE</MobButtonServices>
           </NavLink>
         </div>

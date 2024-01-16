@@ -1,4 +1,4 @@
-// import React, { useState } from 'react';
+
 import { NavLink } from 'react-router-dom';
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
@@ -22,12 +22,6 @@ import before from 'images/BathFanBefore.jpeg';
 import BeforeAfterText from 'images/before-after.png';
 import Clock from 'images/icon_clock.png';
 import Money from 'images/money.svg'
-// import Photo from 'images/icon_camera.png';
-
-// import arr from "images/services/PhotoObject";
-// import { SliderServices } from 'helper/SliderServices';
-
-// const photo = arr.bathroomFan;
 
 const FIRST_IMAGE = {
   imageUrl: before,
@@ -44,15 +38,16 @@ const delimiterIconStyles = {
   backgroundImage: `url(${BeforeAfterText})`,
 };
 export const BathroomFanCleaningP = () => {
-  // const [isSliderOpen, setIsSliderOpen] = useState(false);
+  const scrollToSection = sectionId => {
+    const section = document.getElementById(sectionId);
 
-  // const openSlider = () => {
-  //   setIsSliderOpen(true);
-  // };
-
-  // const closeSlider = () => {
-  //   setIsSliderOpen(false);
-  // };
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+      });
+   
+    }
+  };
   return (
     <>
       <Container>
@@ -63,7 +58,12 @@ export const BathroomFanCleaningP = () => {
 full with mold, germs and bacteria. Cleaning it will prevent you from allergies and breathing problems.
           </TextService>
          
-          <NavLink to="contact_us"><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
+          <NavLink to="/"
+              onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('contact_us');
+                }, 5)
+              } ><ButtonServices>BOOK THIS SERVICE</ButtonServices></NavLink>
       
         </WrapService>
 
@@ -92,7 +92,12 @@ based on standard scope of work</DescriptionService>
           {/* </DivPhoto> */}
         </WrapImages>
         <div>
-          <NavLink to="book_us">
+          <NavLink to="/"
+              onClick={() =>
+                setTimeout(() => {
+                  scrollToSection('contact_us');
+                }, 5)
+              } >
             <MobButtonServices>BOOK THIS SERVICE</MobButtonServices>
           </NavLink>
   
